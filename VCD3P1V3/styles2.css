@@ -44,15 +44,16 @@ h4{
 #body_copy{
     text-align: justify;
     }
-
+button:focus {outline:0;}
 button{
     border: none;
+    margin-top: 313px;
+    margin-left: 10px;
 }
 #button{
     height: 40.501px;
     z-index:30;
-    margin-top: 313px;
-    margin-left: 10px;
+    
     border:none;
 }
 .analysis {
