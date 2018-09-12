@@ -1,9 +1,11 @@
 *{
     background-color: darkslategray;
+    margin: 15px;
 }
 h4{
     color: white;
     font-family:"Trebuchet MS";
+    margin-bottom: 2px;
 }
 h1{
     color: white;
