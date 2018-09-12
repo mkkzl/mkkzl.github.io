@@ -6,6 +6,7 @@ body{
     margin: 80px;
     width: 1024px;
 }
+/*font controls*/
 h2 {
     font-size: 36pt;
     font-style: demi;
@@ -28,35 +29,6 @@ h4{
     font-style: light;
     margin: 0;
     }
-button{
-    border: none;
-}
-.rectangle{
-    border-bottom: 40px solid #c70000;
-}
-.row{
-    display: flex;
-    padding-bottom: 80px;
-
-    }
-.row2{
-    display: flex;
-}
-.column{
-    float: left;
-    width: 50%;
-    padding-left: 80px;
-    }
-.column2{
-    float:left;
-    width: 85%;
-}
-.column3{
-    align-content: flex-end;
-    float: right;
-    width: 15%;
-    align-items: baseline flex-end;
-}
 .body {
     font-family: futura-pt;
     color: white;
@@ -67,15 +39,15 @@ button{
     }
 #showcase{
     text-align: justify;
+    align-content: flex-end;
     }
 #body_copy{
     text-align: justify;
     }
 
-#showcase{
-    align-content: flex-end;
-    }
-
+button{
+    border: none;
+}
 #button{
     height: 40.501px;
     z-index:30;
@@ -83,9 +55,43 @@ button{
     margin-left: 10px;
     border:none;
 }
+.analysis {
+    position: absolute;
+    z-index:20;
+    top: 80px;
+    left: 160px;
+}
+
+.row{
+    display: flex;
+    padding-bottom: 80px;
+
+    }
+.row2{
+    display: flex;
+}
+/*the two halves of the screen*/
+.column{
+    float: left;
+    width: 50%;
+    padding-left: 80px;
+    }
 #right{
     padding-right: 80px;
 }
+/*letter and name+major columns*/
+.column2{
+    float:left;
+    width: 85%;
+}
+/*button and image columns*/
+.column3{
+    align-content: flex-end;
+    float: right;
+    width: 15%;
+    align-items: baseline flex-end;
+}
+
 #name{
     margin-top: 10px;
 }
@@ -95,9 +101,8 @@ button{
 #sources{
     margin-top: 40px;
 }
-.analysis {
-    position: absolute;
-    z-index:20;
-    top: 80px;
-    left: 160px;
+
+/*bottom of screen*/
+.rectangle{
+    border-bottom: 40px solid #c70000;
 }
