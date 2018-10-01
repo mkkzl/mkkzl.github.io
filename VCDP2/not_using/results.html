@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test
+</title>
+<script type="text/javascript">
+function tst() {
+cook = unescape(document.cookie)
+vals = cook.split(";")
+document.write("You answered " + vals[0] + " for number 1.<br>You answered " + vals[1] + " for number 2.<br>You got " + vals[2] + " correct and " + vals[3] + "
+incorrect.<br>You got " + vals[2]/2 * 100 + "% correct.");
+}
+</script>
+</head>
+<body onLoad="tst()">
+<span id="spanname"></span>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title> Quiz </title>
+    <link rel="stylesheet" href="styles2.css"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+    
+<body>
+<div class="wrapper">
+    <div class="namedrag" id="wash" draggable="true" ondragstart="drag(event)"><p>George Washington</p></div>
+    <div class="namedrag" id="adams" draggable="true" ondragstart="drag(event)"><p>John Adams</p></div>
+    <div class="namedrag" id="jeff" draggable="true" ondragstart="drag(event)"><p>Thomas Jefferson</p></div>
+    <div class="namedrag" id="mad" draggable="true" ondragstart="drag(event)"><p>James Madison</p></div>
+    <div class="namedrag" id="monroe" draggable="true" ondragstart="drag(event)"><p>James Monroe</p></div>
+    <div class="namedrag" id="qadams" draggable="true" ondragstart="drag(event)"><p>John Q Adams</p></div>
+    
+    <div class="num" id="one"><p>1</p></div>
+    <div class="num" id="two"><p>2</p></div>
+    <div class="num" id="three"><p>3</p></div>
+    <div class="num" id="four"><p>4</p></div>
+    <div class="num" id="five"><p>5</p></div>
+    <div class="num" id="six"><p>6</p></div>
+    
+    <div class="blank" id="washblank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="blank" id="adamsblank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="blank" id="jeffblank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="blank" id="madblank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="blank" id="monroeblank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="blank" id="qadamsblank" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    
+    <div class=submitbutton>
+                <a href="quizresults.html" class="button submitbutton">
+                    Submit
+                </a>
+    </div>
+    
+    <div class=homebutton>
+                <a href="../home.html" class="button homebutton">
+                    <i class="fa fa-home" aria-hidden="true" ></i>
+                </a>
+    </div>
+</div>
+</body>
+    
+</html>

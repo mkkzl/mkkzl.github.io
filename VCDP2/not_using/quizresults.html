@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles2.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<button onclick="myFunction()">Name of the Pres</button>
+
+<div id="myDIV">
+Image and name and all that info
+</div>
+
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+

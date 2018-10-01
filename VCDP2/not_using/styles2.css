@@ -1,0 +1,182 @@
+*{
+    font-family: serif;
+    margin: 0px;
+}
+
+body {
+  margin: 0px;
+  background-color: navy;
+  display: grid;
+}
+
+/*32 columns 24 rows*/
+.wrapper {
+  display: grid;
+  margin: 0px;
+  grid-template-columns: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+  grid-template-rows: 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px 32px;
+    background-color: navy;
+}
+p {
+  font-size: 16px;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+.blank{
+    background-color: #ffdd70;
+    display: grid;
+    width: 128px;
+    height: 32px;
+    align-content: center;
+}
+
+.button{
+    display: grid;
+    color: #fff;
+    background-color: red;
+    font-size: 36px;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+}
+.namedrag{
+    width: 128px;
+}
+#wash{
+    display: grid;
+    grid-column: 2/ span 4;
+    grid-row:2}
+#washblank{
+    display: grid;
+    grid-column: 17 / span 4;
+    grid-row: 2;
+}
+#adams{
+    display: grid;
+    grid-column: 2/ span 4;
+    grid-row: 4;
+}
+#adamsblank{
+    display: grid;
+    grid-column: 17 / span 4;
+    grid-row: 4;
+}
+#jeff{
+    display: grid;
+    grid-column: 2/ span 4;
+    grid-row: 6;
+}
+#jeffblank{
+    display: grid;
+    grid-column: 17 / span 4;
+    grid-row: 6;
+}
+#mad{
+    display: grid;
+    grid-column: 2/ span 4;
+    grid-row: 8;
+}
+#madblank{
+    display: grid;
+    grid-column: 17 / span 4;
+    grid-row: 8;
+}
+#monroe{
+    display: grid;
+    grid-column: 2/ span 4;
+    grid-row: 10;
+}
+#monroeblank{
+    display: grid;
+    grid-column: 17 / span 4;
+    grid-row: 10;
+}
+#qadams{
+    display: grid;
+    grid-column: 2/ span 4;
+    grid-row: 12;
+}
+#qadamsblank{
+    display: grid;
+    grid-column: 17 / span 4;
+    grid-row: 12;
+}
+#one{
+    display: grid;
+    grid-row: 2;
+}
+#two{
+    display: grid;
+    grid-row: 4;
+}
+#three{
+    display: grid;
+    grid-row: 6;
+}
+#four{
+    display: grid;
+    grid-row: 8;
+}
+#five{
+    display: grid;
+    grid-row: 10;
+}
+#six{
+    display: grid;
+    grid-row: 12;
+}
+.num{
+    display: grid;
+    text-align: right;
+    padding-top: 5px;
+    grid-column: 14;
+}
+.homebutton{
+    display: grid;
+    grid-column: 15;
+    grid-row: 32;
+    width: 32px;
+    height: 32px;
+}
+i{
+    font-size: 16px;
+    padding-top: 8px;
+}
+.submitbutton{
+    display: grid;
+    grid-column: 17/ span 4;
+    grid-row: 16;
+    width: 128px;
+    height: 32px;
+}
+a{
+    font-size: 16px; 
+}
+.hidden {
+  display: none
+}
+
+
+
+/* Input field */
+input {
+  display: grid;
+  border: none ;
+  background: transparent ;
+  color: black;
+  font-size: 18px ;
+
+}
+
+input:focus{
+    outline: none
+}
