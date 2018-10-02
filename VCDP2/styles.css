@@ -19,9 +19,9 @@ h2{
     font-style: italic; 
 }
 h3{
-    font-size: 40px;
+    font-size: 35px;
     margin: 0px;   
-}   
+} 
 h5{
     color: #fff;
     font-size: 60px;
@@ -30,7 +30,7 @@ h5{
 }
 h6{
     color: #fff;
-    font-size: 60px;
+    font-size: 47px;
     margin: 0px;
 }
 p{
@@ -38,7 +38,9 @@ p{
     font-size: 25px;
     margin: 0px;
 }
-
+p.finalbutton{
+    padding-top: 30px;
+}
 /*8 columns 6 rows*/
 .wrapper {
   display: grid;
