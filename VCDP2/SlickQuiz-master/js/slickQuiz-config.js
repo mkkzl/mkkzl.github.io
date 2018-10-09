@@ -4,9 +4,9 @@
 
 var quizJSON = {
     "info": {
-        "name":    "Test Your Knowledge!!",
+        "name":    "Do you know your presidents?",
         "main":    "<p>How well did you learn the order of the presidents?</p>",
-        "results": "<h5>To review again</h5>",
+        "results": "",
         "level1":  "Presidential Master",
         "level2":  "A Real Presidential Historian",
         "level3":  "You are getting there!",
@@ -35,7 +35,7 @@ var quizJSON = {
             ],
             "select_any": true,
             "correct": "<p><span>Nice!</span></p>",
-            "incorrect": "<p>Maybe this will help: Well, the mad sun has escaped- but he's still hot! He opens his mouth and out flows a boiling river.  In the river is some <em>money row</em>-ing a boat.</p>"// no comma here
+            "incorrect": "<p><span>Mmm...no</span>Maybe this will help: Well, the mad sun has escaped- but he's still hot! He opens his mouth and out flows a boiling river.  In the river is some <em>money row</em>-ing a boat.</p>"// no comma here
         },
         { // Question 3 - Multiple Choice, Multiple True Answers, Select Any
             "q": "Who came before William Henry Harrison",
