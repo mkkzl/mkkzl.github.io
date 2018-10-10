@@ -8,6 +8,7 @@ body {
     color: #2d3e50;
     width: 2400px;
     margin: 20px;
+    overflow-y: hidden;
 }
 
 header {
@@ -183,15 +184,16 @@ button{
     font-size: 48px;
 }
 .homecbutton{
+    position: fixed;
     display: grid;
-    grid-column: 1;
-    grid-row: 6;;
     width: 75px;
     height: 75px;
+    top: 500px;
 }
 
 .instructions{
     display: grid;
+    position: fixed;
     grid-column: 1 / span 8;
     grid-row: 1;
     width: 1024px;
