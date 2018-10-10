@@ -1,0 +1,205 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #ecf0f1;
+    font-family: "adobe-caslon-pro",serif;
+    color: #2d3e50;
+    width: 2400px;
+    margin: 20px;
+}
+
+header {
+  position: fixed;
+  top: 36px;
+  left: 36px;
+  z-index: 99;
+}
+
+.wrapper{
+    display: grid;
+    margin: 30px;
+    grid-template-columns: repeat(19, 125px);
+    grid-template-rows: repeat(7,75px);
+    background-color: #ecf0f1;
+    justify-items: center;
+}
+
+
+div.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 10px;
+    background-color: #333;
+    z-index: 1;
+
+}
+
+.container {
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 100vw;
+    height: 70vh;
+}
+
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2d3e50;
+}
+.rectangle {
+    width: 3px;
+    height: 60px;
+    background-color: #2d3e50;
+}
+a {
+    text-align: center;
+    color: #2d3e50;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+
+.cir1{
+    display: grid;
+    grid-row: 2;
+    
+    
+}
+
+.cir2{
+    display: grid;
+    grid-row: 3;
+}
+
+.rect1{
+    display: grid;
+    grid-row: 3;
+}
+.name1{
+    display: grid;
+    grid-row: 4;
+}
+.rect2{
+    display: grid;
+    grid-row: 4;
+}
+.name2{
+    display: grid;
+    grid-row: 5;
+}
+.wash{
+    display: grid;
+    grid-column: 2;
+}
+.adams{
+    display: grid;
+    grid-column: 3;
+}
+.jeff{
+    display: grid;
+    grid-column: 4;
+}
+.mad{
+    display: grid;
+    grid-column: 5;
+}
+.mon{
+    display: grid;
+    grid-column: 6;
+}
+.qadams{
+    display: grid;
+    grid-column: 7;
+}
+.jack{
+    display: grid;
+    grid-column: 8;
+}
+.vanb{
+    display: grid;
+    grid-column: 9;
+}
+.harri{
+    display: grid;
+    grid-column: 10;
+}
+.tyler{
+    display: grid;
+    grid-column: 11;
+}
+.polk{
+    display: grid;
+    grid-column: 12;
+}
+.taylor{
+    display: grid;
+    grid-column: 13;
+}
+.fill{
+    display: grid;
+    grid-column: 14;
+}
+.pierce{
+    display: grid;
+    grid-column: 15;
+}
+.buc{
+    display: grid;
+    grid-column: 16;
+}
+.linc{
+    display: grid;
+    grid-column: 17;
+}
+
+button{
+    display: grid;
+    color: #f5b9b9;
+    background-color: #2d3e50;
+    border: 5px solid #f5b9b9;
+    font-size: 36px;
+    border-radius: 5px;
+    text-align: center;
+}
+.button{
+    display: grid;
+    color: #f5b9b9;
+    background-color: #2d3e50;
+    border: 5px solid #f5b9b9;
+    font-size: 36px;
+    border-radius: 5px;
+    text-align: center;
+}
+.button i{
+    position: relative;
+    top: 15%;
+    font-size: 48px;
+}
+.homecbutton{
+    display: grid;
+    grid-column: 1;
+    grid-row: 6;;
+    width: 75px;
+    height: 75px;
+}
+
+.instructions{
+    display: grid;
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    width: 1024px;
+    height: 128px;
+}
+h6{
+    color: #e84c3d;
+    font-size: 40px;
+    margin: 0px;
+    font-family: "gothic-open-shaded",sans-serif;
+}

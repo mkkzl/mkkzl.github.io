@@ -94,6 +94,7 @@ ol li { list-style-type: decimal; margin-left: 20px; }
 .questionCount {
     font-size: 14px;
     font-style: italic;
+    margin-bottom: 250px;
 }
 .questionCount span {
     font-weight: bold;
@@ -102,9 +103,15 @@ ol li { list-style-type: decimal; margin-left: 20px; }
 ol.questions {
     margin-top: 20px;
     margin-left: 0;
+    position: relative;
 }
 ol.questions li {
     margin-left: 0;
+}
+
+ol.questions img{
+    position: absolute;
+    top: 50px;
 }
 
 ul.answers {

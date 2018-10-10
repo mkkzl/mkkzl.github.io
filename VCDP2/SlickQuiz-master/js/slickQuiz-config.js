@@ -15,7 +15,7 @@ var quizJSON = {
     },
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
-            "q": "Who was the first president?",
+            "q":" <img src='../../Assets/Washorange.png' width='200px' height='200px' /> Who was the first president?",
             "a": [
                 {"option": "John Adams",      "correct": false},
                 {"option": "Thomas Jefferson",     "correct": false},
