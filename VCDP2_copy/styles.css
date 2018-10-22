@@ -1,0 +1,256 @@
+*{
+       font-family: serif;
+}
+
+body {
+  margin: 0px;
+  background-color: lightgrey;
+  display: grid;
+}
+
+h1{
+    font-size: 125px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    font-weight: bold;
+    color: red;
+}
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: blue;
+    line-height: 40px;
+    margin-top: 40px;
+ 
+}
+h3{
+    font-size: 35px;
+    font-family: sans-serif;
+    margin-top: 20px;
+    color: green;
+} 
+h4{
+    color: purple;
+    font-size: 14px;
+    margin: 0px;
+}
+h5{
+    color: lightpink;
+    font-size: 60px;
+    margin: 0px;
+    padding-top: 20px;
+}
+h6{
+    color: coral;
+    font-size: 47px;
+    margin: 0px;
+}
+p{
+    color: black;
+    font-size: 25px;
+    margin: 0px;
+}
+p.finalbutton{
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+
+/*8 columns 6 rows*/
+.wrapper {
+  display: grid;
+  margin: 10px;
+  grid-template-columns: 128px 128px 128px 128px 128px 128px 128px 128px;
+  grid-template-rows: 128px 128px 128px 128px 128px 128px;
+    background-color: #ecf0f1;
+}
+
+.title{
+    display: grid;
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 3;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.subtitle{
+    display: grid;
+    grid-column: 1 / span 5;
+    grid-row: 4 / span 1;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.citation{
+    display: grid;
+    grid-column: 1 / span 5;
+    grid-row: 6 / span 1;
+    padding-left: 20px;
+}
+.firstbutton{
+    display: grid;
+    grid-column: 8 / span 1;
+    grid-row: 3 / span 1;
+    width: 128px;
+    height: 96px;
+}
+button{
+    display: grid;
+    color: palevioletred;
+    background-color: cornflowerblue;
+    font-size: 36px;
+    text-align: center;
+}
+.button{
+    display: grid;
+    color: palevioletred;
+    background-color: cornflowerblue;
+    font-size: 36px;
+    text-align: center;
+}
+.button i{
+    position: relative;
+    top: 25%;
+    font-size: 48px;
+}
+.learnbutton{
+    display: grid;
+    grid-column: 3/ span 3;
+    grid-row: 1/ span 1;
+    width: 384px;
+    height: 128px;
+    text-align: center;
+    margin-top: 10px;
+}
+.choosebutton{
+    display: grid;
+    grid-column: 3/ span 3;
+    grid-row: 3/ span 1;
+    width: 384px;
+    height: 128px;
+    text-align: center;
+    margin-top: 10px;
+}
+.quizbutton{
+    display: grid;
+    grid-column: 3/ span 3;
+    grid-row: 5/ span 1;
+    width: 384px;
+    height: 128px;
+    margin-top: 10px;
+}
+.homebutton{
+    display: grid;
+    grid-column: 8;
+    grid-row: 6;
+    width: 128px;
+    height: 96px;
+}
+
+.name{
+    display: grid;
+    grid-column: 3/ span 3;
+    grid-row: 1/ span 1;
+    width: 384px;
+    height: 128px;
+    text-align: center;
+    padding-top: 55px;
+}
+.number{
+    display: grid;
+    grid-column: 2/ span 1;
+    grid-row: 1/ span 1;
+    width: 128px;
+    height: 128px;
+    text-align: right;
+    padding-top: 55px;
+}
+.image{
+    display: grid;
+    grid-column: 3/ span 3;
+    grid-row: 2/ span 3;
+    width: 384px;
+    height: 384px;
+    background-color: aqua;
+}
+.memtrick{
+    display: grid;
+    grid-column: 3/ span 3;
+    grid-row: 5/ span 1;
+    width: 384px;
+    height: 128px;
+    text-align: center;
+    padding-top: 30px;
+}
+img{
+    height: 384px;
+    width: 384px;
+}
+.forwardbutton{
+    display: grid;
+    grid-column: 8 ;
+    grid-row: 3 ;
+    width: 128px;
+    height: 96px;
+}
+.trickexpl{
+    display: grid;
+    grid-column: 2/ span 5;
+    grid-row: 6/ span 1;
+    width: 640px;
+    height: 128px;
+    text-align: left;
+    
+}
+.backbutton{
+    display: grid;
+    grid-column: 1 ;
+    grid-row: 3 ;
+    width: 128px;
+    height: 96px;
+}
+.list{
+    margin-top: 30px;
+    display: grid;
+    grid-column: 2 / span 2 ;
+    grid-row: 1 / span 4;
+    margin-top: 90px;
+}
+.list2{
+    margin-top: 30px;
+    display: grid;
+    grid-column: 5 / span 2 ;
+    grid-row: 1 / span 4;
+    margin-top: 90px;
+}
+a{
+    color: #2d3e50;
+    font-size: 25px;
+    margin: 0px;
+}
+.homecbutton{
+    display: grid;
+    grid-column: 8;
+    grid-row: 4;
+    width: 128px;
+    height: 96px;
+    margin-top: 40px;
+}
+
+.location{
+    display: grid;
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    width: 1024px;
+    height: 128px;
+    background-color: bisque;
+}
+.circles{
+    margin-top: -40px;
+    margin-left: -50px;
+}
+.instructions{
+    display: grid;
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    width: 1024px;
+    height: 128px;
+}

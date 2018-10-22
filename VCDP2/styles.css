@@ -154,7 +154,15 @@ button{
     width: 128px;
     height: 96px;
 }
-i{
+.forwardbutton i{
+    background-color: none;
+    color: #f5b9b9;
+}
+.homebutton i{
+    background-color: none;
+    color: #f5b9b9;
+}
+.backbutton i{
     background-color: none;
     color: #f5b9b9;
 }
