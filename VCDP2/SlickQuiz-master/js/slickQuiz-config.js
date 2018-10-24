@@ -15,7 +15,7 @@ var quizJSON = {
     },
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
-            "q":"Who was the first president?",
+            "q": "Who was the first president?",
             "a": [
                 {"option": "John Adams",      "correct": false},
                 {"option": "Thomas Jefferson",     "correct": false},
@@ -25,7 +25,18 @@ var quizJSON = {
             "correct": "<p><span>That's right!</span> </p>",
             "incorrect": "<img src='../Assets/Washorange.png' width='200px' height='200px' /><p><span>No, sorry</span>Remember <strong> Wash a ton</strong> for Washington</p>" // no comma here
         },
-        { // Question 2 - Multiple Choice, Multiple True Answers, Select Any
+        { // Question 2 - Multiple Choice, Single True Answer
+            "q": "One of these presidents is not in the right order, who is it?: 6. John Quincy Adams, 7. Andrew Jackson, 8. Martin Van Buren, 9. James Polk",
+            "a": [
+                {"option": "6. John Quincy Adams",      "correct": false},
+                {"option": "7. Andrew Jackson",     "correct": false},
+                {"option": "8. Martin Van Buren",      "correct": false},
+                {"option": "9. James Polk",     "correct": true} // no comma here
+            ],
+            "correct": "<p><span>You're so smart!</span> </p>",
+            "incorrect": "<img src='../Assets/Polkorange.png' width='200px' height='200px' /><p><span>That one was tough</span>Remember <strong> polk a dots</strong> comes after Tyler</p>" // no comma here
+        },
+        { // Question 3 
             "q": "Who came after James Madison?",
             "a": [
                 {"option": "John Adams",               "correct": false},
@@ -37,8 +48,8 @@ var quizJSON = {
             "correct": "<p><span>Nice!</span></p>",
             "incorrect": "<img src='../Assets/Monroeorange.png' width='200px' height='200px' /><p><span>Mmm...no</span>Maybe this will help: Well, the mad sun has escaped- but he's still hot! He opens his mouth and out flows a boiling river.  In the river is some <em>money row</em>-ing a boat.</p>"// no comma here
         },
-        { // Question 3 - Multiple Choice, Multiple True Answers, Select Any
-            "q": "Who came before William Henry Harrison",
+        { // Question 4
+            "q": "Who came before William Henry Harrison?",
             "a": [
                 {"option": "Thomas Jefferson",           "correct": false},
                 {"option": "John Tyler",                  "correct": false},
@@ -48,7 +59,18 @@ var quizJSON = {
             "correct": "<p><span>Brilliant!</span></p>",
             "incorrect": "<img src='../Assets/VanBorange.png' width='200px' height='200px' /><p><span>Not Quite.</span> Picture the hairy <b> van </b></p>" // no comma here
         },
-        { // Question 4
+        { // Question 5 
+            "q": "Fill in the blank: John Adams, ________, James Madison",
+            "a": [
+                {"option": "Thomas Jefferson",           "correct": true},
+                {"option": "John Tyler",                  "correct": false},
+                {"option": "John Quincy Adams",  "correct": false},
+                {"option": "James Monroe",          "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Perfection!</span></p>",
+            "incorrect": "<img src='../Assets/Jefforange.png' width='200px' height='200px' /><p><span>Aww.</span> Picture the <b> chef's son </b></p>" // no comma here
+        },
+        { // Question 6
             "q": "<img src='../Assets/Fillorange.png' width='200px' height='200px' />Who came before and after (in that order) Millard Fillmore?",
             "a": [
                 {"option": "Tyler, Pierce",    "correct": false},
@@ -59,7 +81,18 @@ var quizJSON = {
             "correct": "<p><span>Holy bananas!</span>  Correct!</p>",
             "incorrect": "<img src='../Assets/Taylororange.png' width='200px' height='200px' /><img src='../Assets/Pierceorange.png' width='200px' height='200px' class='second' /><p><span>Oh no.</span> Sorry. It actually was Taylor and Pierce.</p>" // no comma here
         },
-        { // Question 5
+        { // Question 7
+            "q": "<img src='../Assets/Pierceorange.png' width='200px' height='200px' />Select any of the presidents that came after Franklin Pierce (hint there are more than one!)",
+            "a": [
+                {"option": "Buchanan",    "correct": true},
+                {"option": "Lincoln",     "correct": true},
+                {"option": "Taylor",      "correct": false},
+                {"option": "Jackson",   "correct": false} // no comma here
+            ],
+            "correct": "<p><span>Wowza!</span>  Correct!</p>",
+            "incorrect": "<img src='../Assets/Buchorange.png' width='200px' height='200px' /><img src='../Assets/Lincorange.png' width='200px' height='200px' class='second' /><p><span>Aw man.</span> No. Franklin was the 14th president followed by Buchanan and Lincoln.  Taylor was 12th and Jackson was 7th.</p>" // no comma here
+        },
+        { // Question 8
             "q": "Who was the 16th president?",
             "a": [
                 {"option": "Abraham Lincoln",    "correct": true},
