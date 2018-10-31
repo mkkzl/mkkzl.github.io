@@ -116,6 +116,11 @@ button{
     border-radius: 5px;
     text-align: center;
 }
+.button:hover{
+    background-color:  #e84c3d;
+    border-color: #2d3e50;
+    color: #2d3e50;
+}
 .button i{
     position: relative;
     top: 25%;
