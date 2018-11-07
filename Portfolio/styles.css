@@ -8,12 +8,14 @@
         grid-column-gap: 5px;
         grid-row-gap: 5px;
     }
-    .wrapper.index{
-    grid-template-rows: repeat(75,100px);
+.wrapper.index{
+    grid-template-rows: repeat(44,100px);
     }
-    .wrapper.project{
-    grid-template-rows: repeat(40,100px);
+.wrapper.project{
+    grid-template-rows: repeat(43,100px);
     }
+
+/*Index Page*/
 .logo{
     display: grid;
     grid-column: 1 / span 1;
@@ -57,11 +59,11 @@
 }
 .squiggle.item2{
     display: grid;
-    grid-row: 20;
+    grid-row: 19;
 }
 .squiggle.item3{
     display: grid;
-    grid-row: 35;
+    grid-row: 32;
 }
 .sectionimage{
     display: grid;
@@ -76,11 +78,11 @@
 }
 .sectionimage.item2{
     display: grid;
-    grid-row: 22;
+    grid-row: 20;
 }
 .sectionimage.item3{
     display: grid;
-    grid-row: 37;
+    grid-row: 33;
 }
 .sectiontitle{
     display: grid;
@@ -96,11 +98,11 @@
 }
 .sectiontitle.item2{
     display: grid;
-    grid-row: 28;
+    grid-row: 26;
 }
 .sectiontitle.item3{
     display: grid;
-    grid-row: 43;
+    grid-row: 39;
 }
 .sectionbody{
     display: grid;
@@ -116,11 +118,11 @@
 }
 .sectionbody.item2{
     display: grid;
-    grid-row: 29;
+    grid-row: 27;
 }
 .sectionbody.item3{
     display: grid;
-    grid-row: 44;
+    grid-row: 40;
 }
 .button{
     display: grid;
@@ -137,17 +139,19 @@
 }
 .button.item2{
     display: grid;
-    grid-row: 32;
+    grid-row: 30;
 }
 .button.item3{
     display: grid;
-    grid-row: 47;
+    grid-row: 43;
 }
 a{
     background-color: aliceblue;
     border-color: aqua;
     border-width: 30px;
 }
+
+/*Project Pages*/
 .title{
     display: grid;
     grid-column:2 / span 8;
@@ -215,7 +219,7 @@ a{
         grid-row-gap: 5px;
     }
     .wrapper.index{
-    grid-template-rows: repeat(75,100px);
+    grid-template-rows: repeat(61,100px);
     }
     .wrapper.project{
     grid-template-rows: repeat(40,100px);
@@ -258,15 +262,15 @@ a{
     }
     .squiggle.item1{
         display: grid;
-        grid-row: 6;
+        grid-row: 7;
     }
     .squiggle.item2{
         display: grid;
-        grid-row: 22;
+        grid-row: 26;
     }
     .squiggle.item3{
         display: grid;
-        grid-row: 44;
+        grid-row: 45;
     }
     .sectionimage{
         display: grid;
@@ -277,15 +281,15 @@ a{
     }
     .sectionimage.item1{
         display: grid;
-        grid-row: 8;
+        grid-row: 9;
     }
     .sectionimage.item2{
         display: grid;
-        grid-row: 27;
+        grid-row: 28;
     }
     .sectionimage.item3{
         display: grid;
-        grid-row: 44;
+        grid-row: 47;
     }
     .sectiontitle{
         display: grid;
@@ -304,7 +308,7 @@ a{
     }
     .sectiontitle.item3{
         display: grid;
-        grid-row: 51;
+        grid-row: 52;
     }
     .sectionbody{
         display: grid;
@@ -324,7 +328,7 @@ a{
     }
     .sectionbody.item3{
         display: grid;
-        grid-row: 54;
+        grid-row: 55;
     }
     .button{
         display: grid;
@@ -337,15 +341,15 @@ a{
     }
     .button.item1{
         display: grid;
-        grid-row: 24;
+        grid-row: 23;
     }
     .button.item2{
         display: grid;
-        grid-row: 41;
+        grid-row: 42;
     }
     .button.item3{
         display: grid;
-        grid-row: 58;
+        grid-row: 60;
     }
     a{
         background-color: aliceblue;
