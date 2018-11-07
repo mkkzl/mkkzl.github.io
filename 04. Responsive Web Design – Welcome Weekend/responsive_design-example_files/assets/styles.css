@@ -1,0 +1,43 @@
+main{
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 5%;
+}
+blockquote {
+    width: 70%;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    border-top: .2rem solid #AE9142;
+    padding: 1.875rem;
+    margin: 2.5rem auto 0 auto;
+    background-color: white;
+    color: #AE9142;
+}
+
+figure img {
+    width: 100%;
+    margin-bottom:.5rem;
+}
+
+.footer-info {
+    width:80%;
+    margin:0 auto;
+    padding: 5%;
+    text-align:center;
+    color: #fff;
+}
+.spacing {
+    width: 100%;
+    padding:5% 5% 0 5%;
+}
+
+@media only screen and (min-width:
+960px) {
+    .footer-info {
+width: 54rem;
+margin: 0 auto;
+padding: 5% 2.5% 2.5% 2.5%;
+text-align: left;
+color: #fff;
+    }}

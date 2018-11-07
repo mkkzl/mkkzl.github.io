@@ -1,0 +1,73 @@
+.site-header {
+    width: 100%;
+    border-top: 4px solid #ae9142;
+    border-bottom: 5px solid #0c2340;
+}
+    .page {
+    width:110%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+    main {
+    /*  960*.8  */
+    width: 100%;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    border-top: .2rem solid #AE9142;
+    padding: 1.875rem;
+    background-color: white;
+    color: #AE9142;
+}
+
+.spacing {
+    width: 100%;
+    padding:5% 5% 0 5%;
+}
+    footer .footer-info {
+    width:80%;
+    margin:0 auto;
+    padding: 5%;
+    text-align:center;
+    color: #fff;
+        }
+    .video iframe {
+    width:100%;
+    margin:0;
+}
+    blockquote {
+    font-family: 'Suez One', serif;
+    /*  768*.7  */
+    width: 70%;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    border-top: .2rem solid #AE9142;
+    padding: 1.875rem;
+    margin: 2.5rem auto 0 auto;
+    background-color: lightgoldenrodyellow;
+    color: #AE9142;
+}
+    figure img {
+    width: 100%;
+    margin-bottom:.5rem;
+}
+    .info {
+    color: #ae9142;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info h4 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.info h5 {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
