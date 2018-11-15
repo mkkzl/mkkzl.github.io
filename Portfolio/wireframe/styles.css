@@ -1,0 +1,416 @@
+*{
+    background-color: black;
+}
+ .wrapper{
+        display: grid;
+        grid-template-columns: repeat( 10, auto );
+        margin: 25px;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+.wrapper.index{
+    grid-template-rows: repeat(44,100px);
+    }
+.wrapper.project{
+    grid-template-rows: repeat(43,100px);
+    }
+
+/*Index Page*/
+.logo{
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    height: 25px;
+    background-color: yellow;
+}
+.name{
+    display: grid;
+    grid-column:2 / span 3;
+    grid-row: 1 / span 1;
+    height: 25px;
+    background-color: hotpink;
+    padding-left: 5px;
+}
+.back{
+    display: grid;
+    grid-column:9 / span 1;
+    grid-row: 1 / span 1;
+    height: 50px;
+    background-color: aliceblue;
+}
+.largetext{
+    display: grid;
+    grid-column: 2 / span 7;
+    grid-row: 2;
+    height: 150px;
+    padding-top: 50px;
+    background-color: greenyellow;
+}
+.squiggle{
+    display: grid;
+    grid-column: 3 / span 6;
+    height: 60px;
+    padding-top: 20px;
+    background-color: aqua;
+}
+.squiggle.item1{
+    display: grid;
+    grid-row: 4;
+}
+.squiggle.item2{
+    display: grid;
+    grid-row: 19;
+}
+.squiggle.item3{
+    display: grid;
+    grid-row: 32;
+}
+.sectionimage{
+    display: grid;
+    grid-column: 1 / span 10;
+    height: 550px;
+    padding-right: 25px;
+    background-color: blue;
+}
+.sectionimage.item1{
+    display: grid;
+    grid-row: 5;
+}
+.sectionimage.item2{
+    display: grid;
+    grid-row: 20;
+}
+.sectionimage.item3{
+    display: grid;
+    grid-row: 33;
+}
+.sectiontitle{
+    display: grid;
+    grid-column: 2 / span 5;
+    
+    height: 150px;
+    padding-top: 50px;
+    background-color: greenyellow;
+}
+.sectiontitle.item1{
+    display: grid;
+    grid-row: 11;
+}
+.sectiontitle.item2{
+    display: grid;
+    grid-row: 26;
+}
+.sectiontitle.item3{
+    display: grid;
+    grid-row: 39;
+}
+.sectionbody{
+    display: grid;
+    grid-column: 2 / span 8;
+    grid-row: 14;
+    height: 200px;
+    padding-top: 50px;
+    background-color: greenyellow;
+}
+.sectionbody.item1{
+    display: grid;
+    grid-row: 14;
+}
+.sectionbody.item2{
+    display: grid;
+    grid-row: 27;
+}
+.sectionbody.item3{
+    display: grid;
+    grid-row: 40;
+}
+.button{
+    display: grid;
+    grid-column: 2 / span 3;
+    height: 100px;
+    background-color: aliceblue;
+    border-color: aqua;
+    border-width: 30px;
+    
+}
+.button.item1{
+    display: grid;
+    grid-row: 17;
+}
+.button.item2{
+    display: grid;
+    grid-row: 30;
+}
+.button.item3{
+    display: grid;
+    grid-row: 43;
+}
+a{
+    background-color: aliceblue;
+    border-color: aqua;
+    border-width: 30px;
+}
+
+/*Project Pages*/
+.title{
+    display: grid;
+    grid-column:2 / span 8;
+    grid-row: 2 / span 1;
+    height: 75px;
+    background-color: greenyellow;
+    padding-top: 25px;
+}
+.subhead{
+    display: grid;
+    grid-column: 3 / span 6;
+    grid-row: 3;
+    height: 50px;
+    margin-top: 20px;
+    background-color: deeppink;
+}
+.projectimage{
+   display: grid;
+    grid-column: 1 / span 10;
+    grid-row: 4;
+    padding-top: 50px;
+    height: 550px;
+    padding-right: 25px;
+    background-color: blue; 
+}
+.projectdescription{
+    display: grid;
+    grid-column: 2 / span 8;
+    grid-row: 10;
+    height: 200px;
+    padding-top: 50px;
+    background-color: greenyellow;
+}
+.squiggle.project{
+    display: grid;
+    grid-row: 13;
+}
+.otherimage{
+    display: grid;
+    grid-column: 1 / span 10;
+    height: 550px;
+    padding-right: 25px;
+    padding-top: 50px;
+    background-color: blue;
+}
+.otherimage.item1{
+        grid-row: 15;
+}
+.otherimage.item2{
+        grid-row: 22;
+}
+.otherimage.item3{
+        grid-row: 29;
+}
+.otherimage.item4{
+        grid-row: 36;
+}
+
+@media only screen and (min-width: 961px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat( 10, auto );
+        margin: 25px;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+    .wrapper.index{
+    grid-template-rows: repeat(61,100px);
+    }
+    .wrapper.project{
+    grid-template-rows: repeat(40,100px);
+    }
+    .logo{
+    display: grid;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    height: 150px;
+    background-color: yellow;
+}
+    .name{
+    display: grid;
+    grid-column:2 / span 3;
+    grid-row: 1 / span 1;
+    height: 150px;
+    background-color: hotpink;
+    padding-left: 5px;
+}
+    .back{
+    display: grid;
+    grid-column:9 / span 2;
+    grid-row: 1 / span 2;
+    height: 100px;
+    background-color: aliceblue;
+}
+    .largetext{
+    display: grid;
+    grid-column: 2 / span 7;
+    grid-row: 3;
+    height: 300px;
+    background-color: greenyellow;
+}
+    .squiggle{
+    display: grid;
+    grid-column: 3 / span 6;
+    height: 120px;
+    padding-top: 20px;
+    background-color: aqua;
+    }
+    .squiggle.item1{
+        display: grid;
+        grid-row: 7;
+    }
+    .squiggle.item2{
+        display: grid;
+        grid-row: 26;
+    }
+    .squiggle.item3{
+        display: grid;
+        grid-row: 45;
+    }
+    .sectionimage{
+        display: grid;
+        grid-column: 1 / span 10;
+        height: 450px;
+        padding-right: 25px;
+        background-color: blue;
+    }
+    .sectionimage.item1{
+        display: grid;
+        grid-row: 9;
+    }
+    .sectionimage.item2{
+        display: grid;
+        grid-row: 28;
+    }
+    .sectionimage.item3{
+        display: grid;
+        grid-row: 47;
+    }
+    .sectiontitle{
+        display: grid;
+        grid-column: 2 / span 5;
+        height: 300px;
+        padding-top: 50px;
+        background-color: greenyellow;
+    }
+    .sectiontitle.item1{
+        display: grid;
+        grid-row: 15;
+    }
+    .sectiontitle.item2{
+        display: grid;
+        grid-row: 34;
+    }
+    .sectiontitle.item3{
+        display: grid;
+        grid-row: 52;
+    }
+    .sectionbody{
+        display: grid;
+        grid-column: 2 / span 8;
+        grid-row: 14;
+        height: 350px;
+        padding-top: 50px;
+        background-color: greenyellow;
+    }
+    .sectionbody.item1{
+        display: grid;
+        grid-row: 18;
+    }
+    .sectionbody.item2{
+        display: grid;
+        grid-row: 37;
+    }
+    .sectionbody.item3{
+        display: grid;
+        grid-row: 55;
+    }
+    .button{
+        display: grid;
+        grid-column: 2 / span 4;
+        height: 200px;
+        background-color: aliceblue;
+        border-color: aqua;
+        border-width: 30px;
+
+    }
+    .button.item1{
+        display: grid;
+        grid-row: 23;
+    }
+    .button.item2{
+        display: grid;
+        grid-row: 42;
+    }
+    .button.item3{
+        display: grid;
+        grid-row: 60;
+    }
+    a{
+        background-color: aliceblue;
+        border-color: aqua;
+        border-width: 50px;
+    }
+    .title{
+        display: grid;
+        grid-column:2 / span 8;
+        grid-row: 3 / span 1;
+        height: 150px;
+        background-color: greenyellow;
+        padding-top: 25px;
+    }
+    .subhead{display: grid;
+        grid-column: 3 / span 6;
+        grid-row: 5;
+        padding-top: 50px;
+        height: 100px;
+        background-color: deeppink; 
+    }
+    .projectimage{
+       display: grid;
+        grid-column: 1 / span 10;
+        grid-row: 7;
+        padding-top: 50px;
+        height: 450px;
+        padding-right: 25px;
+        background-color: blue; 
+    }
+    .projectdescription{
+        display: grid;
+        grid-column: 2 / span 8;
+        grid-row: 12;
+        height: 350px;
+        padding-top: 50px;
+        background-color: greenyellow;
+    }
+    .squiggle.project{
+        display: grid;
+        grid-row: 16;
+    }
+    .otherimage{
+        display: grid;
+        grid-column: 1 / span 10;
+        height: 450px;
+        padding-right: 25px;
+        padding-top: 50px;
+        background-color: blue;
+    }
+    .otherimage.item1{
+            grid-row: 18;
+    }
+    .otherimage.item2{
+            grid-row: 24;
+    }
+    .otherimage.item3{
+            grid-row: 30;
+    }
+    .otherimage.item4{
+            grid-row: 36;
+    }
+
+}
