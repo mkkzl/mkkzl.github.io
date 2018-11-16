@@ -247,11 +247,11 @@ h4{
     .otherimage#travel4{
         grid-row: 22;
     }
-    .otherimage.3item3{
-        grid-row: 21;
+  .otherimage.item31{
+        grid-row: 20;
     }
-    .otherimage.3item2{
-        grid-row: 21;
+  .otherimage.item21{
+        grid-row: 14;
     }
 
 
