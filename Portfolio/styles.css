@@ -56,7 +56,7 @@ li{
 
 
 .largetext{
-    grid-column: 1 / span 9;
+    grid-column: 2 / span 8;
     grid-row: 2;
     height: 150px;
     padding-top: 50px;
