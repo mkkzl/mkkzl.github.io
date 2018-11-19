@@ -1,0 +1,438 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~ Styles that include Responsive Top Nav Bar - 2 ~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+// Import fonts from Google //
+@import 'https://fonts.googleapis.com/css?family=Roboto|Suez+One';
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /*  includes padding and border in the width and height of an object  */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c2340;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #0c2340;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+h2 {
+    margin: 2.5rem 0rem 1.25rem 0rem;
+}
+
+
+/**************************/
+/**** Top NavBar Two *****/
+/**** Navigation ********/
+/***********************/
+
+nav {
+    text-align: center;
+    width: 100%;
+}
+
+.nav-bar {
+    overflow: hidden;
+    background-color: #0c2340;
+    border-top: .25rem solid #e7cc68;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #e7cc68;
+    text-align: center;
+    padding: .875rem 1rem;
+    text-decoration: none;
+    font-size: .95rem;
+}
+
+.topnav a.icon {
+    color: #f2f2f2;
+    float: right;
+    display: block;
+    font-size: 1.25rem;
+}
+
+.topnav a:hover {
+    background-color: #e7cc68;
+    color: #0c2340;
+}
+
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+}
+
+.main-nav a {
+    display: none;
+}
+
+.main-nav {
+    /*    margin-top:3.5rem;*/
+}
+
+.main-nav.responsive {
+    position: relative;
+
+}
+
+.main-nav.responsive a {
+    float: none;
+    display: block;
+}
+
+
+
+
+
+/*****************/
+/**** Header *****/
+/*****************/
+
+header {
+    position: relative;
+}
+
+.site-header {
+    background-color: #0c2340;
+    width: 100%;
+}
+
+.site-title img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+.site-title {
+    margin: 4rem auto 1rem auto;
+}
+
+/*****************/
+/**** Main *****/
+/*****************/
+
+main {
+    background-color: white;
+}
+
+.spacing {
+    padding: 5% 5% 0 5%;
+}
+
+iframe {
+    width: 100%;
+    margin: 0;
+}
+
+/* Welcome Section */
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+figcaption {
+    font-size: .75rem;
+    font-style: italic;
+}
+
+/* Quote Section */
+
+blockquote {
+    font-family: 'Suez One', serif;
+    font-size: 1.35rem;
+    line-height: 1.5rem;
+    padding: 4.875rem 1.875rem;
+    margin: 2.5rem auto 0 auto;
+    background-color: rgba(174, 145, 66, 0.05);
+    color: #ae9142;
+}
+
+cite {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    color: #ae9142;
+    /*  30/16  */
+    margin-top: 3.5rem;
+    display: block;
+}
+
+/* Schedule Section */
+
+.info {
+    color: #ae9142;
+}
+
+.info h4 {
+    font-size: 1rem;
+    margin: 0 0 1rem 0;
+    line-height: 1.25;
+    text-transform: uppercase;
+    letter-spacing: .125rem
+}
+
+.info h5 {
+    font-weight: 400;
+    font-style: italic;
+    margin: 0;
+}
+
+.activity {
+    margin-bottom: 2.5rem;
+}
+
+hr {
+    border-top: .2rem solid #ae9142;
+    width: 2rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
+}
+
+/* Video Section */
+
+.video {
+    background-color: #000;
+}
+
+.video iframe {
+    height: 60vh;
+}
+
+/*****************/
+/**** Footer *****/
+/*****************/
+
+footer {
+    border-bottom: .25rem solid #e7cc68;
+    width: 100%;
+}
+
+footer .footer-info {
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    padding: 5%;
+    margin: 0 auto;
+}
+
+footer dt {
+    color: #e7cc68;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: .3125rem;
+}
+
+footer dd {
+    margin: 0 0 1.25rem 0;
+}
+
+
+/************************/
+/**** Media Queries *****/
+/************************/
+
+@media only screen and (min-width: 601px) {
+
+    /*8888888888888888888888888*8*/
+    /*88888 Top NavBar Two 88888*/
+    /*888888888888888888888888**/
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .topnav a.icon {
+        display: none;
+    }
+
+    .topnav.responsive .icon {
+        display: none;
+    }
+
+    .main-nav a {
+        display: flex;
+    }
+
+
+}
+
+
+
+
+@media only screen and (min-width: 960px) {
+    .page {
+        /* 960px */
+        width: 60rem;
+        margin: 0 auto;
+    }
+
+    /*8888888888888888888888888*8*/
+    /*88888 Top NavBar Two 88888*/
+    /*888888888888888888888888**/
+
+    nav {
+        width: 54rem;
+        margin: 0 auto;
+    }
+
+    .main-nav {
+        margin-right: 0px;
+    }
+
+    .main-nav a {
+        font-size: .95rem;
+    }
+
+    /*****************/
+    /**** Header *****/
+    /*****************/
+
+    .site-title {
+        /* 864px */
+        width: 54rem;
+        margin: 4rem auto 2rem auto;
+    }
+
+    .site-title img {
+        /* 428px */
+        width: 26.75rem;
+        display: block;
+        margin: 0;
+    }
+
+
+    /*****************/
+    /**** Main *****/
+    /*****************/
+
+    main {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 5%;
+    }
+
+    .spacing {
+        padding: 0;
+    }
+
+    /* Quote Section */
+
+    blockquote {
+        font-family: 'Suez One', serif;
+        font-size: 1.35rem;
+        line-height: 1.5rem;
+        padding: 4.875rem 1.875rem;
+        margin: 2.5rem auto 0 auto;
+        background-color: rgba(174, 145, 66, 0.25);
+        color: #ae9142;
+    }
+
+    cite {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+        font-style: normal;
+        color: #ae9142;
+        /*  30/16  */
+        margin-top: 3.5rem;
+        display: block;
+    }
+
+    blockquote {
+        width: 70%;
+        font-size: 1.25rem;
+        border-top: .2rem solid #ae9142;
+        padding: 1.875rem;
+        background-color: #fff;
+    }
+
+    cite {
+        font-size: .75rem;
+        margin-top: 1.5rem;
+    }
+
+    /* Schedule Section */
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info h4 {
+        width: 50%;
+        margin: 0;
+    }
+
+    .info h5 {
+        width: 37%;
+    }
+
+    /*****************/
+    /**** Footer *****/
+    /*****************/
+
+    footer .footer-info {
+        text-align: left;
+        /*   864px     */
+        width: 54rem;
+        padding: 5% 2.5% 2.5% 2.5%;
+    }
+
+    footer h2 {
+        margin: 0;
+    }
+
+    .flexboxy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+/* Colors */
+
+/* Light grey – #f2f2f2*/
+/* ND Gold – #ae9142*/
+/* Light Gold – #e7cc68*/
