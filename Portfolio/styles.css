@@ -583,6 +583,85 @@ h5{
     grid-row: 51;
   }
 
+
+  /*About Page*/
+  .wrapper.about{
+    display: grid;
+    grid-template-columns: repeat( 10, auto );
+    margin: 25px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-rows: repeat(28,75px);}
+  .largetext.about{
+    display: grid;
+    grid-column:2;
+    grid-row: 1/ span 1;
+    height: 75px;
+    padding-top: 25px;
+    padding-left: 25px;}
+  .subhead.about{
+    display: grid;
+    grid-column: 1 / span 6;
+    grid-row: 6;
+    height: 50px;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 25px;
+    padding-top: 0px;
+  }
+  .about h4{
+      font-size: 3rem;
+      padding-top: 0px;
+  }
+  .squiggle.about{
+    display: grid;
+    grid-column: 1;
+    grid-row: 6;
+    padding-left: 25px;
+    padding-top: 25px;
+  }
+  .contact{
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-row: 9;
+    padding-left: 25px;
+  }
+  .education{
+    display: grid;
+    grid-column: 3/ span 4;
+    grid-row: 9;
+    padding-left: 25px;
+  }
+  .languages{
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-row: 13;
+    padding-left: 25px;
+  }
+  .programs{
+    display: grid;
+    grid-column: 3 / span 4;
+    grid-row: 13;
+    padding-left: 25px;
+  }
+  .experience{
+    display: grid;
+    grid-column: 1 / span 4;
+    grid-row: 18;
+    padding-left: 25px;
+  }
+
+  .about li{
+    font-size: 1rem;
+    color: #8edce6;
+    font-family: linotype-sabon, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+  }
+  .about ul{
+    margin-bottom: 10px;
+  }
   /*Text*/
 
   h1{
@@ -832,6 +911,87 @@ h5{
             grid-row: 79;
         }
 
+        /*About Page*/
+        .wrapper.about{
+          display: grid;
+          grid-template-columns: repeat( 10, auto );
+          margin: 25px;
+          grid-column-gap: 5px;
+          grid-row-gap: 5px;
+          grid-template-rows: repeat(28,75px);}
+        .largetext.about{
+          display: grid;
+          grid-column:2;
+          grid-row: 1/ span 1;
+          height: 75px;
+          padding-top: 25px;
+          padding-left: 25px;}
+        .about h3{
+          font-size: 5rem;
+        }
+        .subhead.about{
+          display: grid;
+          grid-column: 1 / span 6;
+          grid-row: 6;
+          height: 50px;
+          margin-top: 20px;
+          text-align: left;
+          padding-left: 25px;
+          padding-top: 0px;
+        }
+        .about h4{
+            font-size: 3rem;
+            padding-top: 0px;
+        }
+        .squiggle.about{
+          display: grid;
+          grid-column: 1;
+          grid-row: 6;
+          padding-left: 25px;
+          padding-top: 25px;
+        }
+        .contact{
+          display: grid;
+          grid-column: 1 / span 4;
+          grid-row: 9;
+          padding-left: 25px;
+        }
+        .education{
+          display: grid;
+          grid-column: 3/ span 4;
+          grid-row: 9;
+          padding-left: 25px;
+        }
+        .languages{
+          display: grid;
+          grid-column: 1 / span 4;
+          grid-row: 13;
+          padding-left: 25px;
+        }
+        .programs{
+          display: grid;
+          grid-column: 3 / span 4;
+          grid-row: 13;
+          padding-left: 25px;
+        }
+        .experience{
+          display: grid;
+          grid-column: 1 / span 4;
+          grid-row: 18;
+          padding-left: 25px;
+        }
+
+        .about li{
+          font-size: 1rem;
+          color: #8edce6;
+          font-family: linotype-sabon, sans-serif;
+          font-weight: 400;
+          font-style: normal;
+          margin-bottom: 10px;
+        }
+        .about ul{
+          margin-bottom: 10px;
+        }
         /*Text*/
 
         h1{
@@ -994,6 +1154,84 @@ h5{
         grid-row: 53;
     }
 
+    /*About Page*/
+    .wrapper.about{
+      display: grid;
+      grid-template-columns: repeat( 10, auto );
+      margin: 25px;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      grid-template-rows: repeat(28,75px);}
+    .largetext.about{
+      display: grid;
+      grid-column:1;
+      grid-row: 3/ span 8;
+      height: 75px;
+      padding-top: 25px;
+      padding-left: 25px;}
+    .subhead.about{
+      display: grid;
+      grid-column: 1 / span 6;
+      grid-row: 6;
+      height: 50px;
+      margin-top: 20px;
+      text-align: left;
+      padding-left: 25px;
+      padding-top: 0px;
+    }
+    .about h4{
+        font-size: 3rem;
+        padding-top: 0px;
+    }
+    .squiggle.about{
+      display: grid;
+      grid-column: 1;
+      grid-row: 7;
+      padding-left: 25px;
+      padding-top: 25px;
+    }
+    .contact{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 9;
+      padding-left: 25px;
+    }
+    .education{
+      display: grid;
+      grid-column: 3/ span 4;
+      grid-row: 9;
+      padding-left: 25px;
+    }
+    .languages{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 13;
+      padding-left: 25px;
+    }
+    .programs{
+      display: grid;
+      grid-column: 3 / span 4;
+      grid-row: 13;
+      padding-left: 25px;
+    }
+    .experience{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 18;
+      padding-left: 25px;
+    }
+
+    .about li{
+      font-size: 1rem;
+      color: #8edce6;
+      font-family: linotype-sabon, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 10px;
+    }
+    .about ul{
+      margin-bottom: 10px;
+    }
 /********
 Project Pages
 *********/
@@ -1322,6 +1560,85 @@ Project Pages
       grid-row: 40;
     }
 
+    /*About Page*/
+    .wrapper.about{
+      display: grid;
+      grid-template-columns: repeat( 10, auto );
+      margin: 25px;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      grid-template-rows: repeat(28,75px);}
+    .largetext.about{
+      display: grid;
+      grid-column:1;
+      grid-row: 3/ span 1;
+      height: 75px;
+      padding-top: 25px;
+      padding-left: 25px;}
+    .subhead.about{
+      display: grid;
+      grid-column: 1 / span 6;
+      grid-row: 5;
+      height: 50px;
+      margin-top: 20px;
+      text-align: left;
+      padding-left: 25px;
+      padding-top: 0px;
+    }
+    .about h4{
+        font-size: 3rem;
+        padding-top: 0px;
+    }
+    .squiggle.about{
+      display: grid;
+      grid-column: 1;
+      grid-row: 6;
+      padding-left: 25px;
+      padding-top: 25px;
+    }
+    .contact{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 9;
+      padding-left: 25px;
+    }
+    .education{
+      display: grid;
+      grid-column: 2/ span 4;
+      grid-row: 9;
+      padding-left: 125px;
+    }
+    .languages{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 13;
+      padding-left: 25px;
+    }
+    .programs{
+      display: grid;
+      grid-column: 2 / span 4;
+      grid-row: 13;
+      padding-left: 125px;
+    }
+    .experience{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 18;
+      padding-left: 25px;
+    }
+
+    .about li{
+      font-size: 1rem;
+      color: #8edce6;
+      font-family: linotype-sabon, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 10px;
+    }
+    .about ul{
+      margin-bottom: 10px;
+    }
+
     /*******
   Text
   ******/
@@ -1577,6 +1894,87 @@ Project Pages
 
 
     /*******
+
+    /*About Page*/
+    .wrapper.about{
+      display: grid;
+      grid-template-columns: repeat( 10, auto );
+      margin: 25px;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      grid-template-rows: repeat(28,75px);}
+    .largetext.about{
+      display: grid;
+      grid-column:1;
+      grid-row: 3/ span 4;
+      height: 75px;
+      padding-top: 25px;
+      padding-left: 25px;}
+    .subhead.about{
+      display: grid;
+      grid-column: 1 / span 6;
+      grid-row: 5;
+      height: 50px;
+      margin-top: 20px;
+      text-align: left;
+      padding-left: 25px;
+      padding-top: 0px;
+    }
+    .about h4{
+        font-size: 3rem;
+        padding-top: 0px;
+    }
+    .squiggle.about{
+      display: grid;
+      grid-column: 1;
+      grid-row: 6;
+      padding-left: 25px;
+      padding-top: 25px;
+    }
+    .contact{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 9;
+      padding-left: 25px;
+    }
+    .education{
+      display: grid;
+      grid-column: 2/ span 4;
+      grid-row: 9;
+      padding-left: 125px;
+    }
+    .languages{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 13;
+      padding-left: 25px;
+    }
+    .programs{
+      display: grid;
+      grid-column: 2 / span 4;
+      grid-row: 13;
+      padding-left: 125px;
+    }
+    .experience{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 18;
+      padding-left: 25px;
+    }
+
+    .about li{
+      font-size: 1rem;
+      color: #8edce6;
+      font-family: linotype-sabon, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 10px;
+    }
+    .about ul{
+      margin-bottom: 10px;
+    }
+
+
   Text
   ******/
   h1{
@@ -1837,6 +2235,87 @@ Project Pages
     }
 
     /*******
+
+    /*About Page*/
+    .wrapper.about{
+      display: grid;
+      grid-template-columns: repeat( 10, auto );
+      margin: 25px;
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      grid-template-rows: repeat(28,75px);}
+    .largetext.about{
+      display: grid;
+      grid-column:1;
+      grid-row: 3/ span 1;
+      height: 75px;
+      padding-top: 25px;
+      padding-left: 25px;}
+    .subhead.about{
+      display: grid;
+      grid-column: 1 / span 6;
+      grid-row: 6;
+      height: 50px;
+      margin-top: 20px;
+      text-align: left;
+      padding-left: 25px;
+      padding-top: 0px;
+    }
+    .about h4{
+        font-size: 3rem;
+        padding-top: 0px;
+    }
+    .squiggle.about{
+      display: grid;
+      grid-column: 1;
+      grid-row: 6;
+      padding-left: 25px;
+      padding-top: 25px;
+    }
+    .contact{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 9;
+      padding-left: 25px;
+    }
+    .education{
+      display: grid;
+      grid-column: 2/ span 4;
+      grid-row: 9;
+      padding-left: 125px;
+    }
+    .languages{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 13;
+      padding-left: 25px;
+    }
+    .programs{
+      display: grid;
+      grid-column: 2 / span 4;
+      grid-row: 13;
+      padding-left: 125px;
+    }
+    .experience{
+      display: grid;
+      grid-column: 1 / span 4;
+      grid-row: 18;
+      padding-left: 25px;
+    }
+
+    .about li{
+      font-size: 1rem;
+      color: #8edce6;
+      font-family: linotype-sabon, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      margin-bottom: 10px;
+    }
+    .about ul{
+      margin-bottom: 10px;
+    }
+
+
   Text
   ******/
   h1{
