@@ -1,6 +1,7 @@
 *{
     box-sizing:border-box;
     display: grid;
+    position: relative;
 }
 
 /***
@@ -36,6 +37,19 @@ body{
 .logo img{
     width: 50px;
 }
+
+.panel {
+    position: fixed;
+    left: -15.625em; /*left or right and the width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+    background-color: black;
+    font-size: 1.5rem;
+    color: yellow;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+}
+
+
 .largetext{
     grid-column: 1 / span 9;
     grid-row: 2;
@@ -283,7 +297,7 @@ h4{
   grid-template-rows: repeat(65,100px);
   }
   .wrapper.project{
-  grid-template-rows: repeat(100,100px);}
+  grid-template-rows: repeat(70,100px);}
 
   .logo{
   display: grid;
@@ -407,7 +421,7 @@ h4{
       padding-top: 25px;
   }
   .subhead{display: grid;
-      grid-column: 3 / span 6;
+      grid-column: 2 / span 6;
       grid-row: 5;
       height: 100px;
   }
@@ -424,15 +438,16 @@ h4{
   }
   .projectdescription{
       display: grid;
-      grid-column: 2 / span 6;
-      grid-row: 20;
+      grid-column: 2 / span 8;
+      grid-row: 16;
       height: 350px;
       padding-top: 50px;
       background-color: greenyellow;
   }
   .squiggle.project{
       display: grid;
-      grid-row: 20;
+      grid-row: 18;
+      grid-column: 2 / span 8;
   }
   .squiggle img{
       width:75%;
@@ -448,28 +463,34 @@ h4{
       width: 100%;
   }
   .otherimage.item1{
-          grid-row: 30;
+          grid-row: 23;
   }
   .otherimage.item2{
-          grid-row: 40;
+          grid-row: 32;
   }
   .otherimage.item3{
-          grid-row: 50;
+          grid-row: 41;
   }
   .otherimage.item4{
-          grid-row: 60;
+          grid-row: 50;
   }
   .otherimage#travel1{
-      grid-row: 30;
+      grid-row: 23;
   }
   .otherimage#travel2{
-      grid-row: 44;
+      grid-row: 33;
   }
   .otherimage#travel3{
-      grid-row: 58;
+      grid-row: 43;
   }
   .otherimage#travel4{
-      grid-row: 79;
+      grid-row: 60;
+  }
+  .otherimage.item21{
+    grid-row: 30;
+  }
+  .otherimage.item31{
+    grid-row: 51;
   }
 
   /*Text*/
@@ -492,14 +513,14 @@ h4{
   h3{
   font-size: 5rem;
   color: yellow;
-  text-align: center;
+  text-align: left;
   font-family: europa, sans-serif;
   font-weight: 700;
 }
   h4{
   font-size: 1.5rem;
   color: aqua;
-  text-align: center;
+  text-align: left;
   font-family: linotype-sabon, sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -886,6 +907,8 @@ h4{
 /********
 Project Pages
 *********/
+.wrapper.project{
+    grid-template-rows: repeat(65,100px);}
     .title{
         display: grid;
         grid-column:2 / span 8;
@@ -894,7 +917,7 @@ Project Pages
         padding-top: 25px;
     }
     .subhead{display: grid;
-        grid-column: 3 / span 6;
+        grid-column: 2 / span 6;
         grid-row: 5;
         height: 100px;
     }
@@ -912,14 +935,15 @@ Project Pages
     .projectdescription{
         display: grid;
         grid-column: 2 / span 6;
-        grid-row: 20;
+        grid-row: 15;
         height: 350px;
         padding-top: 50px;
         background-color: greenyellow;
     }
     .squiggle.project{
         display: grid;
-        grid-row: 20;
+        grid-row: 17;
+        grid-column: 2/ span 8;
     }
     .squiggle img{
         width:75%;
@@ -927,7 +951,6 @@ Project Pages
     .otherimage{
         display: grid;
         grid-column: 1 / span 10;
-        height: 450px;
         padding-right: 25px;
         padding-top: 50px;
     }
@@ -935,28 +958,34 @@ Project Pages
         width: 100%;
     }
     .otherimage.item1{
-            grid-row: 30;
+            grid-row: 21;
     }
     .otherimage.item2{
-            grid-row: 40;
+            grid-row: 28;
     }
     .otherimage.item3{
-            grid-row: 50;
+            grid-row: 35;
     }
     .otherimage.item4{
-            grid-row: 60;
+            grid-row: 42;
     }
     .otherimage#travel1{
-        grid-row: 30;
+        grid-row: 23;
     }
     .otherimage#travel2{
-        grid-row: 44;
+        grid-row:31;
     }
     .otherimage#travel3{
-        grid-row: 58;
+        grid-row: 39;
     }
     .otherimage#travel4{
-        grid-row: 79;
+        grid-row: 54;
+    }
+    .otherimage.item21{
+      grid-row: 27;
+    }
+    .otherimage.item31{
+      grid-row: 45;
     }
 
     /*******
@@ -977,16 +1006,16 @@ Project Pages
     font-weight: 400;}
 
   h3{
-    font-size: 5rem;
+    font-size: 3.75rem;
     color: yellow;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 700;}
 
   h4{
     font-size: 1.5rem;
     color: aqua;
-    text-align: center;
+    text-align: left;
     font-family: linotype-sabon, sans-serif;
     font-weight: 400;
     font-style: italic;}
@@ -1121,6 +1150,8 @@ Project Pages
   /********
   Project Pages
   *********/
+    .wrapper.project{
+      grid-template-rows: repeat(50,100px);}
     .title{
         display: grid;
         grid-column:2 / span 8;
@@ -1147,14 +1178,15 @@ Project Pages
     .projectdescription{
         display: grid;
         grid-column: 2 / span 6;
-        grid-row: 20;
+        grid-row: 13;
         height: 350px;
         padding-top: 50px;
         background-color: greenyellow;
     }
     .squiggle.project{
         display: grid;
-        grid-row: 20;
+        grid-row: 16;
+        grid-column: 2 / span 8;
     }
     .squiggle img{
         width:75%;
@@ -1170,28 +1202,34 @@ Project Pages
         width: 100%;
     }
     .otherimage.item1{
-            grid-row: 30;
+            grid-row: 19;
     }
     .otherimage.item2{
-            grid-row: 40;
+            grid-row: 25;
     }
     .otherimage.item3{
-            grid-row: 50;
+            grid-row: 31;
     }
     .otherimage.item4{
-            grid-row: 60;
+            grid-row: 37;
     }
     .otherimage#travel1{
-        grid-row: 30;
+        grid-row: 20;
     }
     .otherimage#travel2{
-        grid-row: 44;
+        grid-row: 27;
     }
     .otherimage#travel3{
-        grid-row: 58;
+        grid-row: 34;
     }
     .otherimage#travel4{
-        grid-row: 79;
+        grid-row: 46;
+    }
+    .otherimage.item21{
+      grid-row: 25;
+    }
+    .otherimage.item31{
+      grid-row: 40;
     }
 
     /*******
@@ -1214,9 +1252,9 @@ Project Pages
   }
 
   h3{
-    font-size: 5rem;
+    font-size: 3rem;
     color: yellow;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 700;
   }
@@ -1224,7 +1262,7 @@ Project Pages
   h4{
     font-size: 1.5rem;
     color: aqua;
-    text-align: center;
+    text-align: left;
     font-family: linotype-sabon, sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -1361,6 +1399,11 @@ Project Pages
   /********
   Project Pages
   *********/
+  .wrapper.project{
+      grid-template-rows: repeat(55,100px);}
+    .logo img{
+        width: 100px;
+    }
     .title{
         display: grid;
         grid-column:2 / span 8;
@@ -1369,9 +1412,10 @@ Project Pages
         padding-top: 25px;
     }
     .subhead{display: grid;
-        grid-column: 3 / span 6;
-        grid-row: 5;
+        grid-column: 2 / span 6;
+        grid-row: 4;
         height: 100px;
+        padding-top: 50px;
     }
     .projectimage{
        display: grid;
@@ -1387,14 +1431,15 @@ Project Pages
     .projectdescription{
         display: grid;
         grid-column: 2 / span 6;
-        grid-row: 20;
+        grid-row: 12;
         height: 350px;
         padding-top: 50px;
         background-color: greenyellow;
     }
     .squiggle.project{
         display: grid;
-        grid-row: 20;
+        grid-row: 15;
+        grid-column: 2 / span 8;
     }
     .squiggle img{
         width:75%;
@@ -1410,29 +1455,36 @@ Project Pages
         width: 100%;
     }
     .otherimage.item1{
-            grid-row: 30;
+            grid-row: 17;
     }
     .otherimage.item2{
-            grid-row: 40;
+            grid-row: 22;
     }
     .otherimage.item3{
-            grid-row: 50;
+            grid-row: 27;
     }
     .otherimage.item4{
-            grid-row: 60;
+            grid-row: 32;
     }
     .otherimage#travel1{
-        grid-row: 30;
+        grid-row: 17;
     }
     .otherimage#travel2{
-        grid-row: 44;
+        grid-row: 22;
     }
     .otherimage#travel3{
-        grid-row: 58;
+        grid-row: 27;
     }
     .otherimage#travel4{
-        grid-row: 79;
+        grid-row: 36;
     }
+    .otherimage.item21{
+      grid-row: 21;
+    }
+    .otherimage.item31{
+      grid-row: 32;
+    }
+
 
     /*******
   Text
@@ -1454,9 +1506,9 @@ Project Pages
   }
 
   h3{
-    font-size: 5rem;
+    font-size: 2.5rem;
     color: yellow;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 700;
   }
@@ -1464,7 +1516,7 @@ Project Pages
   h4{
     font-size: 1.5rem;
     color: aqua;
-    text-align: center;
+    text-align: left;
     font-family: linotype-sabon, sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -1602,6 +1654,11 @@ Project Pages
   /********
   Project Pages
   *********/
+  .wrapper.project{
+      grid-template-rows: repeat(55,100px);}
+    .logo img{
+        width: 70px;
+    }
     .title{
         display: grid;
         grid-column:2 / span 8;
@@ -1609,8 +1666,15 @@ Project Pages
         height: 150px;
         padding-top: 25px;
     }
+    .title#travel{
+      grid-row: 2 ;
+    }
+    .subhead#travelsub{
+      grid-row: 4;
+    }
+
     .subhead{display: grid;
-        grid-column: 3 / span 6;
+        grid-column: 2 / span 6;
         grid-row: 5;
         height: 100px;
     }
@@ -1628,14 +1692,15 @@ Project Pages
     .projectdescription{
         display: grid;
         grid-column: 2 / span 6;
-        grid-row: 20;
+        grid-row: 11;
         height: 350px;
         padding-top: 50px;
         background-color: greenyellow;
     }
     .squiggle.project{
         display: grid;
-        grid-row: 20;
+        grid-row: 14;
+        grid-column: 2 / span 8;
     }
     .squiggle img{
         width:75%;
@@ -1651,28 +1716,34 @@ Project Pages
         width: 100%;
     }
     .otherimage.item1{
-            grid-row: 30;
+            grid-row: 16;
     }
     .otherimage.item2{
-            grid-row: 40;
+            grid-row: 20;
     }
     .otherimage.item3{
-            grid-row: 50;
+            grid-row: 24;
     }
     .otherimage.item4{
-            grid-row: 60;
+            grid-row: 28;
     }
     .otherimage#travel1{
-        grid-row: 30;
+        grid-row: 16;
     }
     .otherimage#travel2{
-        grid-row: 44;
+        grid-row: 20;
     }
     .otherimage#travel3{
-        grid-row: 58;
+        grid-row: 24;
     }
     .otherimage#travel4{
-        grid-row: 79;
+        grid-row: 31;
+    }
+    .otherimage.item21{
+      grid-row: 19;
+    }
+    .otherimage.item31{
+      grid-row: 28;
     }
 
     /*******
@@ -1695,9 +1766,9 @@ Project Pages
   }
 
   h3{
-    font-size: 5rem;
+    font-size: 2.75rem;
     color: yellow;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 700;
   }
@@ -1705,7 +1776,7 @@ Project Pages
   h4{
     font-size: 1.5rem;
     color: aqua;
-    text-align: center;
+    text-align: left;
     font-family: linotype-sabon, sans-serif;
     font-weight: 400;
     font-style: italic;

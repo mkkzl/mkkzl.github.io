@@ -7,22 +7,38 @@
     </head>
     <body>
         <div class="wrapper project">
-        <div class="logo"><a href="index.html"><img src="Assets/M%20logo.svg" width="100px"></a></div>
-        
-        <div class="title"><h3>Familial Portrait Series</h3></div>
-        <div class="subhead"><h4>Spring 2017</h4></div>
-        
-        
-        <div class="projectimage"><img src="Assets/Susan.jpg"></div>
-        <div class="projectdescription"></div>
-        <div class="squiggle project"><img src="Assets/pink%20squiggle-03.svg"></div>
-        
-        <div class="otherimage item1"><img src="Assets/Chloe.jpg"></div>
-        <div class="otherimage item2"><img src="Assets/Carolyn.jpg"></div>
-        <div class="otherimage item3"><img src="Assets/Lynn.jpg"></div>
-        <div class="otherimage item4"><img src="Assets/Kennedy.jpg"></div>
+          <div class="logo"><a href="#menu" class="menu-link"><img src="Assets/M%20logo.svg" width="100px"></a></div>
+          <nav id="menu" class="panel" role="navigation">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project1.html">Familial Portrait Series</a></li>
+          <li><a href="project2.html">Travel Photography</a></li>
+          <li><a href="project3.html">Chiaroscuro Portraits</a></li>
+          <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+        <div class="title push"><h3>Familial Portrait Series</h3></div>
+        <div class="subhead push"><h4>Spring 2017</h4></div>
+
+
+        <div class="projectimage push"><img src="Assets/Susan.jpg"></div>
+        <div class="projectdescription push"></div>
+        <div class="squiggle project push"><img src="Assets/pink%20squiggle-03.svg"></div>
+
+        <div class="otherimage item1 push"><img src="Assets/Chloe.jpg"></div>
+        <div class="otherimage item2 push"><img src="Assets/Carolyn.jpg"></div>
+        <div class="otherimage item3 push"><img src="Assets/Lynn.jpg"></div>
+        <div class="otherimage item4 push"><img src="Assets/Kennedy.jpg"></div>
         </div>
-        
-        
+
+
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="big-slide.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
 </html>

@@ -7,23 +7,39 @@
     </head>
     <body>
         <div class="wrapper project">
-        <div class="logo"><a href="index.html"><img src="Assets/M%20logo.svg" width="100px"></a></div>
-        
-        <div class="title"><h3>Travel Photography</h3></div>
-        <div class="subhead"><h4>Fall 2017 // Plitvice Jezera, Croatia // Park Guell, Barcelona, Spain // Louvre, Paris, France // Duomo, Florence, Italy</h4></div>
-        
-        
-        <div class="projectimage"><img src="Assets/Kozal-M-PlitviceJezeraCroatia-3.jpg"></div>
-        <div class="projectdescription"></div>
-        <div class="squiggle project"><img src="Assets/pink%20squiggle-03.svg"></div>
-        
-        <div class="otherimage" id="travel1"><img src="Assets/Kozal-M-ParkGuellBarcelonaSpain-1.jpg"></div>
-        <div class="otherimage"id="travel2"><img src="Assets/IMG_5197.JPG"></div>
-        <div class="otherimage"id="travel3"><img src="Assets/Kozal-M-DuomoFlorenceItaly-2.jpg"></div>
-        <div class="otherimage" id="travel4"><img src="Assets/Kozal-M-PlitviceJezeraCroatia-5.jpg"></div>
+          <div class="logo"><a href="#menu" class="menu-link"><img src="Assets/M%20logo.svg" width="100px"></a></div>
+          <nav id="menu" class="panel" role="navigation">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project1.html">Familial Portrait Series</a></li>
+          <li><a href="project2.html">Travel Photography</a></li>
+          <li><a href="project3.html">Chiaroscuro Portraits</a></li>
+          <li><a href="#">About</a></li>
+      </ul>
+  </nav>
+
+        <div class="title push" id="travel"><h3>Travel Photography</h3></div>
+        <div class="subhead push" id="travelsub"><h4>Fall 2017 // Plitvice Jezera, Croatia // Park Guell, Barcelona, Spain // Louvre, Paris, France // Duomo, Florence, Italy</h4></div>
+
+
+        <div class="projectimage push"><img src="Assets/Kozal-M-PlitviceJezeraCroatia-3.jpg"></div>
+        <div class="projectdescription push"></div>
+        <div class="squiggle project push"><img src="Assets/pink%20squiggle-03.svg"></div>
+
+        <div class="otherimage push" id="travel1"><img src="Assets/Kozal-M-ParkGuellBarcelonaSpain-1.jpg"></div>
+        <div class="otherimage push"id="travel2"><img src="Assets/IMG_5197.JPG"></div>
+        <div class="otherimage push"id="travel3"><img src="Assets/Kozal-M-DuomoFlorenceItaly-2.jpg"></div>
+        <div class="otherimage push" id="travel4"><img src="Assets/Kozal-M-PlitviceJezeraCroatia-5.jpg"></div>
         </div>
-        
-        
-        
+
+
+
     </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="big-slide.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.menu-link').bigSlide();
+    });
+</script>
 </html>
