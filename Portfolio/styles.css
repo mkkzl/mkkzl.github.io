@@ -43,10 +43,15 @@ body{
     left: -15.625em; /*left or right and the width of your navigation panel*/
     width: 15.625em; /*should match the above value*/
     background-color: black;
-    font-size: 1.5rem;
-    color: yellow;
-    font-family: europa, sans-serif;
-    font-weight: 700;
+}
+ul{display: inline-grid;}
+li{
+  font-size: 1.5rem;
+  color: yellow;
+  font-family: europa, sans-serif;
+  font-weight: 700;
+  line-height:normal;
+  margin: 0px;
 }
 
 
@@ -190,6 +195,13 @@ h4{
     font-weight: 400;
     font-style: italic;
 }
+h5{
+  font-size: 1rem;
+  color: yellow;
+  font-family: europa, sans-serif;
+  font-weight: 700;
+}
+
 
 /*Project Pages*/
 .title{
@@ -269,12 +281,90 @@ h4{
         grid-row: 22;
     }
   .otherimage.item31{
-        grid-row: 20;
+        grid-row: 21;
     }
   .otherimage.item21{
         grid-row: 14;
     }
 
+/*About Page*/
+.wrapper.about{
+  display: grid;
+  grid-template-columns: repeat( 10, auto );
+  margin: 25px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-rows: repeat(28,75px);}
+.largetext.about{
+  display: grid;
+  grid-column:1;
+  grid-row: 2 / span 1;
+  height: 75px;
+  padding-top: 25px;
+  padding-left: 25px;}
+.subhead.about{
+  display: grid;
+  grid-column: 1 / span 6;
+  grid-row: 3;
+  height: 50px;
+  margin-top: 20px;
+  text-align: left;
+  padding-left: 25px;
+  padding-top: 0px;
+}
+.about h4{
+    font-size: 1.25rem;
+    padding-top: 0px;
+}
+.squiggle.about{
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.contact{
+  display: grid;
+  grid-column: 1 / span 4;
+  grid-row: 5;
+  padding-left: 25px;
+}
+.education{
+  display: grid;
+  grid-column: 1 / span 4;
+  grid-row: 8;
+  padding-left: 25px;
+}
+.languages{
+  display: grid;
+  grid-column: 1 / span 4;
+  grid-row: 12;
+  padding-left: 25px;
+}
+.programs{
+  display: grid;
+  grid-column: 1 / span 4;
+  grid-row: 14;
+  padding-left: 25px;
+}
+.experience{
+  display: grid;
+  grid-column: 1;
+  grid-row: 19;
+  padding-left: 25px;
+}
+
+.about li{
+  font-size: 1rem;
+  color: #8edce6;
+  font-family: linotype-sabon, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.about ul{
+  margin-bottom: 10px;
+}
 
 /******MEDIA QUERIES*******/
 
@@ -1794,7 +1884,7 @@ aqua blue: 8edce6
 red: e53945
 yellow: e9d757
 
-Whitman
+Europa
     font-weight: 700; bold
     font-weight: 400; regular
     font-weight: 300; light
