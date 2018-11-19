@@ -24,7 +24,7 @@ body{
     grid-template-rows: repeat(30,75px);
     }
 .wrapper.project{
-    grid-template-rows: repeat(28,75px);
+    grid-template-rows: repeat(26,75px);
     }
 
 /*Index Page*/
@@ -32,10 +32,11 @@ body{
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
     height: 50px;
-    align-items: center;
-}
-.logo img{
     width: 50px;
+    align-content: center;
+    border-style: solid;
+    border-color: yellow;
+    border-width: medium;
 }
 
 .panel {
@@ -44,8 +45,8 @@ body{
     width: 15.625em; /*should match the above value*/
     background-color: black;
 }
-ul{display: inline-grid;}
-li{
+.panel ul{display: inline-grid;}
+.panel li{
   font-size: 1.5rem;
   color: yellow;
   font-family: europa, sans-serif;
@@ -60,7 +61,7 @@ li{
     grid-row: 2;
     height: 150px;
     padding-top: 50px;
-    align-items: center;
+    align-items: left;
 }
 
 
@@ -127,8 +128,6 @@ li{
     grid-column: 2 / span 8;
     grid-row: 14;
     height: 100px;
-    padding-top: 50px;
-    background-color: greenyellow;
 }
 .sectionbody.item1{
     display: grid;
@@ -150,6 +149,8 @@ li{
     border-color: yellow;
     border-style: solid;
     border-width: thin;
+    align-content: center;
+    align-items: center;
 
 }
 .button.item1{
@@ -170,7 +171,7 @@ li{
 h1{
     font-size: 2rem;
     color: yellow;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 700;
 
@@ -178,7 +179,7 @@ h1{
 h2{
     font-size: 1rem;
     color: red;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 400;
 }
@@ -201,8 +202,29 @@ h5{
   font-family: europa, sans-serif;
   font-weight: 700;
 }
-
-
+p{
+  font-size: .75rem;
+  color: aqua;
+  font-family: linotype-sabon, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+h6{
+  font-size: 2rem;
+  color: aqua;
+  text-align: center;
+  font-family: europa, sans-serif;
+  font-weight: 700;
+  margin: 0px;
+}
+a p{
+  font-size: 1rem;
+  color: yellow;
+  text-align: center;
+  font-family: europa, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /*Project Pages*/
 .title{
     display: grid;
@@ -237,8 +259,6 @@ h5{
     grid-column: 1 / span 8;
     grid-row: 8;
     height: 100px;
-    padding-top: 50px;
-    background-color: greenyellow;
 }
 .squiggle.project{
     display: grid;
@@ -393,10 +413,8 @@ h5{
   display: grid;
   grid-column: 1 / span 1;
   grid-row: 1 / span 1;
-  height: 150px;}
-  .logo img{
-      width: 150px;
-  }
+  height: 150px;
+  width: 150px;}
   .largetext{
   display: grid;
   grid-column: 2 / span 7;
@@ -465,7 +483,6 @@ h5{
       grid-column: 2 / span 8;
       grid-row: 14;
       height: 350px;
-      background-color: greenyellow;
   }
   .sectionbody.item1{
       display: grid;
@@ -531,8 +548,6 @@ h5{
       grid-column: 2 / span 8;
       grid-row: 16;
       height: 350px;
-      padding-top: 50px;
-      background-color: greenyellow;
   }
   .squiggle.project{
       display: grid;
@@ -667,7 +682,7 @@ h5{
   h1{
   font-size: 6.5rem;
   color: yellow;
-  text-align: center;
+  text-align: left;
   font-family: europa, sans-serif;
   font-weight: 700;
 }
@@ -675,7 +690,7 @@ h5{
   h2{
   font-size: 4rem;
   color: red;
-  text-align: center;
+  text-align: left;
   font-family: europa, sans-serif;
   font-weight: 400;
 }
@@ -694,6 +709,36 @@ h5{
   font-weight: 400;
   font-style: italic;
 }
+h5{
+  font-size: 3rem;
+  color: yellow;
+  font-family: europa, sans-serif;
+  font-weight: 700;
+}
+p{
+  font-size: 2.5rem;
+  color: aqua;
+  font-family: linotype-sabon, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.5;
+}
+h6{
+  font-size: 6rem;
+  color: aqua;
+  text-align: center;
+  font-family: europa, sans-serif;
+  font-weight: 700;
+  margin: 0px;
+}
+a p{
+  font-size: 1.75rem;
+  color: yellow;
+  text-align: center;
+  font-family: europa, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 }
 
@@ -704,7 +749,7 @@ h5{
 **** Desktop Big
 ****
 **/
-  @media only screen and (min-width: 1150px) and (max-width: 1300){
+@media only screen and (min-width: 1150px) and (max-width: 1300px) {
         .wrapper{
             display: grid;
             grid-template-columns: repeat( 10, auto );
@@ -718,16 +763,25 @@ h5{
         .wrapper.project{
         grid-template-rows: repeat(100,100px);
         }
+        .menu ul{display: inline-grid;}
+        .menu li{
+          font-size: 1.5rem;
+          color: yellow;
+          font-family: europa, sans-serif;
+          font-weight: 700;
+          line-height:normal;
+          margin: 0px;
+        }
+
         .logo{
         display: grid;
         grid-column: 1 / span 1;
         grid-row: 1 / span 1;
         height: 150px;
+        width: 150px;
 
     }
-        .logo img{
-            width: 150px;
-        }
+
         .largetext{
         display: grid;
         grid-column: 2 / span 7;
@@ -749,11 +803,11 @@ h5{
         }
         .squiggle.item2{
             display: grid;
-            grid-row: 23;
+            grid-row: 24;
         }
         .squiggle.item3{
             display: grid;
-            grid-row: 43;
+            grid-row: 44;
         }
         .sectionimage{
             display: grid;
@@ -800,7 +854,6 @@ h5{
             grid-column: 2 / span 8;
             grid-row: 14;
             height: 350px;
-            background-color: greenyellow;
         }
         .sectionbody.item1{
             display: grid;
@@ -846,7 +899,7 @@ h5{
             padding-top: 25px;
         }
         .subhead{display: grid;
-            grid-column: 3 / span 6;
+            grid-column: 2 / span 6;
             grid-row: 5;
             height: 100px;
         }
@@ -864,14 +917,13 @@ h5{
         .projectdescription{
             display: grid;
             grid-column: 2 / span 6;
-            grid-row: 20;
+            grid-row: 15;
             height: 350px;
-            padding-top: 50px;
-            background-color: greenyellow;
         }
         .squiggle.project{
             display: grid;
-            grid-row: 20;
+            grid-row: 18;
+            grid-column: 2 / span 8;
         }
         .squiggle img{
             width:75%;
@@ -887,31 +939,39 @@ h5{
             width: 100%;
         }
         .otherimage.item1{
-                grid-row: 30;
+                grid-row: 24;
         }
         .otherimage.item2{
-                grid-row: 40;
+                grid-row: 32;
         }
         .otherimage.item3{
-                grid-row: 50;
+                grid-row: 40;
         }
         .otherimage.item4{
-                grid-row: 60;
+                grid-row: 48;
         }
         .otherimage#travel1{
-            grid-row: 30;
+            grid-row: 23;
         }
         .otherimage#travel2{
-            grid-row: 44;
+            grid-row: 32;
         }
         .otherimage#travel3{
-            grid-row: 58;
+            grid-row: 41;
         }
         .otherimage#travel4{
-            grid-row: 79;
+            grid-row: 57;
+        }
+        .otherimage.item21{
+          grid-row: 31;
+        }
+        .otherimage.item31{
+          grid-row: 50;
         }
 
         /*About Page*/
+
+
         .wrapper.about{
           display: grid;
           grid-template-columns: repeat( 10, auto );
@@ -921,8 +981,8 @@ h5{
           grid-template-rows: repeat(28,75px);}
         .largetext.about{
           display: grid;
-          grid-column:2;
-          grid-row: 1/ span 1;
+          grid-column:1;
+          grid-row: 3;
           height: 75px;
           padding-top: 25px;
           padding-left: 25px;}
@@ -931,7 +991,7 @@ h5{
         }
         .subhead.about{
           display: grid;
-          grid-column: 1 / span 6;
+          grid-column: 1;
           grid-row: 6;
           height: 50px;
           margin-top: 20px;
@@ -948,7 +1008,7 @@ h5{
           grid-column: 1;
           grid-row: 6;
           padding-left: 25px;
-          padding-top: 25px;
+          padding-top: 50px;
         }
         .contact{
           display: grid;
@@ -958,31 +1018,31 @@ h5{
         }
         .education{
           display: grid;
-          grid-column: 3/ span 4;
+          grid-column: 2/ span 4;
           grid-row: 9;
           padding-left: 25px;
         }
         .languages{
           display: grid;
           grid-column: 1 / span 4;
-          grid-row: 13;
+          grid-row: 14;
           padding-left: 25px;
         }
         .programs{
           display: grid;
-          grid-column: 3 / span 4;
-          grid-row: 13;
+          grid-column: 2 / span 4;
+          grid-row: 14;
           padding-left: 25px;
         }
         .experience{
           display: grid;
           grid-column: 1 / span 4;
-          grid-row: 18;
+          grid-row: 19;
           padding-left: 25px;
         }
 
         .about li{
-          font-size: 1rem;
+          font-size: 1.25rem;
           color: #8edce6;
           font-family: linotype-sabon, sans-serif;
           font-weight: 400;
@@ -997,7 +1057,7 @@ h5{
         h1{
         font-size: 6.5rem;
         color: yellow;
-        text-align: center;
+        text-align: left;
         font-family: europa, sans-serif;
         font-weight: 700;
     }
@@ -1005,24 +1065,54 @@ h5{
         h2{
         font-size: 4rem;
         color: red;
-        text-align: center;
+        text-align: left;
         font-family: europa, sans-serif;
         font-weight: 400;
     }
         h3{
         font-size: 5rem;
         color: yellow;
-        text-align: center;
+        text-align: left;
         font-family: europa, sans-serif;
         font-weight: 700;
     }
         h4{
         font-size: 1.5rem;
         color: aqua;
-        text-align: center;
+        text-align: left;
         font-family: linotype-sabon, sans-serif;
         font-weight: 400;
         font-style: italic;
+    }
+    h5{
+      font-size: 1.5rem;
+      color: yellow;
+      font-family: europa, sans-serif;
+      font-weight: 700;
+    }
+    p{
+      font-size: 2.5rem;
+      color: aqua;
+      font-family: linotype-sabon, sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    h6{
+      font-size: 6rem;
+      color: aqua;
+      text-align: center;
+      font-family: europa, sans-serif;
+      font-weight: 700;
+      margin: 0px;
+    }
+    a p{
+      font-size: 1.75rem;
+      color: yellow;
+      text-align: center;
+      font-family: europa, sans-serif;
+      font-weight: 400;
+      font-style: normal;
     }
 
     }
@@ -1037,8 +1127,9 @@ h5{
 @media only screen and (min-width: 1000px) and (max-width: 1150px) {
   .wrapper.index{
       grid-template-rows: repeat(55,100px);}
-    .logo img{
+    .logo {
         width: 150px;
+        height: 150px;
     }
     .largetext{
       display: grid;
@@ -1115,7 +1206,6 @@ h5{
         grid-column: 2 / span 8;
         grid-row: 14;
         height: 350px;
-        background-color: greenyellow;
     }
     .sectionbody.item1{
         display: grid;
@@ -1265,8 +1355,6 @@ Project Pages
         grid-column: 2 / span 6;
         grid-row: 15;
         height: 350px;
-        padding-top: 50px;
-        background-color: greenyellow;
     }
     .squiggle.project{
         display: grid;
@@ -1322,14 +1410,14 @@ Project Pages
   h1{
       font-size: 6rem;
       color: yellow;
-      text-align: center;
+      text-align: left;
       font-family: europa, sans-serif;
       font-weight: 700;}
 
     h2{
     font-size: 3rem;
     color: red;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 400;}
 
@@ -1347,6 +1435,30 @@ Project Pages
     font-family: linotype-sabon, sans-serif;
     font-weight: 400;
     font-style: italic;}
+    p{
+      font-size: 2.25rem;
+      color: aqua;
+      font-family: linotype-sabon, sans-serif;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    h6{
+      font-size: 6rem;
+      color: aqua;
+      text-align: center;
+      font-family: europa, sans-serif;
+      font-weight: 700;
+      margin: 0px;
+    }
+    a p{
+      font-size: 1.75rem;
+      color: yellow;
+      text-align: center;
+      font-family: europa, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
 
 }
 
@@ -1358,8 +1470,9 @@ Project Pages
 @media only screen and (min-width: 801px) and (max-width: 1000px) {
   .wrapper.index{
       grid-template-rows: repeat(55,100px);}
-    .logo img{
-        width: 150px;
+    .logo{
+        width: 100px;
+        height: 100px;
     }
     .largetext{
       display: grid;
@@ -1436,7 +1549,6 @@ Project Pages
         grid-column: 2 / span 8;
         grid-row: 14;
         height: 350px;
-        background-color: greenyellow;
     }
     .sectionbody.item1{
         display: grid;
@@ -1488,9 +1600,10 @@ Project Pages
         padding-top: 25px;
     }
     .subhead{display: grid;
-        grid-column: 3 / span 6;
+        grid-column: 2 / span 6;
         grid-row: 5;
         height: 100px;
+        padding-top: 0px;
     }
     .projectimage{
        display: grid;
@@ -1508,8 +1621,6 @@ Project Pages
         grid-column: 2 / span 6;
         grid-row: 13;
         height: 350px;
-        padding-top: 50px;
-        background-color: greenyellow;
     }
     .squiggle.project{
         display: grid;
@@ -1645,7 +1756,7 @@ Project Pages
   h1{
     font-size: 4rem;
     color: yellow;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 700;
   }
@@ -1653,7 +1764,7 @@ Project Pages
   h2{
     font-size: 2rem;
     color: red;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 400;
   }
@@ -1674,7 +1785,30 @@ Project Pages
     font-weight: 400;
     font-style: italic;
   }
-
+  p{
+    font-size: 2rem;
+    color: aqua;
+    font-family: linotype-sabon, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  h6{
+    font-size: 4rem;
+    color: aqua;
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    margin: 0px;
+  }
+  a p{
+    font-size: 1.75rem;
+    color: yellow;
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 
@@ -1686,8 +1820,9 @@ Project Pages
 @media only screen and (min-width: 676px) and (max-width: 800px) {
   .wrapper.index{
       grid-template-rows: repeat(55,100px);}
-    .logo img{
-        width: 150px;
+    .logo{
+        width: 100px;
+        height: 100px;
     }
     .largetext{
       display: grid;
@@ -1764,7 +1899,6 @@ Project Pages
         grid-column: 2 / span 8;
         grid-row: 14;
         height: 350px;
-        background-color: greenyellow;
     }
     .sectionbody.item1{
         display: grid;
@@ -1840,8 +1974,6 @@ Project Pages
         grid-column: 2 / span 6;
         grid-row: 12;
         height: 350px;
-        padding-top: 50px;
-        background-color: greenyellow;
     }
     .squiggle.project{
         display: grid;
@@ -1980,7 +2112,7 @@ Project Pages
   h1{
     font-size: 4rem;
     color: yellow;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 700;
   }
@@ -1988,7 +2120,7 @@ Project Pages
   h2{
     font-size: 2rem;
     color: red;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 400;
   }
@@ -2009,7 +2141,30 @@ Project Pages
     font-weight: 400;
     font-style: italic;
   }
-
+  p{
+    font-size: 1.75rem;
+    color: aqua;
+    font-family: linotype-sabon, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  h6{
+    font-size: 4rem;
+    color: aqua;
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    margin: 0px;
+  }
+  a p{
+    font-size: 1.5rem;
+    color: yellow;
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 
@@ -2023,8 +2178,9 @@ Project Pages
 @media only screen and (min-width: 450px) and (max-width: 676px) {
   .wrapper.index{
       grid-template-rows: repeat(55,100px);}
-    .logo img{
+    .logo{
         width: 70px;
+        height: 70px;
     }
     .largetext{
       display: grid;
@@ -2100,7 +2256,6 @@ Project Pages
         grid-column: 2 / span 8;
         grid-row: 14;
         height: 350px;
-        background-color: greenyellow;
     }
     .sectionbody.item1{
         display: grid;
@@ -2182,8 +2337,6 @@ Project Pages
         grid-column: 2 / span 6;
         grid-row: 11;
         height: 350px;
-        padding-top: 50px;
-        background-color: greenyellow;
     }
     .squiggle.project{
         display: grid;
@@ -2321,7 +2474,7 @@ Project Pages
   h1{
     font-size: 3rem;
     color: yellow;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 700;
   }
@@ -2329,7 +2482,7 @@ Project Pages
   h2{
     font-size: 1.75rem;
     color: red;
-    text-align: center;
+    text-align: left;
     font-family: europa, sans-serif;
     font-weight: 400;
   }
@@ -2351,6 +2504,30 @@ Project Pages
     font-style: italic;
   }
 
+  p{
+    font-size: 1.75rem;
+    color: aqua;
+    font-family: linotype-sabon, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  h6{
+    font-size: 4rem;
+    color: aqua;
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 700;
+    margin: 0px;
+  }
+  a p{
+    font-size: 1.5rem;
+    color: yellow;
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 }
 
 
