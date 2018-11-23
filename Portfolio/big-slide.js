@@ -187,7 +187,7 @@
             });
             this.$menu.addClass('semiOpen');
           } else {
-            this.$push.css(settings.side, '0');
+            this.$push.css(settings.side, '25');
           }
         } else if (initialState === 'open') {
           this.$menu.css(settings.side, '0');
@@ -238,7 +238,7 @@
                     that.$menu.removeClass('semiOpen');
                     if (controller.getState() === 'closed') {
                         that.$menu.css(settings.side, '-' + that.width).css({width: that.width});
-                        that.$push.css(settings.side, '0');
+                        that.$push.css(settings.side, '25');
                         that.$shrink.css('width', '100%');
                         that.$hiddenThin.show();
                     }

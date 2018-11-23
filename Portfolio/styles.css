@@ -445,7 +445,17 @@ a p{
   }
   .wrapper.project{
   grid-template-rows: repeat(70,100px);}
-
+  .logobar{
+    grid-column: 1 / span 9;
+    grid-row: 1 / span 1;
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    position: fixed;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+  }
   .logo{
   display: grid;
   grid-column: 1 / span 1;
@@ -807,7 +817,17 @@ a p{
           line-height:normal;
           margin: 0px;
         }
-
+        .logobar{
+          grid-column: 1 / span 9;
+          grid-row: 1 / span 1;
+          width: 100%;
+          height: 200px;
+          background-color: black;
+          position: fixed;
+          z-index: 2;
+          left: 0px;
+          top: 0px;
+        }
         .logo{
         display: grid;
         grid-column: 1 / span 1;
@@ -1166,6 +1186,17 @@ a p{
         width: 150px;
         height: 150px;
     }
+    .logobar{
+      grid-column: 1 / span 9;
+      grid-row: 1 / span 1;
+      width: 100%;
+      height: 200px;
+      background-color: black;
+      position: fixed;
+      z-index: 2;
+      left: 0px;
+      top: 0px;
+    }
     .largetext{
       display: grid;
       grid-column: 2 / span 7;
@@ -1509,6 +1540,17 @@ Project Pages
     .logo{
         width: 100px;
         height: 100px;
+    }
+    .logobar{
+      grid-column: 1 / span 9;
+      grid-row: 1 / span 1;
+      width: 100%;
+      height: 150px;
+      background-color: black;
+      position: fixed;
+      z-index: 2;
+      left: 0px;
+      top: 0px;
     }
     .largetext{
       display: grid;
@@ -1860,6 +1902,17 @@ Project Pages
         width: 100px;
         height: 100px;
     }
+    .logobar{
+      grid-column: 1 / span 9;
+      grid-row: 1 / span 1;
+      width: 100%;
+      height: 150px;
+      background-color: black;
+      position: fixed;
+      z-index: 2;
+      left: 0px;
+      top: 0px;
+    }
     .largetext{
       display: grid;
       grid-column: 2 / span 7;
@@ -1877,7 +1930,7 @@ Project Pages
     .squiggle.item1{
         display: grid;
         padding-top: 50px;
-        grid-row: 4;
+        grid-row: 5;
     }
     .squiggle.item2{
         display: grid;
@@ -2083,7 +2136,7 @@ Project Pages
     .subhead.about{
       display: grid;
       grid-column: 1 / span 6;
-      grid-row: 5;
+      grid-row: 4;
       height: 50px;
       margin-top: 20px;
       text-align: left;
@@ -2111,7 +2164,6 @@ Project Pages
       display: grid;
       grid-column: 2/ span 4;
       grid-row: 9;
-      padding-left: 125px;
     }
     .languages{
       display: grid;
@@ -2123,7 +2175,6 @@ Project Pages
       display: grid;
       grid-column: 2 / span 4;
       grid-row: 13;
-      padding-left: 125px;
     }
     .experience{
       display: grid;
@@ -2145,7 +2196,7 @@ Project Pages
     }
 
 
-  Text
+  /*Text
   ******/
   h1{
     font-size: 4rem;
@@ -2219,6 +2270,17 @@ Project Pages
     .logo{
         width: 70px;
         height: 70px;
+    }
+    .logobar{
+      grid-column: 1 / span 9;
+      grid-row: 1 / span 1;
+      width: 100%;
+      height: 125px;
+      background-color: black;
+      position: fixed;
+      z-index: 2;
+      left: 0px;
+      top: 0px;
     }
     .largetext{
       display: grid;
@@ -2473,26 +2535,26 @@ Project Pages
     }
     .education{
       display: grid;
-      grid-column: 2/ span 4;
-      grid-row: 9;
-      padding-left: 225px;
+      grid-column: 1;
+      grid-row: 11;
+      padding-left: 25px;
     }
     .languages{
       display: grid;
       grid-column: 1 / span 4;
-      grid-row: 14;
+      grid-row: 15;
       padding-left: 25px;
     }
     .programs{
       display: grid;
-      grid-column: 2 / span 4;
-      grid-row: 14;
-      padding-left: 225px;
+      grid-column: 1 / span 4;
+      grid-row: 17;
+      padding-left: 25px;
     }
     .experience{
       display: grid;
       grid-column: 1 / span 4;
-      grid-row: 19;
+      grid-row: 21;
       padding-left: 25px;
     }
 
@@ -2509,7 +2571,7 @@ Project Pages
     }
 
 
-  Text
+  /*Text
   ******/
   h1{
     font-size: 3rem;
@@ -2553,7 +2615,7 @@ Project Pages
     line-height: 1.5;
   }
   h6{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #d6ccc4;
     text-align: center;
     font-family: europa, sans-serif;
