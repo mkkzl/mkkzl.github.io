@@ -515,7 +515,7 @@ li a:visited{
   grid-template-rows: repeat(65,100px);
   }
   .wrapper.project{
-  grid-template-rows: repeat(75,100px);}
+  grid-template-rows: repeat(82,100px);}
   .logobar{
     height: 150px;
   }
@@ -674,35 +674,35 @@ li a:visited{
           grid-row: 23;
   }
   .otherimage.item2{
-          grid-row: 32;
+          grid-row: 33;
   }
   .otherimage.item3{
-          grid-row: 41;
+          grid-row: 43;
   }
   .otherimage.item4{
-          grid-row: 50;
+          grid-row: 53;
   }
   .otherimage#travel1{
       grid-row: 23;
   }
   .otherimage#travel2{
-      grid-row: 33;
+      grid-row: 35;
   }
   .otherimage#travel3{
-      grid-row: 43;
+      grid-row: 47;
   }
   .otherimage#travel4{
-      grid-row: 60;
+      grid-row: 67;
   }
   .otherimage.item21{
-    grid-row: 30;
+    grid-row: 31;
   }
   .otherimage.item31{
-    grid-row: 51;
+    grid-row: 55;
   }
-  .topbutton1{grid-row: 61;}
-  .topbutton2{grid-row: 71;}
-  .topbutton3{grid-row: 62;}
+  .topbutton1{grid-row: 64;}
+  .topbutton2{grid-row: 79;}
+  .topbutton3{grid-row: 66;}
 
   /*About Page*/
   .wrapper.about{
