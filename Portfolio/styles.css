@@ -2813,7 +2813,7 @@ Project Pages
 
     .subhead{display: grid;
         grid-column: 2 / span 6;
-        grid-row: 5;
+        grid-row: 4;
         height: 100px;
     }
     .projectimage{
