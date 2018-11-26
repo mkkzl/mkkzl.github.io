@@ -2,13 +2,16 @@
     box-sizing:border-box;
     display: grid;
     position: relative;
+    margin: 0px;
 }
 
 /***
 ******Mobile
 *****
 ***/
-
+a{
+  text-decoration: none;
+}
 body{
     background-color: black;
 
@@ -26,6 +29,14 @@ body{
 .wrapper.project{
     grid-template-rows: repeat(26,75px);
     }
+#menu{
+  background-color: black;
+  z-index: 3;
+}
+#top{
+  left: 0px;
+  top:0px;
+}
 
 /*Index Page*/
 .logo{
@@ -59,7 +70,7 @@ body{
   background-color: black;
   position: fixed;
   z-index: 2;
-  left: 0px;
+  left: 25px;
   top: 0px;
 }
 
@@ -202,6 +213,42 @@ body{
 
 }
 
+
+.topbuttoni{
+  grid-row: 30;
+  grid-column: 1 / span 5;
+}
+.topbuttoni a p{
+    text-align: left;
+}
+.topbutton1{
+  grid-row: 24;
+  grid-column: 1 / span 5;
+}
+.topbutton1 a p{
+    text-align: left;
+}
+.topbutton2{
+  grid-row: 26;
+  grid-column: 1 / span 5;
+}
+.topbutton2 a p{
+    text-align: left;
+}
+.topbutton3{
+  grid-row: 25;
+  grid-column: 1 / span 5;
+}
+.topbutton3 a p{
+    text-align: left;
+}
+.topbuttona{
+  grid-row: 35;
+  grid-column: 1 / span 5;
+}
+.topbuttona a p{
+    text-align: left;
+}
 /*Text*/
 h1{
     font-size: 2rem;
@@ -231,6 +278,7 @@ h4{
     font-family: linotype-sabon, sans-serif;
     font-weight: 400;
     font-style: italic;
+    line-height: 1.5;
 }
 h5{
   font-size: 1.25rem;
@@ -245,6 +293,7 @@ p{
   font-family: linotype-sabon, sans-serif;
   font-weight: 400;
   font-style: italic;
+  line-height: 1.5;
 }
 h6{
   font-size: 2rem;
@@ -353,7 +402,7 @@ a p{
   margin: 25px;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  grid-template-rows: repeat(28,75px);}
+  grid-template-rows: repeat(50,75px);}
 .largetext.about{
   display: grid;
   grid-column:1;
@@ -368,7 +417,7 @@ a p{
   margin-top: 20px;
   text-align: left;
   padding-top: 50px;
-  padding-left: 0px;
+  padding-left: 25px;
 }
 .about h4{
     font-size: 1.25rem;
@@ -407,7 +456,7 @@ a p{
 .experience{
   display: grid;
   grid-column: 1;
-  grid-row: 22;
+  grid-row: 22 / span 10;
   padding-left: 25px;
 }
 
@@ -422,7 +471,16 @@ a p{
 .about ul{
   margin-bottom: 10px;
 }
-
+li a{
+  text-decoration: none;
+  color: inherit;
+}
+li a:hover{
+  color: #d18d07;
+}
+li a:visited{
+    color: #5993ce;
+}
 /******MEDIA QUERIES*******/
 
 
@@ -433,62 +491,40 @@ a p{
 *****
 ****/
 @media only screen and (min-width: 1300px){
-  .wrapper{
-      display: grid;
-      grid-template-columns: repeat( 10, auto );
-      margin: 25px;
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
-  }
   .wrapper.index{
   grid-template-rows: repeat(65,100px);
   }
   .wrapper.project{
-  grid-template-rows: repeat(70,100px);}
+  grid-template-rows: repeat(75,100px);}
   .logobar{
-    grid-column: 1 / span 9;
-    grid-row: 1 / span 1;
-    width: 100%;
-    height: 200px;
-    background-color: black;
-    position: fixed;
-    z-index: 2;
-    left: 0px;
-    top: 0px;
+    height: 150px;
   }
   .logo{
-  display: grid;
-  grid-column: 1 / span 1;
-  grid-row: 1 / span 1;
-  height: 150px;
-  width: 150px;}
+  height: 100px;
+  width: 100px;}
   .largetext{
-  display: grid;
-  grid-column: 2 / span 7;
+  grid-column: 3 / span 7;
   grid-row: 3;
   height: 300px;}
   .squiggle{
-  display: grid;
-  grid-column: 2 / span 5;
-  height: 120px;
+  height: 30px;
   padding-top: 20px;}
   .squiggle img{
       width: 1500px;
   }
   .squiggle.item1{
-      display: grid;
       grid-row: 6;
+      grid-column: 3 / span 5;
   }
   .squiggle.item2{
-      display: grid;
-      grid-row: 25;
+      grid-row: 26;
+      grid-column: 2 / span 5;
   }
   .squiggle.item3{
-      display: grid;
-      grid-row: 45;
+      grid-row: 46;
+      grid-column: 2 / span 5;
   }
   .sectionimage{
-      display: grid;
       grid-column: 1 / span 10;
       height: 450px;
       padding-right: 25px;
@@ -565,7 +601,7 @@ a p{
       display: grid;
       grid-row: 63;
   }
-
+  .topbuttoni{grid-row: 65;}
 /*Project Pages*/
   .title{
       display: grid;
@@ -575,7 +611,7 @@ a p{
       padding-top: 25px;
   }
   .subhead{display: grid;
-      grid-column: 2 / span 6;
+      grid-column: 2 / span 8;
       grid-row: 5;
       height: 100px;
   }
@@ -593,12 +629,12 @@ a p{
   .projectdescription{
       display: grid;
       grid-column: 2 / span 8;
-      grid-row: 16;
+      grid-row: 17;
       height: 350px;
   }
   .squiggle.project{
       display: grid;
-      grid-row: 18;
+      grid-row: 21;
       grid-column: 2 / span 8;
   }
   .squiggle img{
@@ -644,19 +680,16 @@ a p{
   .otherimage.item31{
     grid-row: 51;
   }
-
+  .topbutton1{grid-row: 61;}
+  .topbutton2{grid-row: 71;}
+  .topbutton3{grid-row: 62;}
 
   /*About Page*/
   .wrapper.about{
-    display: grid;
-    grid-template-columns: repeat( 10, auto );
-    margin: 25px;
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    grid-template-rows: repeat(28,75px);}
+    grid-template-rows: repeat(35,75px);}
   .largetext.about{
     display: grid;
-    grid-column:1;
+    grid-column:1/ span 4;
     grid-row: 3/ span 1;
     height: 75px;
     padding-top: 25px;
@@ -677,7 +710,7 @@ a p{
   }
   .squiggle.about{
     display: grid;
-    grid-column: 1;
+    grid-column: 1/ span 4;
     grid-row: 7;
     padding-left: 25px;
     padding-top: 25px;
@@ -690,31 +723,31 @@ a p{
   }
   .education{
     display: grid;
-    grid-column: 3/ span 4;
+    grid-column: 4/ span 4;
     grid-row: 9;
     padding-left: 25px;
   }
   .languages{
     display: grid;
     grid-column: 1 / span 4;
-    grid-row: 14;
+    grid-row: 15;
     padding-left: 25px;
   }
   .programs{
     display: grid;
-    grid-column: 3 / span 4;
-    grid-row: 14;
+    grid-column: 4 / span 4;
+    grid-row: 15;
     padding-left: 25px;
   }
   .experience{
     display: grid;
-    grid-column: 1 / span 4;
-    grid-row: 19;
+    grid-column: 1 / span 6;
+    grid-row: 21;
     padding-left: 25px;
   }
 
   .about li{
-    font-size: 1rem;
+    font-size: 2rem;
     color: #d6ccc4;
     font-family: linotype-sabon, sans-serif;
     font-weight: 400;
@@ -726,7 +759,7 @@ a p{
   }
   /*Text*/
   h1{
-  font-size: 6.5rem;
+  font-size: 5.5rem;
   color: #d18d07;
   text-align: left;
   font-family: europa, sans-serif;
@@ -747,7 +780,7 @@ a p{
   font-weight: 700;
 }
   h4{
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #d6ccc4;
   text-align: left;
   font-family: linotype-sabon, sans-serif;
@@ -755,10 +788,11 @@ a p{
   font-style: italic;
 }
 h5{
-  font-size: 3rem;
+  font-size: 2.75rem;
   color: #d18d07;
   font-family: europa, sans-serif;
   font-weight: 700;
+  padding-bottom: 10px;
 }
 p{
   font-size: 2.5rem;
@@ -769,7 +803,7 @@ p{
   line-height: 1.5;
 }
 h6{
-  font-size: 6rem;
+  font-size: 5.5rem;
   color: #d6ccc4;
   text-align: center;
   font-family: europa, sans-serif;
@@ -783,6 +817,7 @@ a p{
   font-family: europa, sans-serif;
   font-weight: 400;
   font-style: normal;
+  text-decoration: none;
 }
 
 }
@@ -795,47 +830,22 @@ a p{
 ****
 **/
 @media only screen and (min-width: 1150px) and (max-width: 1300px) {
-        .wrapper{
-            display: grid;
-            grid-template-columns: repeat( 10, auto );
-            margin: 25px;
-            grid-column-gap: 5px;
-            grid-row-gap: 5px;
-        }
+  .topbuttoni{
+    grid-row: 65;
+  }
         .wrapper.index{
         grid-template-rows: repeat(65,100px);
         }
         .wrapper.project{
         grid-template-rows: repeat(100,100px);
         }
-        .menu ul{display: inline-grid;}
-        .menu li{
-          font-size: 1.5rem;
-          color: #d18d07;
-          font-family: europa, sans-serif;
-          font-weight: 700;
-          line-height:normal;
-          margin: 0px;
-        }
+
         .logobar{
-          grid-column: 1 / span 9;
-          grid-row: 1 / span 1;
-          width: 100%;
-          height: 200px;
-          background-color: black;
-          position: fixed;
-          z-index: 2;
-          left: 0px;
-          top: 0px;
+          height: 150px;
         }
         .logo{
-        display: grid;
-        grid-column: 1 / span 1;
-        grid-row: 1 / span 1;
-        height: 150px;
-        width: 150px;
-
-    }
+        height: 100px;
+        width: 100px;}
 
         .largetext{
         display: grid;
@@ -1023,20 +1033,18 @@ a p{
         .otherimage.item31{
           grid-row: 50;
         }
+        .topbutton1{grid-row: 57;}
+        .topbutton2{grid-row: 67;}
+        .topbutton3{grid-row: 59;}
 
         /*About Page*/
 
 
         .wrapper.about{
-          display: grid;
-          grid-template-columns: repeat( 10, auto );
-          margin: 25px;
-          grid-column-gap: 5px;
-          grid-row-gap: 5px;
           grid-template-rows: repeat(28,75px);}
         .largetext.about{
           display: grid;
-          grid-column:1;
+          grid-column:1/ span 4;
           grid-row: 3;
           height: 75px;
           padding-top: 25px;
@@ -1060,10 +1068,9 @@ a p{
         }
         .squiggle.about{
           display: grid;
-          grid-column: 1;
+          grid-column: 1/ span 4;
           grid-row: 7;
           padding-left: 25px;
-          padding-top: 50px;
         }
         .contact{
           display: grid;
@@ -1073,7 +1080,7 @@ a p{
         }
         .education{
           display: grid;
-          grid-column: 2/ span 4;
+          grid-column: 4/ span 4;
           grid-row: 9;
           padding-left: 25px;
         }
@@ -1085,13 +1092,13 @@ a p{
         }
         .programs{
           display: grid;
-          grid-column: 2 / span 4;
+          grid-column: 4 / span 4;
           grid-row: 14;
           padding-left: 25px;
         }
         .experience{
           display: grid;
-          grid-column: 1 / span 4;
+          grid-column: 1 / span 8;
           grid-row: 19;
           padding-left: 25px;
         }
@@ -1110,7 +1117,7 @@ a p{
         /*Text*/
 
         h1{
-        font-size: 6.5rem;
+        font-size: 5.5rem;
         color: #d18d07;
         text-align: left;
         font-family: europa, sans-serif;
@@ -1144,6 +1151,7 @@ a p{
       color: #d18d07;
       font-family: europa, sans-serif;
       font-weight: 700;
+      padding-bottom: 10px;
     }
     p{
       font-size: 2.5rem;
@@ -1154,7 +1162,7 @@ a p{
       line-height: 1.5;
     }
     h6{
-      font-size: 6rem;
+      font-size: 5.5rem;
       color: #d6ccc4;
       text-align: center;
       font-family: europa, sans-serif;
@@ -1180,23 +1188,17 @@ a p{
 ***** Desktop Middle
 **/
 @media only screen and (min-width: 1000px) and (max-width: 1150px) {
+  .topbuttoni{
+    grid-row: 55;
+  }
   .wrapper.index{
       grid-template-rows: repeat(55,100px);}
-    .logo {
-        width: 150px;
+      .logobar{
         height: 150px;
-    }
-    .logobar{
-      grid-column: 1 / span 9;
-      grid-row: 1 / span 1;
-      width: 100%;
-      height: 200px;
-      background-color: black;
-      position: fixed;
-      z-index: 2;
-      left: 0px;
-      top: 0px;
-    }
+      }
+      .logo{
+      height: 100px;
+      width: 100px;}
     .largetext{
       display: grid;
       grid-column: 2 / span 7;
@@ -1312,23 +1314,18 @@ a p{
 
     /*About Page*/
     .wrapper.about{
-      display: grid;
-      grid-template-columns: repeat( 10, auto );
-      margin: 25px;
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
       grid-template-rows: repeat(28,75px);}
     .largetext.about{
       display: grid;
-      grid-column:1;
-      grid-row: 3/ span 8;
+      grid-column:1/ span 4;
+      grid-row: 3;
       height: 75px;
       padding-top: 25px;
       padding-left: 25px;}
     .subhead.about{
       display: grid;
       grid-column: 1 / span 6;
-      grid-row: 6;
+      grid-row: 5;
       height: 50px;
       margin-top: 20px;
       text-align: left;
@@ -1341,7 +1338,7 @@ a p{
     }
     .squiggle.about{
       display: grid;
-      grid-column: 1;
+      grid-column: 1/ span 4;
       grid-row: 7;
       padding-left: 25px;
       padding-top: 25px;
@@ -1349,36 +1346,36 @@ a p{
     .contact{
       display: grid;
       grid-column: 1 / span 4;
-      grid-row: 9;
+      grid-row: 10;
       padding-left: 25px;
     }
     .education{
       display: grid;
-      grid-column: 3/ span 4;
-      grid-row: 9;
+      grid-column: 4/ span 4;
+      grid-row: 10;
       padding-left: 25px;
     }
     .languages{
       display: grid;
       grid-column: 1 / span 4;
-      grid-row: 13;
+      grid-row: 15;
       padding-left: 25px;
     }
     .programs{
       display: grid;
-      grid-column: 3 / span 4;
-      grid-row: 13;
+      grid-column: 4 / span 4;
+      grid-row: 15;
       padding-left: 25px;
     }
     .experience{
       display: grid;
       grid-column: 1 / span 4;
-      grid-row: 18;
+      grid-row: 20/ span 10;
       padding-left: 25px;
     }
 
     .about li{
-      font-size: 1rem;
+      font-size: 1.5rem;
       color: #d6ccc4;
       font-family: linotype-sabon, sans-serif;
       font-weight: 400;
@@ -1391,6 +1388,7 @@ a p{
 /********
 Project Pages
 *********/
+
 .wrapper.project{
     grid-template-rows: repeat(65,100px);}
     .title{
@@ -1401,7 +1399,7 @@ Project Pages
         padding-top: 25px;
     }
     .subhead{display: grid;
-        grid-column: 2 / span 6;
+        grid-column: 2 / span 8;
         grid-row: 5;
         height: 100px;
     }
@@ -1418,14 +1416,14 @@ Project Pages
     }
     .projectdescription{
         display: grid;
-        grid-column: 2 / span 6;
+        grid-column: 2 / span 8;
         grid-row: 15;
         height: 350px;
     }
     .squiggle.project{
         display: grid;
         grid-row: 19;
-        padding-left: 0px;
+        padding-left: 25px;
         grid-column: 2/ span 8;
     }
     .squiggle img{
@@ -1470,12 +1468,19 @@ Project Pages
     .otherimage.item31{
       grid-row: 45;
     }
+    .topbutton3{ grid-row: 54;}
+    .topbutton2{
+      grid-row: 63;
+    }
+    .topbutton1{
+      grid-row: 50;
+    }
 
     /*******
   Text
   ******/
   h1{
-      font-size: 6rem;
+      font-size: 5.5rem;
       color: #d18d07;
       text-align: left;
       font-family: europa, sans-serif;
@@ -1489,7 +1494,7 @@ Project Pages
     font-weight: 400;}
 
   h3{
-    font-size: 3.75rem;
+    font-size: 4.75rem;
     color: #d18d07;
     text-align: left;
     font-family: europa, sans-serif;
@@ -1510,8 +1515,12 @@ Project Pages
       font-style: italic;
       line-height: 1.5;
     }
+    h5{
+      font-size: 2.25rem;
+      margin-bottom: 10px;
+    }
     h6{
-      font-size: 6rem;
+      font-size: 5.5rem;
       color: #d6ccc4;
       text-align: center;
       font-family: europa, sans-serif;
@@ -1535,6 +1544,9 @@ Project Pages
 ***/
 
 @media only screen and (min-width: 801px) and (max-width: 1000px) {
+  .topbuttoni{
+    grid-row: 50;
+  }
   .wrapper.index{
       grid-template-rows: repeat(55,100px);}
     .logo{
@@ -1549,7 +1561,7 @@ Project Pages
       background-color: black;
       position: fixed;
       z-index: 2;
-      left: 0px;
+      left: 25px;
       top: 0px;
     }
     .largetext{
@@ -1748,18 +1760,23 @@ Project Pages
     .otherimage.item31{
       grid-row: 40;
     }
+    .topbutton1{
+      grid-row: 44;
+    }
+    .topbutton2{
+      grid-row: 54;
+    }
+    .topbutton3{
+      grid-row: 47;
+    }
+
 
     /*About Page*/
     .wrapper.about{
-      display: grid;
-      grid-template-columns: repeat( 10, auto );
-      margin: 25px;
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
       grid-template-rows: repeat(28,75px);}
     .largetext.about{
       display: grid;
-      grid-column:1;
+      grid-column:1/ span 4;
       grid-row: 3/ span 1;
       height: 75px;
       padding-top: 25px;
@@ -1775,12 +1792,12 @@ Project Pages
       padding-top: 25px;
     }
     .about h4{
-        font-size: 3rem;
+        font-size: 2rem;
         padding-top: 0px;
     }
     .squiggle.about{
       display: grid;
-      grid-column: 1;
+      grid-column: 1/ span 3;
       grid-row: 6;
       padding-left: 25px;
       padding-top: 25px;
@@ -1793,7 +1810,7 @@ Project Pages
     }
     .education{
       display: grid;
-      grid-column: 2/ span 4;
+      grid-column: 3/ span 4;
       grid-row: 9;
       padding-left: 125px;
     }
@@ -1805,7 +1822,7 @@ Project Pages
     }
     .programs{
       display: grid;
-      grid-column: 2 / span 4;
+      grid-column: 3/ span 4;
       grid-row: 14;
       padding-left: 125px;
     }
@@ -1815,7 +1832,9 @@ Project Pages
       grid-row: 19;
       padding-left: 25px;
     }
-
+    .topbuttona{
+      grid-row: 28;
+    }
     .about li{
       font-size: 1rem;
       color: #d6ccc4;
@@ -1896,6 +1915,12 @@ Project Pages
 ***/
 
 @media only screen and (min-width: 676px) and (max-width: 800px) {
+
+
+
+  .topbuttoni{
+    grid-row: 46;
+  }
   .wrapper.index{
       grid-template-rows: repeat(55,100px);}
     .logo{
@@ -1910,7 +1935,7 @@ Project Pages
       background-color: black;
       position: fixed;
       z-index: 2;
-      left: 0px;
+      left: 25px;
       top: 0px;
     }
     .largetext{
@@ -2029,6 +2054,15 @@ Project Pages
   /********
   Project Pages
   *********/
+  .topbutton1{
+    grid-row: 38;
+  }
+  .topbutton2{
+    grid-row: 42;
+  }
+  .topbutton3{
+    grid-row: 38;
+  }
   .wrapper.project{
       grid-template-rows: repeat(55,100px);}
     .logo img{
@@ -2069,7 +2103,7 @@ Project Pages
         grid-row: 15;
         grid-column: 2 / span 8;
         padding-top: 150px;
-        padding-left: 0px;
+        padding-left: 25px;
     }
     .squiggle img{
         width:75%;
@@ -2120,16 +2154,11 @@ Project Pages
 
     /*About Page*/
     .wrapper.about{
-      display: grid;
-      grid-template-columns: repeat( 10, auto );
-      margin: 25px;
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
       grid-template-rows: repeat(28,75px);}
     .largetext.about{
       display: grid;
-      grid-column:1;
-      grid-row: 3/ span 4;
+      grid-column:1 / span 4;
+      grid-row: 3;
       height: 75px;
       padding-top: 25px;
       padding-left: 25px;}
@@ -2141,15 +2170,15 @@ Project Pages
       margin-top: 20px;
       text-align: left;
       padding-left: 25px;
-      padding-top: 0px;
+      padding-top: 50px;
     }
     .about h4{
-        font-size: 3rem;
+        font-size: 2rem;
         padding-top: 0px;
     }
     .squiggle.about{
       display: grid;
-      grid-column: 1;
+      grid-column: 1/ span 4;
       grid-row: 6;
       padding-left: 25px;
       padding-top: 25px;
@@ -2162,7 +2191,7 @@ Project Pages
     }
     .education{
       display: grid;
-      grid-column: 2/ span 4;
+      grid-column: 4/ span 4;
       grid-row: 9;
     }
     .languages{
@@ -2173,7 +2202,7 @@ Project Pages
     }
     .programs{
       display: grid;
-      grid-column: 2 / span 4;
+      grid-column: 4 / span 4;
       grid-row: 13;
     }
     .experience{
@@ -2194,7 +2223,9 @@ Project Pages
     .about ul{
       margin-bottom: 10px;
     }
-
+    .topbuttona{
+      grid-row: 27;
+    }
 
   /*Text
   ******/
@@ -2215,7 +2246,7 @@ Project Pages
   }
 
   h3{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     color: #d18d07;
     text-align: left;
     font-family: europa, sans-serif;
@@ -2267,6 +2298,7 @@ Project Pages
 @media only screen and (min-width: 450px) and (max-width: 676px) {
   .wrapper.index{
       grid-template-rows: repeat(55,100px);}
+    .topbuttoni{grid-row: 41;}
     .logo{
         width: 70px;
         height: 70px;
@@ -2279,7 +2311,7 @@ Project Pages
       background-color: black;
       position: fixed;
       z-index: 2;
-      left: 0px;
+      left: 25px;
       top: 0px;
     }
     .largetext{
@@ -2397,6 +2429,15 @@ Project Pages
   /********
   Project Pages
   *********/
+  .topbutton1{
+    grid-row: 32;
+  }
+  .topbutton2{
+    grid-row: 35;
+  }
+  .topbutton3{
+    grid-row: 32;
+  }
   .wrapper.project{
       grid-template-rows: repeat(55,100px);}
     .logo img{
@@ -2443,7 +2484,7 @@ Project Pages
         grid-row: 14;
         grid-column: 2 / span 8;
         padding-top: 160px;
-        padding-left: 0px;
+        padding-left: 25px;
     }
     .squiggle img{
         width:75%;
@@ -2493,15 +2534,10 @@ Project Pages
 
     /*About Page*/
     .wrapper.about{
-      display: grid;
-      grid-template-columns: repeat( 10, auto );
-      margin: 25px;
-      grid-column-gap: 5px;
-      grid-row-gap: 5px;
       grid-template-rows: repeat(28,75px);}
     .largetext.about{
       display: grid;
-      grid-column:1 / span 2;
+      grid-column:1 / span 4;
       grid-row: 3/ span 1;
       height: 75px;
       padding-top: 25px;
@@ -2517,26 +2553,26 @@ Project Pages
       padding-top: 0px;
     }
     .about h4{
-        font-size: 3rem;
+        font-size: 2rem;
         padding-top: 0px;
     }
     .squiggle.about{
       display: grid;
       grid-column: 1 / span 2;
-      grid-row: 6;
+      grid-row: 5;
       padding-left: 25px;
       padding-top: 25px;
     }
     .contact{
       display: grid;
       grid-column: 1 / span 4;
-      grid-row: 9;
+      grid-row: 8;
       padding-left: 25px;
     }
     .education{
       display: grid;
       grid-column: 1;
-      grid-row: 11;
+      grid-row: 10;
       padding-left: 25px;
     }
     .languages{
@@ -2554,9 +2590,13 @@ Project Pages
     .experience{
       display: grid;
       grid-column: 1 / span 4;
-      grid-row: 21;
+      grid-row: 21/ span 10;
       padding-left: 25px;
     }
+    .topbuttona{
+      grid-row: 31;
+    }
+
 
     .about li{
       font-size: 1rem;

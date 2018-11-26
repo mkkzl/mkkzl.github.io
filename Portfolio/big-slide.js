@@ -52,7 +52,7 @@
       'shrink': ('.shrink'),
       'hiddenThin': ('.hiddenThin'),
       'side': 'left',
-      'menuWidth': '15.625em',
+      'menuWidth': '15.60em',
       'semiOpenMenuWidth': '4em',
       'speed': '300',
       'state': 'closed',
@@ -187,7 +187,7 @@
             });
             this.$menu.addClass('semiOpen');
           } else {
-            this.$push.css(settings.side, '25');
+            this.$push.css(settings.side, '0');
           }
         } else if (initialState === 'open') {
           this.$menu.css(settings.side, '0');
@@ -238,7 +238,7 @@
                     that.$menu.removeClass('semiOpen');
                     if (controller.getState() === 'closed') {
                         that.$menu.css(settings.side, '-' + that.width).css({width: that.width});
-                        that.$push.css(settings.side, '25');
+                        that.$push.css(settings.side, '0');
                         that.$shrink.css('width', '100%');
                         that.$hiddenThin.show();
                     }
