@@ -196,6 +196,14 @@ body{
     align-items: center;
 
 }
+.button:hover{
+  border-color:  #5993ce;
+  background-color: #d18d07 ;
+  color:  #5993ce;
+  font-weight: 700;
+
+
+}
 .button.item1{
     display: grid;
     grid-row: 11;
@@ -212,7 +220,10 @@ body{
   text-decoration: none;
 
 }
-
+.button a p:hover{
+    color:  #5993ce;
+    font-weight: 700; bold
+}
 
 .topbuttoni{
   grid-row: 30;
