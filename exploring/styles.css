@@ -1,12 +1,118 @@
+*{
+    z-index: 2;
+}
+.background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 1725px;
+  z-index: 1;
+}
 .wrapper{
         display: grid;
         grid-template-rows: repeat(15,75px);
-        grid-template-columns: repeat(30,75px);
-        margin: 25px;
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
+        grid-template-columns: repeat(23,75px);
+        width: 1725px;
     }
 .trex{
-  grid-column: 4 / span 10;
-  grid-row: 6 / span 1;
+  grid-column: 18 ;
+  grid-row: 6;
+
+}
+.trex.holder{
+  width:200px;
+  height:223px;
+  overflow: hidden;
+}
+.trex.image{
+  margin-left: -47%;
+  margin-top: -25%;
+  width: 330px;
+}
+.light{
+  grid-column: 13;
+  grid-row: 10;
+
+}
+.light.holder{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.light.image{
+  margin-left: -41%;
+  margin-top: -1%;
+  width: 245px;
+}
+.sign{
+  grid-column: 9;
+    grid-row: 2;
+
+}
+.sign.holder{
+  width: 350px;
+    height: 175px;
+    overflow: hidden;
+}
+.sign.image{
+  margin-left: 0%;
+    margin-top: -53%;
+    width: 350px;
+}
+.chair{
+  grid-column: 2;
+  grid-row: 7;
+
+}
+.chair.holder{
+  width: 275px;
+  height: 450px;
+  overflow: hidden;
+}
+.chair.image{
+  margin-left: -19%;
+  margin-top: -10%;
+  width: 350px;
+}
+.circle{
+  border-radius: 50%;
+}
+#small_circle{
+  grid-column: 8;
+  grid-row: 9;
+  height: 50px;
+  width: 50px;
+  background-color:#3b1b0b;
+}
+#med_circle{
+  grid-column: 15;
+  grid-row: 4;
+  height: 105px;
+  width: 105px;
+  background-color:#403368;
+}
+#large_circle{
+  grid-column: 2;
+  grid-row: 1;
+  height:150px;
+  width:150px;
+  margin-top: 25px;
+  margin-left: 50px;
+  background-color:#97884e;
+}
+.song{
+  grid-column: 4/ span 4;
+  grid-row: 4;
+  font-size: 18px;
+}
+.prayer{
+  grid-column: 7/ span 3;
+  grid-row: 7;
+  font-family: 'Arizonia', cursive;
+  font-size: 24px;
+}
+.convo{
+  grid-column: 13;
+  grid-row: 6;
+  font-family: monospace;
 }
