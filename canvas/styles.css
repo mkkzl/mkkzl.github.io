@@ -1,0 +1,28 @@
+a{
+  grid-column: 1;
+  grid-row: 10;
+}
+.wrapper{
+        display: grid;
+        grid-template-columns: repeat( 10, auto );
+        grid-template-rows: repeat(10,50px);
+        margin: 25px;
+    }
+#image{
+  position: absolute;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 0;
+}
+#newimage{
+  position: absolute;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+}
+#image2{
+  position: absolute;
+  grid-column: 6;
+  grid-row: 1;
+  z-index: 1;
+}
