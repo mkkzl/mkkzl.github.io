@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <script src="jquery-3.4.1.min.js"></script>
+	<script src="button.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+    <div class="wrapper">
+      <div id="buttons"></div>
+      <select id="date">
+
+      </select>
+
+
+        <!---<select id="months">
+
+
+        </select>
+
+        <select id="date">
+
+        </select>-->
+    </div>
+
+
+      <!--    <script type="module">
+
+        import java.util.HashMap;
+
+
+          var months= ["June", "July", "August", "September"];
+
+          var day;
+          var month;
+          var year;
+
+          var times = {};
+
+          var dateArray = {};
+
+
+        console.log("establish vars");
+        public class MyClass {
+          public static void main(String[] args) {
+
+        var json = loadJSONObject("message_1.json");
+        var parse = json.parse(json);
+        var messages= json.messages;
+        console.log("size=",messages.size())
+
+        for (var i = 0; i<messages.size(); i++){
+            var message = messages[i]];
+            var timestamp = message.timestamp_ms;
+            var content= message.content;
+
+             Date time = new Date(timestamp);
+
+             var d= time.getDate();
+             var m= time.getMonth();
+             var y1= time.getYear();
+             var date= str(d);
+             var month= str(m+1);
+             var year= str(y1+1900);
+             var day = month+'/'+ date + '/' + year;
+
+
+
+         HashMap<String, Integer> hm = new HashMap<String,Integer>();
+         var p= hm.get(day);
+         if(p== null) hm.put(day, 1);
+         else hm.put(day, p+1);}
+          }
+        }
+        console.log(hm);
+
+
+
+
+          for( int i=0; i<months.length; i++){
+            var btn = document.createElement("BUTTON").setAttribute("id", months[i]);   // Create a <button> element
+            btn.innerHTML = months[i];                   // Insert text
+            document.body.appendChild(btn);               // Append <button> to <body>
+
+          }
+
+      </script>-->
+	</body>
+</html>
