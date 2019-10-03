@@ -60,13 +60,12 @@ for (var i = 0; i<messages.length; i++){
 
 
   for( var i=0; i<months.length; i++){
-    var option= document.createElement("button");
+    var option= document.createElement("option");
 
     option.appendChild(document.createTextNode(months[i]));
     option.value= months[i];
-    option.id= months[i];
 
-    var element = document.getElementById("buttons");
+    var element = document.getElementById("months");
     element.appendChild(option);
 
   }
@@ -76,76 +75,61 @@ for (var i = 0; i<messages.length; i++){
 
 
 
-var select = document.getElementById("date");
 
 
 
 
 
 
-document.getElementById('June').onclick= function(){
-  var i;
-    for(i = select.options.length - 1 ; i >= 0 ; i--)
-    {
-        select.remove(i);
-    }
+  var select = document.getElementById("months");
+  var selected;
 
+  /*var opt;
+        for ( var i = 0, len = select.options.length; i < len; i++ ) {
+            opt = select.options[i];
+            if ( opt.selected === true ) {
+                selected= String(opt.value);
+            }}*/
 
-    for (var i=0; i<june.length; i++){
-    var d_opt= document.createElement("option");
+  if (selected=="June"){
+    for (var i=0; i<june.length; i++)
+    var d_opt= document.createElement("button");
     d_opt.appendChild(document.createTextNode(june[i]));
     d_opt.value=june[i];
+    d_opt.onclick="window.location='"+"June/"+june[i]+".html';"
 
-    select.appendChild(d_opt);
-  }};
+    var list = document.getElementById("date");
+    date.appendChild(d_opt);
 
+  }else if (selected =="July"){
 
-
-
-
-document.getElementById('July').onclick= function(){
-  var i;
-    for(i = select.options.length - 1 ; i >= 0 ; i--)
-    {
-        select.remove(i);
-    }
-    for (var i=0; i<july.length; i++){
-    var d_opt= document.createElement("option");
+    for (var i=0; i<july.length; i++)
+    var d_opt= document.createElement("button");
     d_opt.appendChild(document.createTextNode(july[i]));
-    d_opt.value=june[i];
+    d_opt.value=july[i];
+    d_opt.href="July/"+july[i]+".html"
 
-    select.appendChild(d_opt);
-  }};
-
-
-document.getElementById('August').onclick= function(){
-  var i;
-    for(i = select.options.length - 1 ; i >= 0 ; i--)
-    {
-        select.remove(i);
-    }
-    for (var i=0; i<aug.length; i++){
-    var d_opt= document.createElement("option");
+    var list = document.getElementById("date");
+    date.appendChild(d_opt);
+  }else if (selected=="August"){
+    for (var i=0; i<aug.length; i++)
+    var d_opt= document.createElement("button");
     d_opt.appendChild(document.createTextNode(aug[i]));
-    d_opt.value=june[i];
+    d_opt.value=aug[i];
+      d_opt.href="August/"+aug[i]+".html"
 
-    select.appendChild(d_opt);
-  }};
-
-
-document.getElementById('September').onclick= function(){
-  var i;
-    for(i = select.options.length - 1 ; i >= 0 ; i--)
-    {
-        select.remove(i);
-    }
-    for (var i=0; i<sept.length; i++){
-    var d_opt= document.createElement("option");
+    var list = document.getElementById("date");
+    date.appendChild(d_opt);
+  }else if (selected=="September"){
+    for (var i=0; i<sept.length; i++)
+    var d_opt= document.createElement("button");
     d_opt.appendChild(document.createTextNode(sept[i]));
-    d_opt.value=june[i];
+    d_opt.value=sept[i];
+      d_opt.href="September/"+sept[i]+".html"
 
+    var list = document.getElementById("date");
+    date.appendChild(d_opt);
+  }
 
-    select.appendChild(d_opt);
-  }};
 
 })
