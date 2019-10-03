@@ -8,7 +8,9 @@
     "high": 87.43,
     "low": 75.12,
     "pressure": 1020.4,
-    "humidity": 0.74
+    "humidity": 0.74,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "6/30/2019",
@@ -19,7 +21,9 @@
     "high": 89.58,
     "low": 77.09,
     "pressure": 1017.1,
-    "humidity": 0.72
+    "humidity": 0.72,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/1/2019",
@@ -30,7 +34,9 @@
     "high": 93.8,
     "low": 78.13,
     "pressure": 1014.55,
-    "humidity": 0.69
+    "humidity": 0.69,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/2/2019",
@@ -41,7 +47,9 @@
     "high": 94.43,
     "low": 79.69,
     "pressure": 1013.77,
-    "humidity": 0.7
+    "humidity": 0.7,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/3/2019",
@@ -52,7 +60,9 @@
     "high": 93.89,
     "low": 80.02,
     "pressure": 1013.12,
-    "humidity": 0.69
+    "humidity": 0.69,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/4/2019",
@@ -63,7 +73,9 @@
     "high": 92.63,
     "low": 77.63,
     "pressure": 1015.16,
-    "humidity": 0.75
+    "humidity": 0.75,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/5/2019",
@@ -74,7 +86,9 @@
     "high": 91.65,
     "low": 75.6,
     "pressure": 1018.53,
-    "humidity": 0.76
+    "humidity": 0.76,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/6/2019",
@@ -85,7 +99,9 @@
     "high": 88.37,
     "low": 68.28,
     "pressure": 1014.2,
-    "humidity": 0.83
+    "humidity": 0.83,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/7/2019",
@@ -96,7 +112,9 @@
     "high": 83.88,
     "low": 59.88,
     "pressure": 1015.61,
-    "humidity": 0.74
+    "humidity": 0.74,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/8/2019",
@@ -107,7 +125,9 @@
     "high": 82.13,
     "low": 58.33,
     "pressure": 1017.19,
-    "humidity": 0.62
+    "humidity": 0.62,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/9/2019",
@@ -118,7 +138,9 @@
     "high": 86.76,
     "low": 68.75,
     "pressure": 1016.77,
-    "humidity": 0.66
+    "humidity": 0.66,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/10/2019",
@@ -129,7 +151,9 @@
     "high": 93.18,
     "low": 66.35,
     "pressure": 1013.11,
-    "humidity": 0.69
+    "humidity": 0.69,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/11/2019",
@@ -140,7 +164,9 @@
     "high": 80.32,
     "low": 54.17,
     "pressure": 1012.32,
-    "humidity": 0.7
+    "humidity": 0.7,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/12/2019",
@@ -151,7 +177,9 @@
     "high": 81.54,
     "low": 63.8,
     "pressure": 1014.76,
-    "humidity": 0.67
+    "humidity": 0.67,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/13/2019",
@@ -162,7 +190,9 @@
     "high": 90.88,
     "low": 69.09,
     "pressure": 1015.18,
-    "humidity": 0.67
+    "humidity": 0.67,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/14/2019",
@@ -173,7 +203,9 @@
     "high": 89.7,
     "low": 69.15,
     "pressure": 1018.98,
-    "humidity": 0.63
+    "humidity": 0.63,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/15/2019",
@@ -184,7 +216,9 @@
     "high": 90.45,
     "low": 69.71,
     "pressure": 1017.53,
-    "humidity": 0.67
+    "humidity": 0.67,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/16/2019",
@@ -195,7 +229,9 @@
     "high": 85.04,
     "low": 71.81,
     "pressure": 1013.83,
-    "humidity": 0.82
+    "humidity": 0.82,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/17/2019",
@@ -206,7 +242,9 @@
     "high": 89.49,
     "low": 72.12,
     "pressure": 1012.24,
-    "humidity": 0.79
+    "humidity": 0.79,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/18/2019",
@@ -217,7 +255,9 @@
     "high": 85.49,
     "low": 78.05,
     "pressure": 1011.58,
-    "humidity": 0.86
+    "humidity": 0.86,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/19/2019",
@@ -228,7 +268,9 @@
     "high": 93.54,
     "low": 71.87,
     "pressure": 1010.54,
-    "humidity": 0.77
+    "humidity": 0.77,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/20/2019",
@@ -239,7 +281,9 @@
     "high": 93.52,
     "low": 71.81,
     "pressure": 1012.17,
-    "humidity": 0.77
+    "humidity": 0.77,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/21/2019",
@@ -250,7 +294,9 @@
     "high": 85.79,
     "low": 64.12,
     "pressure": 1012.72,
-    "humidity": 0.91
+    "humidity": 0.91,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/22/2019",
@@ -261,7 +307,9 @@
     "high": 72.98,
     "low": 53.43,
     "pressure": 1015.55,
-    "humidity": 0.77
+    "humidity": 0.77,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/23/2019",
@@ -272,7 +320,9 @@
     "high": 79.25,
     "low": 58.86,
     "pressure": 1016.54,
-    "humidity": 0.65
+    "humidity": 0.65,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/24/2019",
@@ -283,7 +333,9 @@
     "high": 79.5,
     "low": 60.38,
     "pressure": 1019.16,
-    "humidity": 0.68
+    "humidity": 0.68,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/25/2019",
@@ -294,7 +346,9 @@
     "high": 83.16,
     "low": 64.2,
     "pressure": 1021.91,
-    "humidity": 0.64
+    "humidity": 0.64,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/26/2019",
@@ -305,7 +359,9 @@
     "high": 84.76,
     "low": 67.57,
     "pressure": 1023.63,
-    "humidity": 0.64
+    "humidity": 0.64,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/27/2019",
@@ -316,7 +372,9 @@
     "high": 86.49,
     "low": 71.05,
     "pressure": 1021.19,
-    "humidity": 0.64
+    "humidity": 0.64,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/28/2019",
@@ -327,7 +385,9 @@
     "high": 89.24,
     "low": 71.42,
     "pressure": 1017.75,
-    "humidity": 0.64
+    "humidity": 0.64,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/29/2019",
@@ -338,7 +398,9 @@
     "high": 79.47,
     "low": 67.6,
     "pressure": 1011.04,
-    "humidity": 0.74
+    "humidity": 0.74,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/30/2019",
@@ -349,7 +411,9 @@
     "high": 74.53,
     "low": 64.04,
     "pressure": 1015.61,
-    "humidity": 0.7
+    "humidity": 0.7,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "7/31/2019",
@@ -360,7 +424,9 @@
     "high": 79.71,
     "low": 62.43,
     "pressure": 1018.49,
-    "humidity": 0.77
+    "humidity": 0.77,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/1/2019",
@@ -371,7 +437,9 @@
     "high": 81.25,
     "low": 58.24,
     "pressure": 1021,
-    "humidity": 0.66
+    "humidity": 0.66,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/2/2019",
@@ -382,7 +450,9 @@
     "high": 82.34,
     "low": 60.53,
     "pressure": 1020.2,
-    "humidity": 0.63
+    "humidity": 0.63,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/3/2019",
@@ -393,7 +463,9 @@
     "high": 85.21,
     "low": 63.59,
     "pressure": 1017.88,
-    "humidity": 0.62
+    "humidity": 0.62,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/4/2019",
@@ -404,7 +476,9 @@
     "high": 84.8,
     "low": 64.39,
     "pressure": 1016.07,
-    "humidity": 0.7
+    "humidity": 0.7,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/5/2019",
@@ -415,7 +489,9 @@
     "high": 89.61,
     "low": 71.26,
     "pressure": 1013.8,
-    "humidity": 0.69
+    "humidity": 0.69,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/6/2019",
@@ -426,7 +502,9 @@
     "high": 81.29,
     "low": 65.55,
     "pressure": 1008.92,
-    "humidity": 0.83
+    "humidity": 0.83,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/7/2019",
@@ -437,7 +515,9 @@
     "high": 84.64,
     "low": 67.84,
     "pressure": 1009.14,
-    "humidity": 0.75
+    "humidity": 0.75,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/8/2019",
@@ -448,7 +528,9 @@
     "high": 84.72,
     "low": 59.01,
     "pressure": 1008.64,
-    "humidity": 0.64
+    "humidity": 0.64,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/9/2019",
@@ -459,7 +541,9 @@
     "high": 80.99,
     "low": 58.88,
     "pressure": 1012.52,
-    "humidity": 0.6
+    "humidity": 0.6,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/10/2019",
@@ -470,7 +554,9 @@
     "high": 94.39,
     "low": 77.87,
     "pressure": 1014.38,
-    "humidity": 0.8
+    "humidity": 0.8,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/11/2019",
@@ -481,7 +567,9 @@
     "high": 93.97,
     "low": 72.61,
     "pressure": 1014.46,
-    "humidity": 0.8
+    "humidity": 0.8,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/12/2019",
@@ -492,7 +580,9 @@
     "high": 92.09,
     "low": 73.4,
     "pressure": 1013.91,
-    "humidity": 0.84
+    "humidity": 0.84,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/13/2019",
@@ -503,7 +593,9 @@
     "high": 93.59,
     "low": 74.79,
     "pressure": 1013.39,
-    "humidity": 0.83
+    "humidity": 0.83,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/14/2019",
@@ -514,7 +606,9 @@
     "high": 91.74,
     "low": 75.75,
     "pressure": 1013.86,
-    "humidity": 0.83
+    "humidity": 0.83,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/15/2019",
@@ -525,7 +619,9 @@
     "high": 84.79,
     "low": 74.14,
     "pressure": 1014.91,
-    "humidity": 0.91
+    "humidity": 0.91,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/16/2019",
@@ -536,7 +632,9 @@
     "high": 77.39,
     "low": 71.34,
     "pressure": 1016.05,
-    "humidity": 0.95
+    "humidity": 0.95,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/17/2019",
@@ -547,7 +645,9 @@
     "high": 76.16,
     "low": 72.74,
     "pressure": 1017.86,
-    "humidity": 0.95
+    "humidity": 0.95,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/18/2019",
@@ -558,7 +658,9 @@
     "high": 81.67,
     "low": 72.74,
     "pressure": 1019.24,
-    "humidity": 0.92
+    "humidity": 0.92,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/19/2019",
@@ -569,7 +671,9 @@
     "high": 85.63,
     "low": 72.59,
     "pressure": 1019.14,
-    "humidity": 0.87
+    "humidity": 0.87,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/20/2019",
@@ -580,7 +684,9 @@
     "high": 91.32,
     "low": 71.93,
     "pressure": 1019.88,
-    "humidity": 0.84
+    "humidity": 0.84,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/21/2019",
@@ -591,7 +697,9 @@
     "high": 92.71,
     "low": 73.08,
     "pressure": 1019.37,
-    "humidity": 0.79
+    "humidity": 0.79,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/22/2019",
@@ -602,7 +710,9 @@
     "high": 93.38,
     "low": 72.45,
     "pressure": 1018.1,
-    "humidity": 0.77
+    "humidity": 0.77,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/23/2019",
@@ -613,7 +723,9 @@
     "high": 93.43,
     "low": 72.88,
     "pressure": 1016.75,
-    "humidity": 0.76
+    "humidity": 0.76,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/24/2019",
@@ -624,7 +736,9 @@
     "high": 93.34,
     "low": 74.36,
     "pressure": 1015.37,
-    "humidity": 0.78
+    "humidity": 0.78,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/25/2019",
@@ -635,7 +749,9 @@
     "high": 89.9,
     "low": 72.57,
     "pressure": 1015.25,
-    "humidity": 0.83
+    "humidity": 0.83,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/26/2019",
@@ -646,7 +762,9 @@
     "high": 92,
     "low": 72.09,
     "pressure": 1015.67,
-    "humidity": 0.83
+    "humidity": 0.83,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/27/2019",
@@ -657,7 +775,9 @@
     "high": 89.6,
     "low": 72.99,
     "pressure": 1015.34,
-    "humidity": 0.89
+    "humidity": 0.89,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/28/2019",
@@ -668,7 +788,9 @@
     "high": 91.65,
     "low": 73.61,
     "pressure": 1013.56,
-    "humidity": 0.82
+    "humidity": 0.82,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/29/2019",
@@ -679,7 +801,9 @@
     "high": 93.46,
     "low": 73.35,
     "pressure": 1014.51,
-    "humidity": 0.77
+    "humidity": 0.77,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/30/2019",
@@ -690,7 +814,9 @@
     "high": 86.86,
     "low": 75.23,
     "pressure": 1015.96,
-    "humidity": 0.87
+    "humidity": 0.87,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "8/31/2019",
@@ -701,7 +827,9 @@
     "high": 91.4,
     "low": 76,
     "pressure": 1016.5,
-    "humidity": 0.81
+    "humidity": 0.81,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/1/2019",
@@ -712,7 +840,9 @@
     "high": 86.33,
     "low": 75.94,
     "pressure": 1015.8,
-    "humidity": 0.86
+    "humidity": 0.86,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/2/2019",
@@ -723,7 +853,9 @@
     "high": 88.17,
     "low": 75.66,
     "pressure": 1012.68,
-    "humidity": 0.86
+    "humidity": 0.86,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/3/2019",
@@ -734,7 +866,9 @@
     "high": 87.17,
     "low": 74.87,
     "pressure": 1011.04,
-    "humidity": 0.84
+    "humidity": 0.84,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/4/2019",
@@ -745,7 +879,9 @@
     "high": 87.55,
     "low": 76.67,
     "pressure": 1008.96,
-    "humidity": 0.8
+    "humidity": 0.8,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/5/2019",
@@ -756,7 +892,9 @@
     "high": 94.62,
     "low": 74.86,
     "pressure": 1011.47,
-    "humidity": 0.71
+    "humidity": 0.71,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/6/2019",
@@ -767,7 +905,9 @@
     "high": 94.28,
     "low": 68.26,
     "pressure": 1012.19,
-    "humidity": 0.71
+    "humidity": 0.71,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/7/2019",
@@ -778,7 +918,9 @@
     "high": 95.52,
     "low": 69.82,
     "pressure": 1013.7,
-    "humidity": 0.7
+    "humidity": 0.7,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/8/2019",
@@ -789,7 +931,9 @@
     "high": 95.83,
     "low": 70.4,
     "pressure": 1016.21,
-    "humidity": 0.73
+    "humidity": 0.73,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/9/2019",
@@ -800,7 +944,9 @@
     "high": 95.38,
     "low": 72.42,
     "pressure": 1019.41,
-    "humidity": 0.74
+    "humidity": 0.74,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/10/2019",
@@ -811,7 +957,9 @@
     "high": 93.51,
     "low": 71.31,
     "pressure": 1022.13,
-    "humidity": 0.76
+    "humidity": 0.76,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/11/2019",
@@ -822,7 +970,9 @@
     "high": 92.35,
     "low": 72,
     "pressure": 1021.34,
-    "humidity": 0.78
+    "humidity": 0.78,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/12/2019",
@@ -833,7 +983,9 @@
     "high": 90.45,
     "low": 73.46,
     "pressure": 1018.38,
-    "humidity": 0.77
+    "humidity": 0.77,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/13/2019",
@@ -844,7 +996,9 @@
     "high": 88.31,
     "low": 72.81,
     "pressure": 1018.46,
-    "humidity": 0.8
+    "humidity": 0.8,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/14/2019",
@@ -855,7 +1009,9 @@
     "high": 90.42,
     "low": 74.25,
     "pressure": 1018.03,
-    "humidity": 0.78
+    "humidity": 0.78,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/15/2019",
@@ -866,194 +1022,230 @@
     "high": 88.06,
     "low": 73.24,
     "pressure": 1015.77,
-    "humidity": 0.83
+    "humidity": 0.83,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/16/2019",
     "message_count": 186,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "good",
     "high": 92.8,
     "low": 69.73,
     "pressure": 1015.32,
-    "humidity": 0.75
+    "humidity": 0.75,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/17/2019",
     "message_count": 145,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "good",
     "high": 95.89,
     "low": 67.7,
     "pressure": 1014.62,
-    "humidity": 0.69
+    "humidity": 0.69,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/18/2019",
     "message_count": 392,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "okay",
+    "middle": "okay",
+    "night": "good",
     "high": 91.99,
     "low": 69.86,
     "pressure": 1015.75,
-    "humidity": 0.75
+    "humidity": 0.75,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/19/2019",
     "message_count": 20,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "good",
     "high": 85.69,
     "low": 68.21,
     "pressure": 1018.48,
-    "humidity": 0.75
+    "humidity": 0.75,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/20/2019",
     "message_count": 0,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "good",
     "high": 86.29,
     "low": 68.24,
     "pressure": 1020.95,
-    "humidity": 0.75
+    "humidity": 0.75,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/21/2019",
     "message_count": 1,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "okay",
     "high": 86.06,
     "low": 66.38,
     "pressure": 1022.28,
-    "humidity": 0.73
+    "humidity": 0.73,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/22/2019",
     "message_count": 412,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "okay",
     "high": 88.16,
     "low": 67.22,
     "pressure": 1020.64,
-    "humidity": 0.73
+    "humidity": 0.73,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/23/2019",
     "message_count": 210,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good-okay",
+    "night": "okay-okay-bad",
     "high": 88.19,
     "low": 62.18,
     "pressure": 1017.93,
-    "humidity": 0.72
+    "humidity": 0.72,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/24/2019",
     "message_count": 341,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "okay-bad",
     "high": 92.74,
     "low": 67.87,
     "pressure": 1013.8,
-    "humidity": 0.71
+    "humidity": 0.71,
+    "cats": "",
+    "color": ""
   },
   {
     "date": "9/25/2019",
     "message_count": 583,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "okay",
+    "middle": "good",
+    "night": "okay-okay-good",
     "high": 95.1,
     "low": 71.86,
     "pressure": 1012.93,
-    "humidity": 0.73
+    "humidity": 0.73,
+    "cats": 2,
+    "color": "black"
   },
   {
     "date": "9/26/2019",
     "message_count": 329,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "good-okay",
     "high": 94.22,
     "low": 72.97,
     "pressure": 1013.48,
-    "humidity": 0.75
+    "humidity": 0.75,
+    "cats": 0,
+    "color": "grey"
   },
   {
     "date": "9/27/2019",
     "message_count": 543,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "good",
     "high": 93.6,
     "low": 67.32,
     "pressure": 1015.43,
-    "humidity": 0.74
+    "humidity": 0.74,
+    "cats": 1,
+    "color": "navy"
   },
   {
     "date": "9/28/2019",
     "message_count": 330,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "okay-good",
     "high": 89.05,
     "low": 67.15,
     "pressure": 1019.09,
-    "humidity": 0.77
+    "humidity": 0.77,
+    "cats": 0,
+    "color": "grey stripe"
   },
   {
     "date": "9/29/2019",
     "message_count": 843,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good-good-okay",
+    "night": "okay-okay-good",
     "high": 90.53,
     "low": 72.1,
     "pressure": 1020.55,
-    "humidity": 0.77
+    "humidity": 0.77,
+    "cats": 0,
+    "color": "navy"
   },
   {
     "date": "9/30/2019",
     "message_count": 304,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good-okay",
+    "night": "okay-bad-bad",
     "high": 91.61,
     "low": 72.97,
     "pressure": 1019.18,
-    "humidity": 0.78
+    "humidity": 0.78,
+    "cats": 0,
+    "color": "teal"
   },
   {
     "date": "10/1/2019",
     "message_count": 308,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "okay-okay-good",
     "high": 90.64,
     "low": 70.54,
     "pressure": 1017.06,
-    "humidity": 0.79
+    "humidity": 0.79,
+    "cats": 2,
+    "color": "striped"
   },
   {
     "date": "10/2/2019",
     "message_count": 216,
-    "morning": "",
-    "middle": "",
-    "night": "",
+    "morning": "okay",
+    "middle": "okay",
+    "night": "okay-good",
     "high": "",
     "low": "",
     "pressure": "",
-    "humidity": ""
+    "humidity": "",
+    "cats": 2,
+    "color": "black"
   },
   {
     "date": "10/3/2019",
@@ -1064,7 +1256,9 @@
     "high": "",
     "low": "",
     "pressure": "",
-    "humidity": ""
+    "humidity": "",
+    "cats": "",
+    "color": "pink"
   },
   {
     "date": "10/4/2019",
@@ -1075,7 +1269,9 @@
     "high": "",
     "low": "",
     "pressure": "",
-    "humidity": ""
+    "humidity": "",
+    "cats": "",
+    "color": ""
   },
   {
     "date": "10/5/2019",
@@ -1086,7 +1282,9 @@
     "high": "",
     "low": "",
     "pressure": "",
-    "humidity": ""
+    "humidity": "",
+    "cats": "",
+    "color": ""
   },
   {
     "date": "10/6/2019",
@@ -1097,7 +1295,9 @@
     "high": "",
     "low": "",
     "pressure": "",
-    "humidity": ""
+    "humidity": "",
+    "cats": "",
+    "color": ""
   },
   {
     "date": "10/7/2019",
@@ -1108,6 +1308,8 @@
     "high": "",
     "low": "",
     "pressure": "",
-    "humidity": ""
+    "humidity": "",
+    "cats": "",
+    "color": ""
   }
 ]
