@@ -127,7 +127,7 @@ document.getElementById('September').onclick= function(){
 document.body.addEventListener('click', function (evt) {
     if (evt.target.className === 'day') {
         var date= evt.target.value;
-
+        console.log(date);
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
         var x=15;
@@ -150,10 +150,10 @@ document.body.addEventListener('click', function (evt) {
             var low= json[i].low;
             var cats= json[i].cats;
             var color= json[i].color;
-
+            console.log("gathering data");
         // check date
             if(date == j_date){
-
+              console.log("date matched");
               canvas.width= width;
               canvas.height= height;
               var y_f=0;
@@ -457,6 +457,13 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillRect(x_f,y_f,125,800);
                     x_f=x_f+125;
                   }
+
+                  if(night == "" && morning == "" && middle == ""){
+                    ctx.fillStyle= "#cccccc";
+                    ctx.fillRect(x_f,y_f,750,800);
+                    x_f=x_f+750;
+
+                  }
               x_f=0;
 
               // high and low
@@ -565,7 +572,7 @@ document.body.addEventListener('click', function (evt) {
 
 
           }
-
+          break;
             }
             }
 
