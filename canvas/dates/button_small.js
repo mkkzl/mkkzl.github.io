@@ -1,4 +1,4 @@
-var months= ["June", "July", "August", "September"];
+var months= ["June", "July", "August", "September", "October"];
 
 var day;
 var month;
@@ -8,24 +8,30 @@ var june = [];
 var july = [];
 var aug = [];
 var sept = [];
+var oct = [];
 
 var hm= new Object();
 $.getJSON("data.json", function(json){
 
+
+// NEED TO ADD OCTOBER IN THIS ONE
 for (var i = 0; i<json.length; i++){
-    var message = json[i].message_count;
     var date = json[i].date;
 
     var m_l= date.charAt(1);
     if (m_l == '/'){
+
       var m= date.charAt(0);}
       else{var m= date.substr(0,2);}
-    var m_number= parseInt(m);
 
+    var m_number= parseInt(m);
     if (m_number<10 && date.length==8){
       var d= date.charAt(2);
     }else if (m_number<10 && date.length==9){
       var d= date.substr(2,2);
+    }
+    if(m_number>=10 ){
+      var d= date.charAt(3);
     }
 
 
@@ -42,8 +48,11 @@ for (var i = 0; i<json.length; i++){
      if(m== 9){
        if(sept.includes(d)){}else{sept.push(d)}
      }
-
+     if (m==10){
+       if(oct.includes(d)){}else{oct.push(d)}
+     }
 }
+
 
 // make month buttons
   for( var i=0; i<months.length; i++){
@@ -121,6 +130,18 @@ document.getElementById('September').onclick= function(){
 
     select.appendChild(d_opt);
   }};
+
+  document.getElementById('October').onclick= function(){
+    if (select.innerHTML!= null){select.innerHTML= "";}
+      for (var i=0; i<oct.length; i++){
+        var d_opt= document.createElement("button");
+      d_opt.appendChild(document.createTextNode(oct[i]));
+      d_opt.value="10/"+oct[i]+"/2019";
+      d_opt.className= "day";
+
+
+      select.appendChild(d_opt);
+    }};
 
 // draw to canvas
 
@@ -506,7 +527,7 @@ document.body.addEventListener('click', function (evt) {
         //pressure and humidity
         if(pressure > 0){
               ctx.fillStyle = "#561F37";
-              ctx.fillRect(pressure/2,height-75,40,40);}
+              ctx.fillRect((pressure-1000)*20,height-75,40,40);}
 
         if (humidity > 0){
 
@@ -517,7 +538,6 @@ document.body.addEventListener('click', function (evt) {
               ctx.lineTo((humidity*500+40), 120);
               ctx.fill();}
         if(cats>0){
-          console.log("cats="+cats);
           while(cats>0){
             ctx.strokeStyle = "#ffffff";
             ctx.beginPath();
@@ -569,7 +589,16 @@ document.body.addEventListener('click', function (evt) {
             ctx.fillStyle= "#ff684a";
             ctx.fillRect(0,495,750,5);
           }
-
+          if(color== "tan & black"){
+            ctx.fillStyle= "#E7CAA7";
+            ctx.fillRect(0,480,750,10);
+            ctx.fillStyle= "#000000";
+            ctx.fillRect(0,490,750,20);
+          }
+          if(color== "burgundy"){
+            ctx.fillStyle= "#771E10";
+            ctx.fillRect(0,480,750,20);
+          }
 
           }
           break;

@@ -1257,7 +1257,7 @@
     "low": "",
     "pressure": "",
     "humidity": "",
-    "cats": "",
+    "cats": "0",
     "color": "pink"
   },
   {
@@ -1270,8 +1270,8 @@
     "low": "",
     "pressure": "",
     "humidity": "",
-    "cats": "",
-    "color": ""
+    "cats": "0",
+    "color": "tan & black"
   },
   {
     "date": "10/5/2019",
@@ -1283,8 +1283,8 @@
     "low": "",
     "pressure": "",
     "humidity": "",
-    "cats": "",
-    "color": ""
+    "cats": "0",
+    "color": "teal"
   },
   {
     "date": "10/6/2019",
@@ -1296,8 +1296,8 @@
     "low": "",
     "pressure": "",
     "humidity": "",
-    "cats": "",
-    "color": ""
+    "cats": "1",
+    "color": "burgundy"
   },
   {
     "date": "10/7/2019",
@@ -1310,6 +1310,6 @@
     "pressure": "",
     "humidity": "",
     "cats": "",
-    "color": ""
+    "color": "grey"
   }
 ]
