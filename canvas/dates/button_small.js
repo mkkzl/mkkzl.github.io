@@ -14,7 +14,7 @@ var hm= new Object();
 $.getJSON("data.json", function(json){
 
 
-// NEED TO ADD OCTOBER IN THIS ONE
+// generate month lists
 for (var i = 0; i<json.length; i++){
     var date = json[i].date;
 
@@ -30,8 +30,11 @@ for (var i = 0; i<json.length; i++){
     }else if (m_number<10 && date.length==9){
       var d= date.substr(2,2);
     }
-    if(m_number>=10 ){
+    if(m_number>=10 && date.length==9){
       var d= date.charAt(3);
+    }else if (m_number>=10 && date.length==10) {
+      var d= date.charAt(3)+date.charAt(4);
+
     }
 
 
@@ -171,10 +174,11 @@ document.body.addEventListener('click', function (evt) {
             var low= json[i].low;
             var cats= json[i].cats;
             var color= json[i].color;
-            console.log("gathering data");
+
         // check date
             if(date == j_date){
               console.log("date matched");
+              console.log(message, morning, middle, night, pressure, humidity, high, low, cats, color);
               canvas.width= width;
               canvas.height= height;
               var y_f=0;
@@ -338,6 +342,7 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,107,107 )";
                     ctx.fillRect(x_f,y_f,250,800);
                     x_f=x_f+250;
+                    console.log("bad");
 
                 } else if (night=="okay"){
                     ctx.fillStyle= "rgb(255,230,109 )";
@@ -501,7 +506,7 @@ document.body.addEventListener('click', function (evt) {
 
 
         // messages
-              for(var i=0; i<message+1; i++){
+              for(var i=1; i<message; i++){
               if(x< width-w){
                 ctx.fillStyle = "rgb(41,47,54 )";
                 ctx.beginPath();
@@ -527,7 +532,9 @@ document.body.addEventListener('click', function (evt) {
         //pressure and humidity
         if(pressure > 0){
               ctx.fillStyle = "#561F37";
-              ctx.fillRect((pressure-1000)*20,height-75,40,40);}
+              ctx.fillRect((pressure-1000)*20,height-75,40,40);
+              console.log("pressure");
+            }
 
         if (humidity > 0){
 

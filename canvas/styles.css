@@ -4,8 +4,8 @@ a{
 }
 .wrapper{
         display: grid;
-        grid-template-columns: repeat( 10, 100px );
-        grid-template-rows: repeat(13,100px);
+        grid-template-columns: repeat( 12, 162px );
+        grid-template-rows: repeat(36,162px);
         margin: 25px;
     }
 #image{
@@ -27,7 +27,7 @@ a{
   z-index: 1;
 }
 #buttons{
-  grid-column: 1 / span 5;
+  grid-column: 1 / span 10;
   grid-row: 1;
 
 }
@@ -40,7 +40,7 @@ a{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 11px;
+  font-size: 18px;
 }
 #buttons button:hover{
   background-color: #008CBA;
@@ -49,7 +49,7 @@ a{
   background-color: #f44336;
 }
 #date{
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 10;
   grid-row: 2;
 
 }
@@ -62,7 +62,7 @@ a{
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 10px;
+  font-size: 18px;
 
 }
 #date button:hover{
@@ -74,3 +74,9 @@ a{
   grid-row: 4/ span 10;
 
 }
+#august{grid-column: 1 / span 10;
+grid-row: 1/ span 12;}
+#september{grid-column: 1 / span 10;
+grid-row: 12/ span 12;}
+#october{grid-column: 1 / span 10;
+grid-row: 24/ span 12;}
