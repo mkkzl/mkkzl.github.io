@@ -203,7 +203,21 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,125,800);
                     x_f=x_f+125;
-                  } else if (morning=="okay-okay-good"){
+                  } else if (morning=="okay-bad"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                  } else if (morning=="good-okay"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                  }else if (morning=="okay-okay-good"){
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,83,800);
                     x_f=x_f+83;
@@ -225,13 +239,6 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillRect(x_f,y_f,84,800);
                     x_f=x_f+84;
 
-                  } else if (morning=="okay-bad"){
-                    ctx.fillStyle= "rgb(255,230,109 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
-                    ctx.fillStyle= "rgb(255,107,107 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
                   }
 
 
@@ -257,7 +264,28 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,125,800);
                     x_f=x_f+125;
-                  } else if (middle=="okay-okay-good"){
+                  } else if (middle=="good-okay"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                  }else if (middle=="okay-bad"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                  }else if (night=="okay-good"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                  }else if (middle=="okay-okay-good"){
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,83,800);
                     x_f=x_f+83;
@@ -277,13 +305,6 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(161,204,165 )";
                     ctx.fillRect(x_f,y_f,84,800);
                     x_f=x_f+84;
-                  } else if (middle=="good-okay"){
-                    ctx.fillStyle= "rgb(161,204,165 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
-                    ctx.fillStyle= "rgb(255,230,109 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
                   } else if (middle=="okay-okay-bad"){
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,83,800);
@@ -304,15 +325,7 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,84,800);
                     x_f=x_f+84;
-                  }else if (middle=="okay-bad"){
-                    ctx.fillStyle= "rgb(255,230,109 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
-                    ctx.fillStyle= "rgb(255,107,107 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
-                  }
-                  if(middle=="bad-bad-okay"){
+                  }else if(middle=="bad-bad-okay"){
                   ctx.fillStyle= "rgb(255,107,107 )";
                     ctx.fillRect(x_f,y_f,83,800);
                     x_f=x_f+83;
@@ -359,11 +372,26 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,125,800);
                     x_f=x_f+125;
-                  } else if (night=="okay-good"){
+                  } else if (night=="good-okay"){
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,125,800);
                     x_f=x_f+125;
                     ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                  }else if (night=="okay-good"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                  }
+                  else if (night=="okay-bad"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,125,800);
+                    x_f=x_f+125;
+                    ctx.fillStyle= "rgb(255,107,107 )";
                     ctx.fillRect(x_f,y_f,125,800);
                     x_f=x_f+125;
                   }
@@ -377,14 +405,7 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(161,204,165 )";
                     ctx.fillRect(x_f,y_f,84,800);
                     x_f=x_f+84;
-                  } else if (night=="okay-good"){
-                    ctx.fillStyle= "rgb(255,230,109 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
-                    ctx.fillStyle= "rgb(161,204,165 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
-                  }else if (night=="good-okay-okay"){
+                  } else if (night=="good-okay-okay"){
                     ctx.fillStyle= "rgb(161,204,165 )";
                     ctx.fillRect(x_f,y_f,83,800);
                     x_f=x_f+83;
@@ -414,15 +435,7 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,84,800);
                     x_f=x_f+84;
-                  }else if (night=="okay-bad"){
-                    ctx.fillStyle= "rgb(255,230,109 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
-                    ctx.fillStyle= "rgb(255,107,107 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
-                  }
-                  else if(night=="okay-okay-bad"){
+                  }else if(night=="okay-okay-bad"){
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,83,800);
                     x_f=x_f+83;
@@ -475,13 +488,6 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,107,107 )";
                     ctx.fillRect(x_f,y_f,84,800);
                     x_f=x_f+84;
-                  }else if (night=="good-okay"){
-                    ctx.fillStyle= "rgb(255,230,109 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
-                    ctx.fillStyle= "rgb(161,204,165 )";
-                    ctx.fillRect(x_f,y_f,125,800);
-                    x_f=x_f+125;
                   }
 
                   if(night == "" && morning == "" && middle == ""){

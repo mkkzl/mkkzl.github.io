@@ -1502,13 +1502,41 @@
     "message_count": "",
     "morning": "good",
     "middle": "good",
-    "night": "",
+    "night": "good",
     "high": "",
     "low": "",
     "pressure": "",
     "humidity": "",
     "cats": "",
     "color": "striped",
+    "comp": ""
+  },
+  {
+    "date": "10/15/2019",
+    "message_count": "",
+    "morning": "good",
+    "middle": "good",
+    "night": "okay",
+    "high": "",
+    "low": "",
+    "pressure": "",
+    "humidity": "",
+    "cats": "",
+    "color": "pink",
+    "comp": ""
+  },
+  {
+    "date": "10/16/2019",
+    "message_count": "",
+    "morning": "okay",
+    "middle": "",
+    "night": "",
+    "high": "",
+    "low": "",
+    "pressure": "",
+    "humidity": "",
+    "cats": "",
+    "color": "tan",
     "comp": ""
   }
 ]
