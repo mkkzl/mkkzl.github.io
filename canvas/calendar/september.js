@@ -11,6 +11,8 @@ var x=2;
 var y=2;
 var w=0;
 var h=0;
+var t=0;
+var l=0;
 var width=1296;
 var height= 810;
 canvas.width= width;
@@ -27,12 +29,14 @@ canvas.height= height;
             var night= json[i].night;
             var month= j_date[0]+j_date[1];
             var date= j_date[2]+j_date[3];
-          /*  var pressure= json[i].pressure;
+            var high= json[i].high;
+            var low= json[i].low;
+            var pressure= json[i].pressure;
             var humidity= json[i].humidity;
             var high= json[i].high;
             var low= json[i].low;
             var cats= json[i].cats;
-            var color= json[i].color;*/
+            var color= json[i].color;
         // check date
 
 
@@ -335,6 +339,78 @@ canvas.height= height;
                 }
 
 
+
+                // high and low
+                if (l > 1133){t= t+162;
+                  l=0;}
+                  ctx.fillStyle= "#4ECDC4";
+                  ctx.beginPath();
+                  ctx.arc((l+10+high/3), (t+40+high/3), high/3, 0, 2 * Math.PI);
+                  ctx.fill();
+                  ctx.strokeStyle= "#385F71";
+                  ctx.lineWidth = 2;
+                  ctx.beginPath();
+                  ctx.arc((l+10+low/3), (t+40+low/3), low/3, 0, 2 * Math.PI);
+                  ctx.stroke();
+
+
+                  if(color!= null){
+                    if(color== "black"){
+                      ctx.fillStyle= "#000000";
+                      ctx.fillRect(l,t+152,162,10);
+                    }
+                    if(color== "grey"){
+                      ctx.fillStyle= "#9d9d9e";
+                      ctx.fillRect(l,t+152,162,10);;
+                    }
+                    if(color== "navy"){
+                      ctx.fillStyle= "#092654";
+                      ctx.fillRect(l,t+152,162,10);
+                    }
+                  if(color== "grey stripe"){
+                    ctx.fillStyle= "#9d9d9e";
+                    ctx.fillRect(l,t+152,162,4);
+                    ctx.fillStyle= "#0a8505";
+                    ctx.fillRect(l,t+156,162,3);
+                    ctx.fillStyle= "#9d9d9e";
+                    ctx.fillRect(l,t+159,162,3);
+                  }
+                  if(color== "teal"){
+                    ctx.fillStyle= "#77e6e6";
+                    ctx.fillRect(l,t+152,162,10);
+                  }
+                  if(color== "pink"){
+                    ctx.fillStyle= "#f0a3df";
+                    ctx.fillRect(l,t+152,162,10);
+                  }
+                  if(color== "striped"){
+                    ctx.fillStyle= "#81d4d0";
+                    ctx.fillRect(l,t+152,162,2);
+                    ctx.fillStyle= "#fafc79";
+                    ctx.fillRect(l,t+154,162,3);
+                    ctx.fillStyle= "#9d9d9e";
+                    ctx.fillRect(l,t+157,162,2);
+                    ctx.fillStyle= "#ff684a";
+                    ctx.fillRect(l,t+159,162,3);
+                  }
+                  if(color== "tan & black"){
+                    ctx.fillStyle= "#E7CAA7";
+                    ctx.fillRect(l,t+152,162,5);
+                    ctx.fillStyle= "#000000";
+                    ctx.fillRect(l,t+152,162,5);
+                  }
+                  if(color== "burgundy"){
+                    ctx.fillStyle= "#771E10";
+                    ctx.fillRect(l,t+152,162,10);
+                  }
+                  if(color== "tan"){
+                    ctx.fillStyle= "#E7CAA7";
+                    ctx.fillRect(l,t+152,162,10);
+                  }
+
+                }
+
+
               //messages
               for(var n=1; n<message; n++){
                 if(n<2 && date=='1/'){console.log(x,w);}
@@ -363,7 +439,35 @@ canvas.height= height;
                      if(w+162<1134){w=w+162;x=2;y=2;}
                      else{w=0; h=h+162;x=2;y=2;}
 
+                     //pressure and humidity
+                     if(pressure > 0){
+                           ctx.fillStyle = "#561F37";
+                           ctx.fillRect(l+(pressure-1000)*5,t+125,10,10);
+                         }
 
+                     if (humidity > 0){
+
+                           ctx.fillStyle = "#ffffff";
+                           ctx.beginPath();
+                           ctx.moveTo(l+humidity*135, t+20);
+                           ctx.lineTo(l+humidity*135-10, t+40);
+                           ctx.lineTo(l+humidity*135+10, t+40);
+                           ctx.fill();}
+                     if(cats>0){
+                       while(cats>0){
+                         ctx.strokeStyle = "#ffffff";
+                         ctx.beginPath();
+                         ctx.moveTo(l+125, t+80+(cats*15));
+                         ctx.lineTo(l+150, t+70+(cats*15));
+                         ctx.lineTo(l+150, t+90+(cats*15));
+                         ctx.lineTo(l+125, t+80+(cats*15))
+                         ctx.stroke();
+                         cats=cats-1;
+
+                       }
+                       }
+
+                     l=l+162;
 
 
             }

@@ -11,6 +11,8 @@ var x=2;
 var y=2;
 var w=648;
 var h=0;
+var t=0;
+var l=648;
 var width=1296;
 var height= 810;
 canvas.width= width;
@@ -27,13 +29,13 @@ canvas.height= height;
             var night= json[i].night;
             var month= j_date[0]+j_date[1];
             var date= j_date[2]+j_date[3];
-          /*  var pressure= json[i].pressure;
-            var humidity= json[i].humidity;
             var high= json[i].high;
             var low= json[i].low;
+            var pressure= json[i].pressure;
+            var humidity= json[i].humidity;
             var cats= json[i].cats;
-            var color= json[i].color;*/
-        // check date
+            var color= json[i].color;
+
 
 
 if (month=='8/'){
@@ -334,6 +336,26 @@ if (month=='8/'){
 
                     }
 
+
+
+
+                  // high and low
+                  if (l > 1133){t= t+162;
+                    l=0;}
+
+                    ctx.fillStyle= "#4ECDC4";
+                    ctx.beginPath();
+                    ctx.arc((l+10+high/3), (t+40+high/3), high/3, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.strokeStyle= "#385F71";
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.arc((l+10+low/3), (t+40+low/3), low/3, 0, 2 * Math.PI);
+                    ctx.stroke();
+
+
+
+
                   //messages
                   for(var n=1; n<message; n++){
 
@@ -363,6 +385,37 @@ if (month=='8/'){
                          else{w=0; h=h+162;x=2;y=2;}
 
 
+                         //pressure and humidity
+                         if(pressure > 0){
+                               ctx.fillStyle = "#561F37";
+                               ctx.fillRect(l+(pressure-1000)*5,t+125,10,10);
+                             }
+
+                         if (humidity > 0){
+
+                               ctx.fillStyle = "#ffffff";
+                               ctx.beginPath();
+                               ctx.moveTo(l+humidity*135, t+20);
+                               ctx.lineTo(l+humidity*135-10, t+40);
+                               ctx.lineTo(l+humidity*135+10, t+40);
+                               ctx.fill();}
+
+                         if(cats>0){
+                                 while(cats>0){
+                                   ctx.strokeStyle = "#ffffff";
+                                   ctx.beginPath();
+                                   ctx.moveTo(l+125, t+80+(cats*15));
+                                   ctx.lineTo(l+150, t+70+(cats*15));
+                                   ctx.lineTo(l+150, t+90+(cats*15));
+                                   ctx.lineTo(l+125, t+80+(cats*15))
+                                   ctx.stroke();
+                                   cats=cats-1;
+
+                                 }
+                                 }
+
+                         l=l+162;
+
 
 
 }
@@ -370,105 +423,3 @@ if (month=='8/'){
 }
 
 }, false);
-
-
-
-
-/*
-
-              // high and low
-                ctx.fillStyle= "#4ECDC4";
-                ctx.beginPath();
-                ctx.arc((10+high), (canvas.height-150-high), high, 0, 2 * Math.PI);
-                ctx.fill();
-                ctx.strokeStyle= "#385F71";
-                ctx.lineWidth = 5;
-                ctx.beginPath();
-                ctx.arc((10+low), (canvas.height-150-low), low, 0, 2 * Math.PI);
-                ctx.stroke();
-
-
-
-
-
-
-
-        //pressure and humidity
-        if(pressure > 0){
-              ctx.fillStyle = "#561F37";
-              ctx.fillRect((pressure-1000)*20,height-75,40,40);
-              console.log("pressure");
-            }
-
-        if (humidity > 0){
-
-              ctx.fillStyle = "#ffffff";
-              ctx.beginPath();
-              ctx.moveTo(humidity*500, 60);
-              ctx.lineTo((humidity*500-40), 120);
-              ctx.lineTo((humidity*500+40), 120);
-              ctx.fill();}
-        if(cats>0){
-          while(cats>0){
-            ctx.strokeStyle = "#ffffff";
-            ctx.beginPath();
-            ctx.moveTo(625, 240+(cats*50));
-            ctx.lineTo(675, 280+(cats*50));
-            ctx.lineTo(675, 162+(cats*50));
-            ctx.lineTo(625, 240+(cats*50))
-            ctx.stroke();
-            cats=cats-1;
-
-          }
-          }
-          if(color!= null){
-            if(color== "black"){
-              ctx.fillStyle= "#000000";
-              ctx.fillRect(0,480,750,20);
-            }
-            if(color== "grey"){
-              ctx.fillStyle= "#9d9d9e";
-              ctx.fillRect(0,480,750,20);
-            }
-            if(color== "navy"){
-              ctx.fillStyle= "#092654";
-              ctx.fillRect(0,480,750,20);
-            }
-          if(color== "grey stripe"){
-            ctx.fillStyle= "#9d9d9e";
-            ctx.fillRect(0,480,750,7);
-            ctx.fillStyle= "#0a8505";
-            ctx.fillRect(0,487,750,6);
-            ctx.fillStyle= "#9d9d9e";
-            ctx.fillRect(0,493,750,7);
-          }
-          if(color== "teal"){
-            ctx.fillStyle= "#77e6e6";
-            ctx.fillRect(0,480,750,20);
-          }
-          if(color== "pink"){
-            ctx.fillStyle= "#f0a3df";
-            ctx.fillRect(0,480,750,20);
-          }
-          if(color== "striped"){
-            ctx.fillStyle= "#81d4d0";
-            ctx.fillRect(0,480,750,5);
-            ctx.fillStyle= "#fafc79";
-            ctx.fillRect(0,485,750,5);
-            ctx.fillStyle= "#9d9d9e";
-            ctx.fillRect(0,490,750,5);
-            ctx.fillStyle= "#ff684a";
-            ctx.fillRect(0,495,750,5);
-          }
-          if(color== "tan & black"){
-            ctx.fillStyle= "#E7CAA7";
-            ctx.fillRect(0,480,750,10);
-            ctx.fillStyle= "#000000";
-            ctx.fillRect(0,490,750,20);
-          }
-          if(color== "burgundy"){
-            ctx.fillStyle= "#771E10";
-            ctx.fillRect(0,480,750,20);
-          }
-
-        } */

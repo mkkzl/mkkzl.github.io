@@ -63,11 +63,13 @@ for (var i = 0; i<json.length; i++){
 
     option.appendChild(document.createTextNode(months[i]));
     option.value= months[i];
+    option.className="btn";
     option.id= months[i];
     option.href="/"+months[i]+"/index.html";
 
-    var element = document.getElementById("buttons");
-    element.appendChild(option);
+
+
+    document.getElementById("buttons").appendChild(option);
 
   }
 
@@ -82,76 +84,82 @@ var select = document.getElementById("date");
 
 
 // make day buttons
+document.getElementById('June').onclick = function() {
 
-document.getElementById('June').onclick= function(){
-  if (select.innerHTML!= null){select.innerHTML= "";}
-    for (var i=0; i<june.length; i++){
-    var d_opt= document.createElement("button");
-    d_opt.appendChild(document.createTextNode(june[i]));
-    d_opt.value="6/"+june[i]+"/2019";
-    d_opt.className= "day";
+        if (select.innerHTML!= null){select.innerHTML= "";}
+          for (var i=0; i<june.length; i++){
+          var d_opt= document.createElement("button");
+          d_opt.appendChild(document.createTextNode(june[i]));
+          d_opt.value="6/"+june[i]+"/2019";
+          d_opt.className= "day";
+          d_opt.className += " btn";
 
-    select.appendChild(d_opt);
-
-
-
-  }};
+          select.appendChild(d_opt);
 
 
-document.getElementById('July').onclick= function(){
+
+        }};
+
+document.getElementById('July').onclick = function() {
   if (select.innerHTML!= null){select.innerHTML= "";}
     for (var i=0; i<july.length; i++){
       var d_opt= document.createElement("button");
     d_opt.appendChild(document.createTextNode(july[i]));
       d_opt.value="7/"+july[i]+"/2019"
       d_opt.className= "day";
+      d_opt.className += " btn";
 
     select.appendChild(d_opt);
   }};
 
 
-document.getElementById('August').onclick= function(){
+document.getElementById('August').onclick = function() {
   if (select.innerHTML!= null){select.innerHTML= "";}
     for (var i=0; i<aug.length; i++){
     var d_opt= document.createElement("button");
     d_opt.appendChild(document.createTextNode(aug[i]));
       d_opt.value="8/"+aug[i]+"/2019"
       d_opt.className= "day";
+      d_opt.className += " btn";
 
     select.appendChild(d_opt);
   }};
 
 
-document.getElementById('September').onclick= function(){
+document.getElementById('September').onclick = function() {
   if (select.innerHTML!= null){select.innerHTML= "";}
     for (var i=0; i<sept.length; i++){
       var d_opt= document.createElement("button");
     d_opt.appendChild(document.createTextNode(sept[i]));
     d_opt.value="9/"+sept[i]+"/2019";
     d_opt.className= "day";
+    d_opt.className += " btn";
 
 
     select.appendChild(d_opt);
   }};
 
-  document.getElementById('October').onclick= function(){
+document.getElementById('October').onclick = function() {
     if (select.innerHTML!= null){select.innerHTML= "";}
       for (var i=0; i<oct.length; i++){
         var d_opt= document.createElement("button");
       d_opt.appendChild(document.createTextNode(oct[i]));
       d_opt.value="10/"+oct[i]+"/2019";
       d_opt.className= "day";
+      d_opt.className += " btn";
 
 
       select.appendChild(d_opt);
     }};
 
+
 // draw to canvas
 
 document.body.addEventListener('click', function (evt) {
-    if (evt.target.className === 'day') {
+
+    if (evt.target.className === 'day btn') {
         var date= evt.target.value;
-        console.log(date);
+
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
         var x=15;
@@ -177,8 +185,8 @@ document.body.addEventListener('click', function (evt) {
 
         // check date
             if(date == j_date){
-              console.log("date matched");
-              console.log(message, morning, middle, night, pressure, humidity, high, low, cats, color);
+
+
               canvas.width= width;
               canvas.height= height;
               var y_f=0;
@@ -355,7 +363,7 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,107,107 )";
                     ctx.fillRect(x_f,y_f,250,800);
                     x_f=x_f+250;
-                    console.log("bad");
+
 
                 } else if (night=="okay"){
                     ctx.fillStyle= "rgb(255,230,109 )";
@@ -512,7 +520,7 @@ document.body.addEventListener('click', function (evt) {
 
 
         // messages
-              for(var i=1; i<message; i++){
+              for(var n=1; n<message; n++){
               if(x< width-w){
                 ctx.fillStyle = "rgb(41,47,54 )";
                 ctx.beginPath();
@@ -539,7 +547,7 @@ document.body.addEventListener('click', function (evt) {
         if(pressure > 0){
               ctx.fillStyle = "#561F37";
               ctx.fillRect((pressure-1000)*20,height-75,40,40);
-              console.log("pressure");
+
             }
 
         if (humidity > 0){
@@ -612,6 +620,10 @@ document.body.addEventListener('click', function (evt) {
             ctx.fillStyle= "#771E10";
             ctx.fillRect(0,480,750,20);
           }
+          if(color== "tan"){
+            ctx.fillStyle= "#E7CAA7";
+            ctx.fillRect(0,480,750,20);
+          }
 
           }
           break;
@@ -624,4 +636,54 @@ document.body.addEventListener('click', function (evt) {
 
 
     })
+// make month red
+  var btnContainer = document.getElementById("buttons");
+
+    var btns = btnContainer.getElementsByClassName('btn');
+    console.log(btns);
+    console.log(btns.length);
+
+    // Loop through the buttons and add the active class to the current/clicked button
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+
+        // If there's no active class
+        if (current.length > 0) {
+          current[0].className = current[0].className.replace("active", "");
+        }
+
+        // Add the active class to the current/clicked button
+        this.className += " active";
+      });
+    }
+
+
+
+
 }, false);
+
+// make date red
+    var dbtnContainer = document.getElementById("date");
+    var el_dbtn= dbtnContainer.getElementsByTagName('button');
+    var dbtns= dbtnContainer.getElementsByClassName('day');
+    console.log(dbtns);
+    console.log(dbtns.length);
+
+      //var dbtns =
+
+      // Loop through the buttons and add the active class to the current/clicked button
+      for (var o = 0; o < 31; o++) {
+        console.log("in for loop");
+        dbtns[o].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+
+          // If there's no active class
+          if (current.length > 0) {
+            current[0].className = current[0].className.replace("active", "");
+          }
+
+          // Add the active class to the current/clicked button
+          this.className += " active";
+        });
+      }
