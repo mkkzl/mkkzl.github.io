@@ -1583,7 +1583,7 @@
   },
   {
     "date": "10/20/2019",
-    "message_count": 225,
+    "message_count": 251,
     "morning": "good",
     "middle": "good",
     "night": "okay-good",
@@ -1593,11 +1593,12 @@
     "humidity": 0.91,
     "cats": 0,
     "color": "black",
-    "comp": ""
+    "comp": "",
+    "up": "3:55, 5:04"
   },
   {
     "date": "10/21/2019",
-    "message_count": "",
+    "message_count": 502,
     "morning": "okay",
     "middle": "okay",
     "night": "okay-good",
@@ -1607,20 +1608,82 @@
     "humidity": 0.82,
     "cats": 0,
     "color": "grey",
-    "comp": ""
+    "comp": "",
+    "up": "2:24, 5:11"
   },
   {
     "date": "10/22/2019",
-    "message_count": "",
+    "message_count": 226,
     "morning": "good",
     "middle": "good-okay",
-    "night": "",
+    "night": "okay-bad",
     "high": 80.66,
     "low": 73.72,
     "pressure": 1015.62,
     "humidity": 0.93,
-    "cats": "",
+    "cats": 0,
     "color": "burgundy",
-    "comp": ""
+    "comp": "",
+    "up": "6:06"
+  },
+  {
+    "date": "10/23/2019",
+    "message_count": 321,
+    "morning": "okay",
+    "middle": "okay",
+    "night": "okay",
+    "high": 87.3,
+    "low": 54.54,
+    "pressure": 1015.45,
+    "humidity": 0.89,
+    "cats": 0,
+    "color": "",
+    "comp": "",
+    "up": "11:34, 5:04"
+  },
+  {
+    "date": "10/24/2019",
+    "message_count": 338,
+    "morning": "good",
+    "middle": "good-okay",
+    "night": "okay-good-good",
+    "high": 77.3,
+    "low": 61.02,
+    "pressure": 1019.73,
+    "humidity": 0.61,
+    "cats": 1,
+    "color": "plaid",
+    "comp": "",
+    "up": "3:31, 5:05"
+  },
+  {
+    "date": "10/25/2019",
+    "message_count": 728,
+    "morning": "good",
+    "middle": "good",
+    "night": "good",
+    "high": 84.64,
+    "low": 71.01,
+    "pressure": 1020.36,
+    "humidity": 0.8,
+    "cats": 1,
+    "color": "black",
+    "comp": "",
+    "up": "12:11, 3:50"
+  },
+  {
+    "date": "10/26/2019",
+    "message_count": "",
+    "morning": "",
+    "middle": "",
+    "night": "",
+    "high": 87.74,
+    "low": 71.07,
+    "pressure": 1019,
+    "humidity": 0.82,
+    "cats": "",
+    "color": "",
+    "comp": "",
+    "up": "3:30"
   }
 ]

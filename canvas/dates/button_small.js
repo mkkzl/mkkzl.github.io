@@ -159,6 +159,17 @@ document.body.addEventListener('click', function (evt) {
 
     if (evt.target.className === 'day btn') {
         var date= evt.target.value;
+        var current2 = document.getElementsByClassName("active");
+
+        // If there's no active class
+        if (current2.length > 1) {
+          current2[1].className = current2[1].className.replace("active", "");
+        }
+
+        // Add the active class to the current/clicked button
+
+
+          evt.target.className += " active";
 
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
@@ -182,6 +193,7 @@ document.body.addEventListener('click', function (evt) {
             var low= json[i].low;
             var cats= json[i].cats;
             var color= json[i].color;
+            var up= json[i].up;
 
         // check date
             if(date == j_date){
@@ -286,7 +298,7 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,107,107 )";
                     ctx.fillRect(x_f,y_f,125,800);
                     x_f=x_f+125;
-                  }else if (night=="okay-good"){
+                  }else if (middle=="okay-good"){
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,125,800);
                     x_f=x_f+125;
@@ -645,24 +657,96 @@ document.body.addEventListener('click', function (evt) {
             ctx.fillStyle= "#E7CAA7";
             ctx.fillRect(0,480,750,20);
           }
-
+          if (color== "plaid"){
+            ctx.fillStyle= "#055e2a";
+            ctx.fillRect(0,480,750,5);
+            ctx.fillStyle= "#ffffff";
+            ctx.fillRect(0,485,750,2);
+            ctx.fillStyle= "#0d0142";
+            ctx.fillRect(0,487,750,5);
+            ctx.fillStyle= "#055e2a";
+            ctx.fillRect(0,492,750,8);
           }
-          break;
+
+          // up
+          if (up != undefined){
+          up= up.toString();
+          up=up.split(",");
+          for(var u=0; u< up.length; u++){
+            var h_min= up[u].split(":");
+            var hour= Number(h_min[0]);
+            var min= Number(h_min[1]);
+
+            var count= 0;
+            if (hour== 11){
+              count= count+0;
             }
+            if (hour== 12){
+              count= count+60;
             }
+            if (hour== 1){
+              count= count+120;
+            }
+            if (hour== 2){
+              count= count+180;
+            }
+            if (hour== 3){
+              count= count+240;
+            }
+            if (hour== 4){
+              count= count+300;
+            }
+            if (hour== 5){
+              count= count+360;
+            }
+            if (hour== 6){
+              count= count+420;
+            }
+
+            count= count+ min;
+            console.log(count);
+
+            ctx.fillStyle= '#ffffff';
+            ctx.fillRect(width*(count/480), 0, 5, height)
 
 
 
         }
 
+          }
+        }
+          break;
+            }
+            }
 
-    })
+            /*var buttons = document.querySelectorAll('#date button')
+            var count=0;
+            for (var i = 0; i < buttons.length; i++) {
+              buttons[i].addEventListener("click", function() {
+              var current2 = document.getElementsByClassName("active");
+
+              // If there's no active class
+              if (current2.length > 1) {
+                current2[1].className = current2[1].className.replace("active", "");
+              }
+
+              // Add the active class to the current/clicked button
+
+
+                evt.className += " active";
+              });*/
+            }
+
+
+
+
+    });
+
+
 // make month red
   var btnContainer = document.getElementById("buttons");
 
     var btns = btnContainer.getElementsByClassName('btn');
-    console.log(btns);
-    console.log(btns.length);
 
     // Loop through the buttons and add the active class to the current/clicked button
     for (var i = 0; i < btns.length; i++) {
@@ -676,6 +760,10 @@ document.body.addEventListener('click', function (evt) {
 
         // Add the active class to the current/clicked button
         this.className += " active";
+
+
+
+
       });
     }
 
@@ -684,27 +772,5 @@ document.body.addEventListener('click', function (evt) {
 
 }, false);
 
-// make date red
-    var dbtnContainer = document.getElementById("date");
-    var el_dbtn= dbtnContainer.getElementsByTagName('button');
-    var dbtns= dbtnContainer.getElementsByClassName('day');
-    console.log(dbtns);
-    console.log(dbtns.length);
 
-      //var dbtns =
-
-      // Loop through the buttons and add the active class to the current/clicked button
-      for (var o = 0; o < 31; o++) {
-        console.log("in for loop");
-        dbtns[o].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-
-          // If there's no active class
-          if (current.length > 0) {
-            current[0].className = current[0].className.replace("active", "");
-          }
-
-          // Add the active class to the current/clicked button
-          this.className += " active";
-        });
-      }
+/**/

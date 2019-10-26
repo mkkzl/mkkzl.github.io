@@ -202,14 +202,14 @@ canvas.height= height;
 
               }else if (middle=="good-okay-okay"){
                 ctx.fillStyle= "rgb(161,204,165 )";
-                ctx.fillRect(x_f,y_f,83,800);
-                x_f=x_f+83;
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
                 ctx.fillStyle= "rgb(255,230,109 )";
-                ctx.fillRect(x_f,y_f,83,800);
-                x_f=x_f+83;
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
                 ctx.fillStyle= "rgb(255,230,109 )";
-                ctx.fillRect(x_f,y_f,84,800);
-                x_f=x_f+84;
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
               }
 
 
@@ -258,14 +258,14 @@ canvas.height= height;
                 x_f=x_f+27;
               }else if (night=="okay-good-good"){
                 ctx.fillStyle= "rgb(255,230,109 )";
-                ctx.fillRect(x_f,y_f,83,800);
-                x_f=x_f+83;
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
                 ctx.fillStyle= "rgb(161,204,165 )";
-                ctx.fillRect(x_f,y_f,83,800);
-                x_f=x_f+83;
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
                 ctx.fillStyle= "rgb(161,204,165 )";
-                ctx.fillRect(x_f,y_f,84,800);
-                x_f=x_f+84;
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
               }
               else if (night=="okay-okay-good"){
                 ctx.fillStyle= "rgb(255,230,109 )";
@@ -435,6 +435,16 @@ canvas.height= height;
                 if(color== "tan"){
                   ctx.fillStyle= "#E7CAA7";
                   ctx.fillRect(l,t+152,162,10);
+                }
+                if (color== "plaid"){
+                  ctx.fillStyle= "#055e2a";
+                  ctx.fillRect(l,t+152,162,3);
+                  ctx.fillStyle= "#ffffff";
+                  ctx.fillRect(l,t+155,162,1);
+                  ctx.fillStyle= "#0d0142";
+                  ctx.fillRect(l,t+156,162,2);
+                  ctx.fillStyle= "#055e2a";
+                  ctx.fillRect(l,t+158,162,4);
                 }
 
               }
