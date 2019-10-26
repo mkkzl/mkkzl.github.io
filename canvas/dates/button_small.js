@@ -355,6 +355,17 @@ document.body.addEventListener('click', function (evt) {
                     x_f=x_f+84;
 
                   }
+                  else if (middle=="good-okay-okay"){
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,83,800);
+                    x_f=x_f+83;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,83,800);
+                    x_f=x_f+83;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,84,800);
+                    x_f=x_f+84;
+                  }
 
 
 
@@ -413,7 +424,17 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(161,204,165 )";
                     ctx.fillRect(x_f,y_f,84,800);
                     x_f=x_f+84;
-                  } else if (night=="good-okay-okay"){
+                  } else if (night=="okay-good-good"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,83,800);
+                    x_f=x_f+83;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,83,800);
+                    x_f=x_f+83;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,84,800);
+                    x_f=x_f+84;
+                  }else if (night=="good-okay-okay"){
                     ctx.fillStyle= "rgb(161,204,165 )";
                     ctx.fillRect(x_f,y_f,83,800);
                     x_f=x_f+83;

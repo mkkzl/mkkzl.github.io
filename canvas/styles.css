@@ -8,24 +8,8 @@ a{
         grid-template-rows: repeat(36,162px);
         margin: 25px;
     }
-#image{
-  position: absolute;
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 0;
-}
-#newimage{
-  position: absolute;
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 1;
-}
-#image2{
-  position: absolute;
-  grid-column: 6;
-  grid-row: 1;
-  z-index: 1;
-}
+
+
 #buttons{
   grid-column: 1 / span 10;
   grid-row: 1;
@@ -81,3 +65,28 @@ grid-row: 1/ span 12;}
 grid-row: 7/ span 12;}
 #october{grid-column: 1 / span 10;
 grid-row: 13/ span 12;}
+#multiply{
+  float: none;
+  margin: 50px;
+}
+#image{
+float: left;
+}
+@media screen and (max-width: 800px) {
+  .wrapper{
+          display: grid;
+          grid-template-columns: repeat( 12, 81px );
+          grid-template-rows: repeat(36,81px);
+          margin: 5px;
+      }
+      #myCanvas{
+        transform: scale(.95, .95);
+        grid-column: 1 / span 10;
+        grid-row: 6/ span 10;
+
+      }
+
+      #buttons{margin-left: 20px;}
+      #date{margin-left: 20px;}
+
+}
