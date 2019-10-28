@@ -35,6 +35,7 @@ canvas.height= height;
             var low= json[i].low;
             var cats= json[i].cats;
             var color= json[i].color;
+            var up = json[i].up;
         // check date
 
         if (month=='10'){
@@ -508,6 +509,52 @@ canvas.height= height;
                                cats=cats-1;
 
                              }
+                             }
+                             // up
+                             if (up != undefined){
+                             up= up.toString();
+                             up=up.split(",");
+                             for(var u=0; u< up.length; u++){
+                               var h_min= up[u].split(":");
+                               var hour= Number(h_min[0]);
+                               var min= Number(h_min[1]);
+
+                               var count= 0;
+                               if (hour== 11){
+                                 count= count+0;
+                               }
+                               if (hour== 12){
+                                 count= count+60;
+                               }
+                               if (hour== 1){
+                                 count= count+120;
+                               }
+                               if (hour== 2){
+                                 count= count+180;
+                               }
+                               if (hour== 3){
+                                 count= count+240;
+                               }
+                               if (hour== 4){
+                                 count= count+300;
+                               }
+                               if (hour== 5){
+                                 count= count+360;
+                               }
+                               if (hour== 6){
+                                 count= count+420;
+                               }
+
+                               count= count+ min;
+                               
+
+                               ctx.fillStyle= '#ffffff';
+                               ctx.fillRect(l+ 162*(count/480), t, 3, 162)
+
+
+
+                           }
+
                              }
 
                 l=l+162;
