@@ -13,10 +13,11 @@ a{
 #buttons{
   grid-column: 1 / span 10;
   grid-row: 1;
+    font-family: 'Roboto', sans-serif;
 
 }
 .btn{
-  background-color: #4CAF50;
+  background-color: #385F71;
   border: none;
   color: white;
   padding: 10px 10px;
@@ -25,6 +26,7 @@ a{
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
 #date{
@@ -45,13 +47,14 @@ a{
 
 }*/
 .day.btn{
-  background-color: #008CBA;
+  background-color: #4ECDC4;
+
 }
 .active, .btn:hover{
-  background-color: #f44336;
+  background-color: #561F37;
 }
 .day.btn.active{
-  background-color: #f44336;
+  background-color: #561F37;
 }
 
 #myCanvas{
@@ -71,6 +74,14 @@ grid-row: 13/ span 12;}
 }
 #image{
 float: left;
+}
+#text{
+  grid-row: 3;
+  grid-column: 1;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  margin-top: 100px;
 }
 @media screen and (max-width: 800px) {
   .wrapper{

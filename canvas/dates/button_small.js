@@ -171,6 +171,7 @@ document.body.addEventListener('click', function (evt) {
 
           evt.target.className += " active";
 
+
         var canvas = document.getElementById("myCanvas");
         var ctx = canvas.getContext("2d");
         var x=15;
@@ -180,6 +181,8 @@ document.body.addEventListener('click', function (evt) {
         var w= 10;
         var h=10;
 
+        var text= document.getElementById("text");
+        text.appendChild(document.createTextNode(date));
         // gather json variables
         for (var i = 0; i<json.length; i++){
             var message = json[i].message_count;
@@ -194,6 +197,7 @@ document.body.addEventListener('click', function (evt) {
             var cats= json[i].cats;
             var color= json[i].color;
             var up= json[i].up;
+            var comp=json[i].comp;
 
         // check date
             if(date == j_date){
@@ -704,7 +708,7 @@ document.body.addEventListener('click', function (evt) {
             }
 
             count= count+ min;
-            console.log(count);
+
 
             ctx.fillStyle= '#ffffff';
             ctx.fillRect(width*(count/480), 0, 5, height)
@@ -715,26 +719,20 @@ document.body.addEventListener('click', function (evt) {
 
           }
         }
+
+        // comp use
+        if(comp > 0){
+              ctx.fillStyle = "#68A1C1";
+              ctx.fillRect((comp)*2,height-250,60,20);
+
+            }
+
+
           break;
             }
             }
 
-            /*var buttons = document.querySelectorAll('#date button')
-            var count=0;
-            for (var i = 0; i < buttons.length; i++) {
-              buttons[i].addEventListener("click", function() {
-              var current2 = document.getElementsByClassName("active");
 
-              // If there's no active class
-              if (current2.length > 1) {
-                current2[1].className = current2[1].className.replace("active", "");
-              }
-
-              // Add the active class to the current/clicked button
-
-
-                evt.className += " active";
-              });*/
             }
 
 
