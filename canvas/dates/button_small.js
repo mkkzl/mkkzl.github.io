@@ -1,4 +1,4 @@
-var months= ["June", "July", "August", "September", "October"];
+var months= ["August", "September", "October"];
 
 var day;
 var month;
@@ -84,7 +84,7 @@ var select = document.getElementById("date");
 
 
 // make day buttons
-document.getElementById('June').onclick = function() {
+/*document.getElementById('June').onclick = function() {
 
         if (select.innerHTML!= null){select.innerHTML= "";}
           for (var i=0; i<june.length; i++){
@@ -110,7 +110,7 @@ document.getElementById('July').onclick = function() {
       d_opt.className += " btn";
 
     select.appendChild(d_opt);
-  }};
+  }};*/
 
 
 document.getElementById('August').onclick = function() {
@@ -182,6 +182,7 @@ document.body.addEventListener('click', function (evt) {
         var h=10;
 
         var text= document.getElementById("text");
+        text.innerHTML = '';
         text.appendChild(document.createTextNode(date));
         // gather json variables
         for (var i = 0; i<json.length; i++){
