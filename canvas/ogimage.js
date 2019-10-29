@@ -1,58 +1,31 @@
 
-    var img = new Image();
-    img.src = 'IMG_5240.jpg'
-    var canvasimage = document.getElementById('image');
-    var context = canvasimage.getContext('2d');
-    canvasimage.width = img.width;
-    canvasimage.height = img.height*3;
-    img.onload = function() {
-  context.drawImage(img, 0, 0);
-  img.style.display = 'none';
+var img = new Image();
+img.src = 'IMG_5240.jpg'
+var canvasimage = document.getElementById('image');
+var context = canvasimage.getContext('2d');
+canvasimage.width = img.width;
+canvasimage.height = img.height*3;
+img.onload = function() {
+context.drawImage(img, 0, 0);
+img.style.display = 'none';
+console.log("first image done");
+  };
+
+var button= document.getElementById("gather");
+button.addEventListener("click",function(){
+
+console.log("in function");
 
 
 
 
-};
 
-function multiply(newlist){
-
-
-    var w= 0;
-    var n=0;
-      while (w<=img.width)
-      {
-        console.log("drawing");
-        var h=img.height;
-
-        while (h<= img.height*2)
-        {
-            var color= newlist[n];
-            context.fillStyle = color;
-            context.fillRect(w*h, h, 1, 1);
-
-
-
-          n= n+1
-          h=h+1
-        }
-        w= w+1
-      }
-
-    };
-
-
-var gather= document.getElementById("gather");
-gather.addEventListener("click", function(){
-  var multiply=document.createElement("button");
-  multiply.appendChild(document.createTextNode("Multiply"));
-  multiply.id= "multiply";
-  multiply.addEventListener("click", multiply());
-  document.getElementById("buttns").appendChild(multiply);
 
   var newlist= [];
   var x = 0;
   var y = 0;
   while (x<=img.width){
+    if(x== img.width-1){"almost done"};
     while (y<=img.height){
       var imageData = context.getImageData(x, y, 1, 1);
 
@@ -76,5 +49,31 @@ gather.addEventListener("click", function(){
     }
     x=x+1;
     y=0;
-    return newlist;
-  }});
+    var w= 0;
+    var n=0;
+
+    /* while (w<=img.width)
+      {
+        if(x<1 && y <1 && w<1){console.log("drawing width");}
+
+        var h=img.height;
+
+        while (h<= img.height*2)
+        {
+          if(x<1 && y <1 && w<1 && h<img.height+1){console.log("drawing height");}
+            var color= newlist[n];
+            context.fillStyle = color;
+            context.fillRect(w*h, h, 1, 1);
+
+
+
+          n= n+1
+          h=h+1
+        }
+        w= w+1
+      }
+        console.log(newlist);*/
+
+    }
+    console.log(newlist);
+  });

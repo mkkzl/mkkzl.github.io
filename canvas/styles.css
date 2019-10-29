@@ -68,9 +68,8 @@ grid-row: 1/ span 12;}
 grid-row: 7/ span 12;}
 #october{grid-column: 1 / span 10;
 grid-row: 13/ span 12;}
-#multiply{
-  float: none;
-  margin: 50px;
+#gather{
+  grid-column: 5;
 }
 #image{
 float: left;
@@ -91,13 +90,23 @@ float: left;
           margin: 5px;
       }
       #myCanvas{
-        transform: scale(.95, .95);
+        transform: scale(.9, .9);
         grid-column: 1 / span 10;
-        grid-row: 6/ span 10;
+        grid-row: 7/ span 10;
+        margin-left: -20px;
 
       }
 
       #buttons{margin-left: 20px;}
       #date{margin-left: 20px;}
+      #text{
+        grid-row: 6;
+        grid-column: 1;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+        margin-top: 40px;
+        margin-left: 20px;
+      }
 
 }
