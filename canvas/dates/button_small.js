@@ -1,4 +1,4 @@
-var months= ["August", "September", "October"];
+var months= ["August", "September", "October", "November"];
 
 var day;
 var month;
@@ -9,6 +9,7 @@ var july = [];
 var aug = [];
 var sept = [];
 var oct = [];
+var nov=[];
 
 var hm= new Object();
 $.getJSON("data.json", function(json){
@@ -53,6 +54,9 @@ for (var i = 0; i<json.length; i++){
      }
      if (m==10){
        if(oct.includes(d)){}else{oct.push(d)}
+     }
+     if(m==11){
+       if(nov.includes(d)){}else{nov.push(d)}
      }
 }
 
@@ -151,6 +155,19 @@ document.getElementById('October').onclick = function() {
 
       select.appendChild(d_opt);
     }};
+
+    document.getElementById('November').onclick = function() {
+        if (select.innerHTML!= null){select.innerHTML= "";}
+          for (var i=0; i<nov.length; i++){
+            var d_opt= document.createElement("button");
+          d_opt.appendChild(document.createTextNode(nov[i]));
+          d_opt.value="11/"+nov[i]+"/2019";
+          d_opt.className= "day";
+          d_opt.className += " btn";
+
+    
+          select.appendChild(d_opt);
+        }};
 
 
 // draw to canvas

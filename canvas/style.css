@@ -1,0 +1,15 @@
+.wrapper{
+        display: grid;
+        grid-template-columns: repeat( 10, 40px );
+        grid-template-rows: repeat(10,40px);
+        margin: 5px;
+    }
+
+#buttons{
+  grid-column: 1/ span 5;
+  grid-row: 2/ span 5;
+}
+#question{
+  grid-column: 1 / span 5;
+  grid-row: 1;
+}
