@@ -2,16 +2,16 @@ $.getJSON("data.json", function(json){
 
 // draw to canvas
 
-var canvas= document.getElementById("november");
+var canvas= document.getElementById("december");
 var ctx = canvas.getContext("2d");
 var y_f=0;
-var x_f= 810;
+var x_f= 0;
 var x=2;
 var y=2;
-var w=810;
+var w=0;
 var h=0;
 var t=0;
-var l=810;
+var l=0;
 var width=1296;
 var height= 810;
 canvas.width= width;
@@ -38,7 +38,7 @@ canvas.height= height;
             var up = json[i].up;
         // check date
 
-        if (month=='11'){
+        if (month=='12'){
           if (x_f > 1133){  y_f= y_f+162;
             x_f=0;}
 
@@ -96,27 +96,26 @@ canvas.height= height;
                 ctx.fillStyle= "rgb(255,230,109 )";
                 ctx.fillRect(x_f,y_f,18,162);
                 x_f=x_f+18;
-}
-              else if (morning=="bad-okay-good"){
-              ctx.fillStyle= "rgb(255,107,107 )";
-              ctx.fillRect(x_f,y_f,18,162);
-              x_f=x_f+18;
-              ctx.fillStyle= "rgb(255,230,109 )";
-              ctx.fillRect(x_f,y_f,18,162);
-              x_f=x_f+18;
-              ctx.fillStyle= "rgb(161,204,165 )";
-              ctx.fillRect(x_f,y_f,18,162);
-              x_f=x_f+18;
+                }else if (morning=="bad-okay-good"){
+                ctx.fillStyle= "rgb(255,107,107 )";
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
+                ctx.fillStyle= "rgb(255,230,109 )";
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
+                ctx.fillStyle= "rgb(161,204,165 )";
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
               }else if (morning=="okay-okay-bad"){
-              ctx.fillStyle= "rgb(255,230,109 )";
-              ctx.fillRect(x_f,y_f,18,162);
-              x_f=x_f+18;
-              ctx.fillStyle= "rgb(255,230,109 )";
-              ctx.fillRect(x_f,y_f,18,162);
-              x_f=x_f+18;
-              ctx.fillStyle= "rgb(255,107,107 )";
-              ctx.fillRect(x_f,y_f,18,162);
-              x_f=x_f+18;
+                ctx.fillStyle= "rgb(255,230,109 )";
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
+                ctx.fillStyle= "rgb(255,230,109 )";
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
+                ctx.fillStyle= "rgb(255,107,107 )";
+                ctx.fillRect(x_f,y_f,18,162);
+                x_f=x_f+18;
               }
 
 
@@ -528,7 +527,7 @@ canvas.height= height;
                      //pressure and humidity
                      if(pressure > 0){
                            ctx.fillStyle = "#561F37";
-                           ctx.fillRect(l+(pressure-1000)*5,t+125,10,10);
+                           ctx.fillRect(l+(pressure-990)*4.5,t+125,10,10);
                          }
 
                      if (humidity > 0){
@@ -601,8 +600,7 @@ canvas.height= height;
 
                 l=l+162;
             }
+
           }
-
-
 
             }, false);

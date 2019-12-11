@@ -1,4 +1,4 @@
-var months= ["August", "September", "October", "November"];
+var months= ["August", "September", "October", "November", "December"];
 
 var day;
 var month;
@@ -10,6 +10,7 @@ var aug = [];
 var sept = [];
 var oct = [];
 var nov=[];
+var dec= [];
 
 var hm= new Object();
 $.getJSON("data.json", function(json){
@@ -57,6 +58,9 @@ for (var i = 0; i<json.length; i++){
      }
      if(m==11){
        if(nov.includes(d)){}else{nov.push(d)}
+     }
+     if(m==12){
+       if(dec.includes(d)){}else{dec.push(d)}
      }
 }
 
@@ -168,6 +172,19 @@ document.getElementById('October').onclick = function() {
 
           select.appendChild(d_opt);
         }};
+
+        document.getElementById('December').onclick = function() {
+            if (select.innerHTML!= null){select.innerHTML= "";}
+              for (var i=0; i<nov.length; i++){
+                var d_opt= document.createElement("button");
+              d_opt.appendChild(document.createTextNode(dec[i]));
+              d_opt.value="12/"+dec[i]+"/2019";
+              d_opt.className= "day";
+              d_opt.className += " btn";
+
+
+              select.appendChild(d_opt);
+            }};
 
 
 // draw to canvas
@@ -281,6 +298,27 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillRect(x_f,y_f,84,800);
                     x_f=x_f+84;
 
+                  }
+                  else if (morning=="bad-okay-good"){
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,83,800);
+                    x_f=x_f+83;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,83,800);
+                    x_f=x_f+83;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,84,800);
+                    x_f=x_f+84;
+                  }else if (morning=="okay-okay-bad"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,83,800);
+                    x_f=x_f+83;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,83,800);
+                    x_f=x_f+83;
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,84,800);
+                    x_f=x_f+84;
                   }
 
 
@@ -621,7 +659,7 @@ document.body.addEventListener('click', function (evt) {
         //pressure and humidity
         if(pressure > 0){
               ctx.fillStyle = "#561F37";
-              ctx.fillRect((pressure-1000)*20,height-75,40,40);
+              ctx.fillRect((pressure-990)*18,height-75,40,40);
 
             }
 

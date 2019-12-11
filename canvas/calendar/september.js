@@ -413,7 +413,7 @@ canvas.height= height;
 
               //messages
               for(var n=1; n<message; n++){
-                if(n<2 && date=='1/'){console.log(x,w);}
+                
                        if(x+w< w+160){
 
 
