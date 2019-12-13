@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", function()
       context.fillRect(x,y,w,h)
     }
   }
-  function onTouchStart(){
+  function handleStart(){
     context.drawImage(base_image, 0, 0);
     handleStart = !handleStart;
 
