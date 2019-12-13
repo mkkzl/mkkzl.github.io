@@ -320,6 +320,10 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,107,107 )";
                     ctx.fillRect(x_f,y_f,84,800);
                     x_f=x_f+84;
+                  }else if (morning==""){
+                    ctx.fillStyle= "#cccccc";
+                    ctx.fillRect(x_f,y_f,250,800);
+                    x_f=x_f+250;
                   }
 
 
@@ -330,7 +334,11 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillRect(x_f,y_f,250,800);
                     x_f=x_f+250;
 
-                } else if (middle=="okay"){
+                } else if (middle==""){
+                  ctx.fillStyle= "#cccccc";
+                  ctx.fillRect(x_f,y_f,250,800);
+                  x_f=x_f+250;
+                }else if (middle=="okay"){
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,250,800);
                     x_f=x_f+250;
@@ -459,7 +467,11 @@ document.body.addEventListener('click', function (evt) {
                     x_f=x_f+250;
 
 
-                } else if (night=="okay"){
+                } else if (night==""){
+                  ctx.fillStyle= "#cccccc";
+                  ctx.fillRect(x_f,y_f,250,800);
+                  x_f=x_f+250;
+                }else if (night=="okay"){
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,250,800);
                     x_f=x_f+250;
@@ -612,12 +624,8 @@ document.body.addEventListener('click', function (evt) {
                     x_f=x_f+84;
                   }
 
-                  if(night == "" && morning == "" && middle == ""){
-                    ctx.fillStyle= "#cccccc";
-                    ctx.fillRect(x_f,y_f,750,800);
-                    x_f=x_f+750;
 
-                  }
+
               x_f=0;
 
               // high and low
