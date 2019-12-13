@@ -1,7 +1,3 @@
-a{
-  grid-column: 1;
-  grid-row: 10;
-}
 .wrapper{
         display: grid;
         grid-template-columns: repeat( 12, 162px );
@@ -10,42 +6,30 @@ a{
     }
 
 
-#buttons{
-  grid-column: 1 / span 10;
-  grid-row: 1;
-    font-family: 'Roboto', sans-serif;
 
-}
 .btn{
   background-color: #385F71;
   border: none;
   color: white;
   padding: 10px 10px;
-  margin: 10px;
+  margin: 7px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
-
+#buttons{
+  grid-column: 1 / span 3;
+  grid-row: 1/ span 2;
+    font-family: 'Roboto', sans-serif;
+}
 #date{
-  grid-column: 1 / span 5;
-  grid-row: 2;
+  grid-column: 1 / span 3;
+  grid-row: 2/ span 2;
 
 }
-/*.date button{
-  background-color: #008CBA;
-  border: none;
-  color: white;
-  padding: 10px 10px;
-  margin: 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 18px;
 
-}*/
 .day.btn{
   background-color: #4ECDC4;
 
@@ -58,51 +42,122 @@ a{
 }
 
 #myCanvas{
-  grid-column: 1 / span 10;
-  grid-row: 4/ span 10;
+  grid-column: 4 / span 10;
+  grid-row: 2/ span 10;
+  transform: scale(.9, .9);
+  margin-top: -25px;
+  margin-left: -37px;
 
 }
-#august{grid-column: 1 / span 10;
-grid-row: 1/ span 12;}
-#september{grid-column: 1 / span 10;
-grid-row: 7/ span 12;}
-#october{grid-column: 1 / span 10;
-grid-row: 13/ span 12;}
-#november{grid-column: 1 / span 10;
-grid-row: 19/ span 12;}
-#december{grid-column: 1 / span 10;
-grid-row: 25/ span 12;}
-#gather{
-  grid-column: 5;
-}
-#image{
-float: left;
-}
 #text{
-  grid-row: 3;
-  grid-column: 1;
+  grid-row: 1;
+  grid-column: 4;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   margin-top: 100px;
 }
+.button{
+    display: grid;
+    margin-top: 50px;
+    grid-column: 1 / span 3;
+    height: 30px;
+    width: 100px;
+    border-color: #4ECDC4;
+    border-style: solid;
+    border-width: thin;
+    align-content: center;
+    align-items: center;
+
+}
+.button:hover{
+  border-color:  #561F37;
+  background-color: #4ECDC4;
+  color:  #561F37;
+  font-weight: 700;
+
+
+}
+.button a p{
+  text-decoration: none;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  grid-row: 5;
+  margin: 40px;
+  font-weight: 700; bold
+
+}
+.button a p:hover{
+    color:  #561F37;
+    font-weight: 700; bold
+}
+
+h1{
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  grid-column: 1/ span 5;
+  color: #561F37;
+
+
+}
+p{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  color: #385F71;
+}
+
+
+/*calendar*/
+
+#august{
+  grid-column: 1 / span 10;
+  grid-row: 1/ span 12;}
+#september{
+  grid-column: 1 / span 10;
+  grid-row: 7/ span 12;}
+#october{
+  grid-column: 1 / span 10;
+  grid-row: 13/ span 12;}
+#november{
+  grid-column: 1 / span 10;
+  grid-row: 19/ span 12;}
+#december{
+  grid-column: 1 / span 10;
+  grid-row: 25/ span 12;}
+#gather{
+  grid-column: 5;
+}
+#image{
+  float: left;
+}
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
   .wrapper{
           display: grid;
-          grid-template-columns: repeat( 12, 81px );
+          grid-template-columns: repeat( 9, 81px );
           grid-template-rows: repeat(36,81px);
           margin: 5px;
       }
       #myCanvas{
         transform: scale(.9, .9);
-        grid-column: 1 / span 10;
+        grid-column: 1 / span 9;
         grid-row: 7/ span 10;
         margin-left: -20px;
 
       }
 
-      #buttons{margin-left: 20px;}
-      #date{margin-left: 20px;}
+      #buttons{margin-left: 20px;
+      grid-column: 1/ span 6;}
+      #date{margin-left: 20px;
+        grid-column: 1/ span 6;
+      grid-row: 3;}
       #text{
         grid-row: 6;
         grid-column: 1;

@@ -175,7 +175,8 @@ document.getElementById('October').onclick = function() {
 
         document.getElementById('December').onclick = function() {
             if (select.innerHTML!= null){select.innerHTML= "";}
-              for (var i=0; i<nov.length; i++){
+              for (var i=0; i<dec.length; i++){
+
                 var d_opt= document.createElement("button");
               d_opt.appendChild(document.createTextNode(dec[i]));
               d_opt.value="12/"+dec[i]+"/2019";

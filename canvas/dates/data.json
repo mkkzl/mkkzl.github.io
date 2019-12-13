@@ -2296,47 +2296,5 @@
     "cats": 0,
     "color": "grey",
     "up": "5:17"
-  },
-  {
-    "date": "12/9/2019",
-    "message_count": "",
-    "morning": "",
-    "middle": "",
-    "night": "",
-    "high": "",
-    "low": "",
-    "pressure": "",
-    "humidity": "",
-    "cats": 0,
-    "color": "navy",
-    "up": "12:23, 5:23"
-  },
-  {
-    "date": "12/10/2019",
-    "message_count": "",
-    "morning": "",
-    "middle": "",
-    "night": "",
-    "high": "",
-    "low": "",
-    "pressure": "",
-    "humidity": "",
-    "cats": "",
-    "color": "",
-    "up": "3:59"
-  },
-  {
-    "date": "12/11/2019",
-    "message_count": "",
-    "morning": "",
-    "middle": "",
-    "night": "",
-    "high": "",
-    "low": "",
-    "pressure": "",
-    "humidity": "",
-    "cats": "",
-    "color": "",
-    "up": "4:02"
   }
 ]
