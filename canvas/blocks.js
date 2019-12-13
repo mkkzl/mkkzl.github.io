@@ -19,8 +19,8 @@ window.addEventListener("DOMContentLoaded", function()
 
       var mouseClicked = false;
       document.addEventListener("click", onMouseClick, false);
-      var touchStart = false;
-      document.addEventListener("touchstart", touchStart, false);
+      var handleStart = false;
+      document.addEventListener("touchstart", handleStart, false);
   function onMouseClick(){
     context.drawImage(base_image, 0, 0);
     mouseClicked = !mouseClicked;
@@ -40,7 +40,7 @@ window.addEventListener("DOMContentLoaded", function()
   }
   function onTouchStart(){
     context.drawImage(base_image, 0, 0);
-    touchStart = !touchStart;
+    handleStart = !handleStart;
 
     var rectnum= Math.floor(Math.random() * 15) + 1;
 
