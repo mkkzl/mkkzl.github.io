@@ -1,31 +1,44 @@
-window.addEventListener("load", function () {
-    var img = new Image();
-    img.src = 'IMG_5240.jpg'
+window.addEventListener("DOMContentLoaded", function()
+{
     var canvasimage = document.getElementById('image');
     var context = canvasimage.getContext('2d');
-    canvasimage.width = img.width;
-    canvasimage.height = img.height;
-    img.onload = function() {
-  context.drawImage(img, 0, 0);
-  img.style.display = 'none';
+    make_base();
 
-  var canvas = document.getElementById('newimage');
-  var ctx = canvas.getContext('2d');
-  canvas.width= canvasimage.width;
-  canvas.height= canvasimage.height;
-  var rectnum= Math.floor(Math.random() * 15) + 1;
-  //console.log(rectnum)
-  while (rectnum > 0){
-    var x= Math.floor(Math.random() * img.width) + 1;
-    var y= Math.floor(Math.random() * img.height) + 1;
-    var w= Math.floor(Math.random() * (img.width-x)) + 1;
-    var h= Math.floor(Math.random() * (img.height-y)) + 1;
-    //console.log(x,y,w,h)
-    ctx.fillStyle= '#000000'
-    rectnum= rectnum-1
-    ctx.fillRect(x,y,w,h)
+
+
+
+  function make_base()
+      {
+          base_image = new Image();
+          base_image.onload = function()
+          {
+             // test that the image was loaded
+             console.log('base_image');  // or console.log if you prefer
+             context.drawImage(base_image, 0, 0);
+
+          }
+          base_image.src = 'IMG_5240.jpg';
+      }
+
+      var mouseClicked = false;
+      document.addEventListener("click", onMouseClick, false);
+  function onMouseClick(){
+    context.drawImage(base_image, 0, 0);
+    mouseClicked = !mouseClicked;
+
+    var rectnum= Math.floor(Math.random() * 15) + 1;
+
+    while (rectnum > 0){
+      var x= Math.floor(Math.random() * 500) + 1;
+      var y= Math.floor(Math.random() * 347) + 1;
+      var w= Math.floor(Math.random() * (500-x)) + 1;
+      var h= Math.floor(Math.random() * (347-y)) + 1;
+      //console.log(x,y,w,h)
+      context.fillStyle= '#000000'
+      rectnum= rectnum-1
+      context.fillRect(x,y,w,h)
+    }
   }
+  base_image.src = 'IMG_5240.jpg';
 
-
-};
-  });
+ });

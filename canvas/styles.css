@@ -130,7 +130,15 @@ p{
   grid-column: 5;
 }
 #image{
-  float: left;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 50px;
+  z-index: -1;
+}
+#censor_text{
+  grid-row: 4;
+  margin-left: 50px;
+  font-size: 24px;
 }
 
 
