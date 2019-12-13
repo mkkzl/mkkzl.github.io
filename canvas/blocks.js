@@ -4,9 +4,6 @@ window.addEventListener("DOMContentLoaded", function()
     var context = canvasimage.getContext('2d');
     make_base();
 
-
-
-
   function make_base()
       {
           base_image = new Image();
