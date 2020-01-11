@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+			<script src="jquery-3.4.1.min.js"></script>
+    <script src="drag.js" type="module"></script>
+		<script>
+		    function allowDrop(ev) {
+		        ev.preventDefault();
+		    }
+
+		    function dragStart(ev) {
+		        ev.dataTransfer.setData("text", ev.target.id);
+		    }
+
+		    function dragDrop(ev) {
+		        ev.preventDefault();
+		        var data = ev.dataTransfer.getData("text");
+		        ev.target.appendChild(document.getElementById(data));
+		        var image= document.getElementById("div1");
+		        var elements = image.childNodes.length;
+		        for(index = 0; index < elements; index++){
+		              node = image.childNodes[index];
+		              if (node && node.nodeType == 1 && node.nodeName == 'IMG'){
+		              var id_name= node.id;
+		              if(id_name== "drag1"){
+		                console.log("success");
+		              }
+		              else{console.log(id_name);}
+		              }
+		            }
+		    }
+
+
+		    // Get the modal
+		    var modal = document.getElementById("myModal");
+
+		    // Get the image and insert it inside the modal - use its "alt" text as a caption
+		    var img = document.getElementById("drag1");
+		    var modalImg = document.getElementById("img01");
+		    img.onclick = function(){
+		      modal.style.display = "block";
+		      modalImg.src = this.src;
+		    }
+
+		    // Get the <span> element that closes the modal
+		    var span = document.getElementsByClassName("close")[0];
+
+		    // When the user clicks on <span> (x), close the modal
+		    span.onclick = function() {
+		      modal.style.display = "none";
+		    }
+</script>
+		<link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+         <p>Image Drag and Drop in boxes</p>
+        <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
+        <img id="drag1"
+        src="IMG_5240.jpg" draggable="true"
+        ondragstart="dragStart(event)" ></div>
+        <br>
+        <div class="box" id="div1" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+				<div class="box" id="div2" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+				<!-- The Modal -->
+				<div id="myModal" class="modal">
+
+			  <!-- The Close Button -->
+			  <span class="close">&times;</span>
+
+			  <!-- Modal Content (The Image) -->
+			  <img class="modal-content" id="img01">
+
+			</div>
+		</body>
+</html>
