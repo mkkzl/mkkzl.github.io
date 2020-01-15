@@ -2,8 +2,24 @@
 <html>
     <head>
 			<script src="jquery-3.4.1.min.js"></script>
-    <script src="drag.js" type="module"></script>
+
 		<script>
+        var n=101;
+        var boxes = document.getElementById("101t");
+
+          boxes.style.gridRow= 2;
+          boxes.style.gridColumn= 1;
+
+
+
+        var images = document.getElementsByTagName('img');
+        var row_i=2;
+        for (var b=0; b< images.length; b++){
+          images.item(b).style.gridRow= row_i+1;
+          images.item(b).style.gridColumn= 2;
+          row_i= row_i+1;
+        }
+
 		    function allowDrop(ev) {
 		        ev.preventDefault();
 		    }
@@ -16,7 +32,7 @@
 		        ev.preventDefault();
 		        var data = ev.dataTransfer.getData("text");
 		        ev.target.appendChild(document.getElementById(data));
-		        var image= document.getElementById("div1");
+		        /*var image= document.getElementById("div1");
 		        var elements = image.childNodes.length;
 		        for(index = 0; index < elements; index++){
 		              node = image.childNodes[index];
@@ -27,10 +43,42 @@
 		              }
 		              else{console.log(id_name);}
 		              }
-		            }
+		            }*/
 		    }
 
+        var button = document.getElementById("submit");
+        var frames = document.getElementsByClassName("box");
 
+        function checkAnswers(){
+
+              for(var i = 0; i < frames.length; i++)
+              {
+                var accept= parseFloat(frames.item(i).id);
+                 var elements= frames.item(i).childNodes.length;
+                 for(index = 0; index < elements; index++){
+     		              node = frames.item(i).childNodes[index];
+     		              if (node && node.nodeType == 1 && node.nodeName == 'IMG'){
+                        var target= parseFloat(node.id);
+                      }
+
+                      if (target == (accept-100)){
+
+                      }
+                      else{
+                        var incorrect=document.getElementById(target+'i');
+                        incorrect.style.filter= "grayscale(90%)";
+                        var correct=document.getElementById((accept-100)+'i');
+                        frames.item(i).style.height= "220px";
+                        frames.item(i).appendChild(correct);
+                      }
+              }
+
+
+            }
+
+        }
+
+/*
 		    // Get the modal
 		    var modal = document.getElementById("myModal");
 
@@ -48,29 +96,32 @@
 		    // When the user clicks on <span> (x), close the modal
 		    span.onclick = function() {
 		      modal.style.display = "none";
-		    }
+		    }*/
 </script>
 		<link rel="stylesheet" href="styles.css">
     </head>
     <body>
-
+      <div class="wrapper">
          <p>Image Drag and Drop in boxes</p>
-        <div ondrop="dragDrop(event)" ondragover="allowDrop(event)">
-        <img id="drag1"
-        src="IMG_5240.jpg" draggable="true"
-        ondragstart="dragStart(event)" ></div>
-        <br>
-        <div class="box" id="div1" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
-				<div class="box" id="div2" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
 
-			  <!-- The Close Button -->
-			  <span class="close">&times;</span>
+        <img ondrop="dragDrop(event)" ondragover="allowDrop(event)" src="IMG_5240.jpg" draggable="true" ondragstart="dragStart(event)" id="1i" >
+        <img ondrop="dragDrop(event)" ondragover="allowDrop(event)" src="MC1_0099.jpg" draggable="true" ondragstart="dragStart(event)" id="2i" >
 
-			  <!-- Modal Content (The Image) -->
-			  <img class="modal-content" id="img01">
 
-			</div>
+        <div class="box"  id="101t" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+				<div class="box" id="102t" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>
+
+        <button type="submit" id= "submit" onclick="checkAnswers()" value="submit">Submit</button>
+      </div>
+    				<!-- The Modal -->
+    				<div id="myModal" class="modal">
+
+    			  <!-- The Close Button -->
+    			  <span class="close">&times;</span>
+
+    			  <!-- Modal Content (The Image) -->
+    			  <img class="modal-content" id="img01">
+
+    			</div>
 		</body>
 </html>
