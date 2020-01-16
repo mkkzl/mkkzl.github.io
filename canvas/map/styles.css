@@ -258,9 +258,6 @@ a:hover{
       cursor: pointer;
       color: black;
     }
-    .loading {
-      background: transparent url('http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif') center no-repeat;
-    }
     h3{
       font-family: 'Roboto', sans-serif;
     }
