@@ -1,20 +1,21 @@
 .wrapper{
         display: grid;
         grid-template-columns: repeat( 100, 25px );
-        grid-template-rows: repeat(100, 25px);
+        grid-template-rows: repeat(52, 25px);
     }
 #drawn{
     grid-row: 4;
     grid-column: 3;
     padding-top: 10px;
     z-index: 2;
-    width: 1314px;
-    height: 426px;
+    width: 985.5px;
+    height: 319.5px;
 }
 #screen{
   grid-column: 1;
   grid-row: 3 / span 20;
   z-index: 1;
+  width: 1129.75px;
 }
 .dot {
   height: 10px;
@@ -23,91 +24,92 @@
   border-radius: 50%;
   z-index: 3;
 }
-#s-25{
-  grid-column: 23;
-  grid-row: 15;
-}
-#s-26{
-  grid-column: 54;
-  grid-row: 19;
+a:hover{
+  cursor: pointer;
 }
 
-#date{
-  grid-column: 13;
-  grid-row: 25;
-}
-#rate{
-  grid-column: 13;
-  grid-row: 26;
-}
-#position{
-  grid-column: 13;
-  grid-row: 27;
-}
-#day_image{
-  width: 500px;
-  transform: rotate(90deg);
-  grid-column: 11;
-  grid-row: 33;
-}
-
-h3{
-  font-family: 'Roboto', sans-serif;
-}
-h5{
-  font-family: 'Roboto', sans-serif;
-}
-
-.modal {
-    grid-column: 20 / span 25;
-    grid-row: 17/ span 20;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1050;
-    display: none;
-    overflow: hidden;
-    -webkit-overflow-scrolling: touch;
-    outline: 0;
-    display: block;
-    background-color: #fffff;
-}
-
-.modal-open .modal {
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.modal-dialog {
-    position: relative;
-    width: auto;
-    margin: 10px;
-}
-.modal-content {
-    grid-column: 20;
-    grid-row: 6
-}
-.modal-footer {
-    padding: 15px;
-    text-align: right;
-    border-top: 1px solid #e5e5e5;
-}
-button.close {
-    padding: 0;
-    cursor: pointer;
-    background: 0 0;
-    border: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-.close {
-    float: right;
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 1;
-    color: #000;
-    text-shadow: 0 1px 0 #fff;
-    filter: alpha(opacity=20);
-    opacity: .2;
-}
+/*Dots positioning*/
+    #s-25{
+      grid-column: 19;
+      grid-row: 13;
+    }
+    #s-26{
+      grid-column: 41;
+      grid-row: 15;
+    }
+    #s-30{
+      grid-column: 14;
+      grid-row: 12;
+    }
+    #o-1{
+      grid-column: 18;
+      grid-row: 13;
+    }
+    #o-2{
+      grid-column: 30;
+      grid-row: 13;
+    }
+    #o-3{
+      grid-column: 27;
+      grid-row: 13;
+    }
+    #o-7{
+      grid-column: 42;
+      grid-row: 15;
+    }
+    #o-8{
+      grid-column: 42;
+      grid-row: 16;
+    }
+    #o-9{
+      grid-column: 11;
+      grid-row: 12;
+    }
+    #o-10{
+      grid-column: 40;
+      grid-row: 14;
+    }
+/*Data at bottom*/
+    #date{
+      grid-column: 13/ span 10;
+      grid-row: 21;
+    }
+    #rate{
+      grid-column: 13/ span 5;
+      grid-row: 22;
+    }
+    #position{
+      grid-column: 13/ span 5;
+      grid-row: 23;
+    }
+    #day_image{
+      width: 500px;
+      transform: rotate(90deg);
+      grid-column: 11;
+      grid-row: 29;
+    }
+    #close{
+      grid-column: 27;
+      grid-row: 22;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      overflow: hidden;
+      background : none;
+      border: none;
+      color: grey;
+      font-size: 24px;
+      visibility: hidden;
+    }
+    #close:hover{
+      cursor: pointer;
+      color: black;
+    }
+    .loading {
+      background: transparent url('http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif') center no-repeat;
+    }
+    h3{
+      font-family: 'Roboto', sans-serif;
+    }
+    h5{
+      font-family: 'Roboto', sans-serif;
+    }

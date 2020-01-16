@@ -1,7 +1,56 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.4.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <script>
+      var dots = document.getElementsByClassName('dot');
+    /*  var date_filled= document.getElementById('date');
+      if(date_filled != null){
+        document.getElementById("rectangle").style.zIndex= "1";
+      }
+      else{
+        document.getElementById("rectangle").style.zIndex= "5";
+      }*/
+
+      function closeThis(){
+        document.getElementById('date').innerHTML = ' ';
+        document.getElementById('rate').innerHTML = ' ';
+        document.getElementById('position').innerHTML = ' ';
+        document.getElementById('day_image').style.visibility = 'hidden';
+        document.getElementById('close').style.visibility = 'hidden';
+      }
+    function showData(clicked_id, clicked_src){
+      $.getJSON("map.json", function(json){
+        for (var i = 0; i<json.length; i++){
+          var id= json[i].id;
+          var date= json[i].date;
+          var rate= json[i].rate;
+          var position= json[i].position;
+          var image= json[i].image;
+
+          if(id==clicked_id){
+            var date_place= document.getElementById('date');
+            var rate_place= document.getElementById('rate');
+            var position_place= document.getElementById('position');
+            var image_place= document.getElementById('day_image');
+
+            date_place.innerHTML = ' ';
+            rate_place.innerHTML = ' ';
+            position_place.innerHTML = ' ';
+            image_place.style.visibility = 'hidden';
+
+            date_place.appendChild(document.createTextNode('Date: '+date));
+            rate_place.appendChild(document.createTextNode('Rate: '+rate));
+            position_place.appendChild(document.createTextNode('Position: '+position));
+            image_place.src= image;
+            image_place.style.visibility= 'visible';
+            document.getElementById('close').style.visibility= "visible";
+          }
+
+    }
+    });
+    }</script>
   <!---  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>--->
@@ -10,34 +59,21 @@
     <div class="wrapper">
     <img src="maps-01.PNG" id="drawn">
     <img src="maps.PNG" id="screen">
-    <a class="dot" id="s-25" src="images/9_25.JPG"data-toggle="modal" href="#myModal"></a>
-    <div class="dot" id="s-26"><a></a></div>
-
-
-      <h3 id="date"></h3>
-      <h5 id="rate"></h5>
-      <h5 id="position"></h5>
-      <img src="" id="day_image">
-
-
-    <!-- Modal
-  <div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-
-    </div>
-  </div>-->
+    <a class="dot" onClick= "showData(this.id, this.src);" id="s-25"></a>
+    <a class="dot" id="s-26" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="s-30" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-1" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-2" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-3" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-7" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-8" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-9" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-10" onClick= "showData(this.id, this.src);"></a>
+      <button id="close" onClick="closeThis()">x</button>
+      <h3 id="date"> </h3>
+      <h5 id="rate"> </h5>
+      <h5 id="position"> </h5>
+      <img class="loading" id="day_image">
 
   </div>
 
