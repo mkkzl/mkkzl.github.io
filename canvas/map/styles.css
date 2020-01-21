@@ -260,6 +260,8 @@ a:hover{
     }
     h3{
       font-family: 'Roboto', sans-serif;
+      grid-column: 13/ span 10;
+      grid-row: 21;
     }
     h5{
       font-family: 'Roboto', sans-serif;

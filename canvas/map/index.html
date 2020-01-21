@@ -3,19 +3,11 @@
     <link rel="stylesheet" href="styles.css">
     <script src="jquery-3.4.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <script type="text/javascript" language="javascript" src="map.json"></script> 
+    <script type="text/javascript" language="javascript" src="map.json"></script>
     <script>
       var dots = document.getElementsByClassName('dot');
-    /*  var date_filled= document.getElementById('date');
-      if(date_filled != null){
-        document.getElementById("rectangle").style.zIndex= "1";
-      }
-      else{
-        document.getElementById("rectangle").style.zIndex= "5";
-      }*/
 
       function closeThis(){
-        console.log("in closeThis");
         document.getElementById('date').innerHTML = ' ';
         document.getElementById('rate').innerHTML = ' ';
         document.getElementById('position').innerHTML = ' ';
@@ -23,7 +15,6 @@
         document.getElementById('close').style.visibility = 'hidden';
       }
     function showData(clicked_id, clicked_src){
-      console.log("in showData");
       $.getJSON("map.json", function(json){
         for (var i = 0; i<json.length; i++){
           var id= json[i].id;
@@ -32,18 +23,30 @@
           var position= json[i].position;
           var image= json[i].image;
 
-          console.log("json parsed");
 
           if(id==clicked_id){
             var date_place= document.getElementById('date');
             var rate_place= document.getElementById('rate');
             var position_place= document.getElementById('position');
             var image_place= document.getElementById('day_image');
-            console.log("in id clicked");
+
             date_place.innerHTML = ' ';
             rate_place.innerHTML = ' ';
             position_place.innerHTML = ' ';
-            //image_place.style.visibility = 'hidden';
+            image_place.style.visibility = 'hidden';
+
+            if(image.includes("JPEG")){
+              image_place.style.transform= 'rotate(0deg)';
+              image_place.style.height= '500px';
+              image_place.style.width= '375px';
+              image_place.style.gridColumn= "13";
+            }
+            else{
+              image_place.style.transform= 'rotate(90deg)';
+              image_place.style.width= '500px';
+              image_place.style.height= '375px';
+              image_place.style.gridColumn= "11";
+            }
 
             date_place.appendChild(document.createTextNode('Date: '+date));
             rate_place.appendChild(document.createTextNode('Rate: '+rate));
@@ -51,7 +54,7 @@
             image_place.src= image;
             image_place.style.visibility= 'visible';
             document.getElementById('close').style.visibility= "visible";
-            console.log("added to dialog");
+
           }
 
     }
