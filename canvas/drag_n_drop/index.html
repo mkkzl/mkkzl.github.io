@@ -1,18 +1,87 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+      <title> Drag N Drop </title>
 			<script src="jquery-3.4.1.min.js"></script>
-      <script src="drag.js" type="module">
-      </script>
+      <!---<script src="drag.js" type="module"></script>--->
+      <script>$(document).ready(function() {
+        var n=101;
+      var boxes = document.getElementsByClassName("box");
+      var col=1;
+      for(var c=0; c< boxes.length; c++){
+      boxes.item(c).style.gridRow= 2;
+      boxes.item(c).style.gridColumn= col;
+      col= col+1;
+      }
+
+
+      var images = document.getElementsByTagName('img');
+      col= 1;
+      for (var b=0; b< images.length; b++){
+      images.item(b).style.gridRow= 3;
+      images.item(b).style.gridColumn= col;
+      col= col+1;
+      }
+
+
+    });
+
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function dragStart(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function dragDrop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+
+    var button = document.getElementById("submit");
+    var frames = document.getElementsByClassName("box");
+
+    function checkAnswers(){
+
+          for(var i = 0; i < frames.length; i++)
+          {
+            var accept= parseFloat(frames.item(i).id);
+             var elements= frames.item(i).childNodes.length;
+             for(index = 0; index < elements; index++){
+                  node = frames.item(i).childNodes[index];
+                  if (node && node.nodeType == 1 && node.nodeName == 'IMG'){
+                    var target= parseFloat(node.id);
+                  }
+
+                  if (target == (accept-100)){
+
+                  }
+                  else{
+                    var incorrect=document.getElementById(target+'i');
+                    incorrect.style.filter= "grayscale(90%)";
+                    var correct=document.getElementById((accept-100)+'i');
+                    frames.item(i).style.height= "220px";
+                    frames.item(i).appendChild(correct);
+                  }
+          }
+
+
+        }
+
+    }
+
+</script>
 
 		<link rel="stylesheet" href="styles.css">
     </head>
     <body>
       <div class="wrapper">
-         <p>Image Drag and Drop in boxes</p>
+         <p> Drag and Drop Image in Boxes</p>
 
-        <img ondrop="dragDrop(event)" ondragover="allowDrop(event)" src="IMG_5240.jpg" draggable="true" ondragstart="dragStart(event)" id="1i" >
-        <img ondrop="dragDrop(event)" ondragover="allowDrop(event)" src="MC1_0099.jpg" draggable="true" ondragstart="dragStart(event)" id="2i" >
+        <img ondrop="JavaScript:dragDrop(event)" ondragover="JavaScript:allowDrop(event)" src="IMG_5240.jpg" draggable="true" ondragstart="JavaScript:dragStart(event)" id="1i" >
+        <img ondrop="JavaScript:dragDrop(event)" ondragover="JavaScript:allowDrop(event)" src="MC1_0099.jpg" draggable="true" ondragstart="JavaScript:dragStart(event)" id="2i" >
 
 
         <div class="box"  id="101t" ondrop="dragDrop(event)" ondragover="allowDrop(event)"></div>

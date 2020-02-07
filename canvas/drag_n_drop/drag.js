@@ -17,6 +17,9 @@ images.item(b).style.gridColumn= col;
 col= col+1;
 }
 
+
+});
+
 function allowDrop(ev) {
     ev.preventDefault();
 }
@@ -61,7 +64,7 @@ function checkAnswers(){
 
     }
 
-}});
+}
 /*// Get the modal
 var modal = document.getElementById("myModal");
 

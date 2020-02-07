@@ -1,0 +1,374 @@
+*{
+  background-color: #FBF9E9;
+}
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(800, 50px );
+  grid-template-rows: repeat(50,25px);
+}
+img{
+  width: 324px;
+}
+
+.florida{
+  grid-row: 4;
+}
+#FL_9_30{
+  grid-column: 2;
+}
+#FL_10_1{
+  grid-column: 10;
+}
+#FL_10_2{
+  grid-column: 18;
+}
+#FL_10_3{
+  grid-column: 26;
+}
+#FL_10_4{
+  grid-column: 34;
+}
+#FL_10_5{
+  grid-column: 42;
+}
+#FL_10_6{
+  grid-column: 50;
+}
+#FL_10_7{
+  grid-column: 58;
+}
+#FL_10_8{
+  grid-column: 66;
+}
+#FL_10_9{
+  grid-column: 74;
+}
+#FL_10_11{
+  grid-column: 90;
+}
+#FL_10_12{
+  grid-column: 98;
+}
+#FL_10_13{
+  grid-column: 106;
+}
+#FL_10_14{
+  grid-column: 114;
+}
+#FL_10_15{
+  grid-column: 122;
+}
+#FL_10_16{
+  grid-column: 130;
+}
+#FL_10_17{
+  grid-column: 138;
+}
+#FL_10_18{
+  grid-column: 146;
+}
+#FL_10_20{
+  grid-column: 162;
+}
+#FL_10_21{
+  grid-column: 170;
+}
+#FL_10_22{
+  grid-column: 178;
+}
+#FL_10_23{
+  grid-column: 186;
+}
+#FL_10_24{
+  grid-column: 194;
+}
+#FL_10_25{
+  grid-column: 202;
+}
+#FL_10_26{
+  grid-column: 210;
+}
+#FL_10_27{
+  grid-column: 218;
+}
+#FL_10_28{
+  grid-column: 226;
+}
+#FL_10_30{
+  grid-column: 242;
+}
+#FL_11_01{
+  grid-column: 258;
+}
+#FL_11_02{
+  grid-column: 266;
+}
+#FL_11_03{
+  grid-column: 274;
+}
+#FL_11_04{
+  grid-column: 282;
+}
+#FL_11_05{
+  grid-column: 290;
+}
+#FL_11_06{
+  grid-column: 298;
+}
+#FL_11_07{
+  grid-column: 306;
+}
+#FL_11_08{
+  grid-column: 314;
+}
+#FL_11_09{
+  grid-column: 322;
+}
+#FL_11_10{
+  grid-column: 330;
+}
+#FL_11_11{
+  grid-column: 338;
+}
+#FL_11_12{
+  grid-column: 346;
+}
+#FL_11_13{
+  grid-column: 354;
+}
+#FL_11_14{
+  grid-column: 362;
+}
+#FL_11_15{
+  grid-column: 370;
+}
+#FL_11_16{
+  grid-column: 378;
+}
+#FL_11_17{
+  grid-column: 386;
+}
+#FL_11_18{
+  grid-column: 394;
+}
+#FL_11_19{
+  grid-column: 402;
+}
+#FL_11_20{
+  grid-column: 410;
+}
+#FL_11_21{
+  grid-column: 418;
+}
+#FL_11_22{
+  grid-column: 426;
+}
+#FL_11_23{
+  grid-column: 434;
+}
+#FL_11_24{
+  grid-column: 442;
+}
+#FL_11_25{
+  grid-column: 450;
+}
+#FL_12_2{
+  grid-column: 506;
+}
+#FL_12_3{
+  grid-column: 514;
+}
+#FL_12_4{
+  grid-column: 522;
+}
+#FL_12_9{
+  grid-column: 562;
+}
+#FL_12_10{
+  grid-column: 570;
+}
+
+
+.ohio{
+  grid-row: 20;
+}
+#OH_9_30{
+  grid-column: 2;
+}
+#OH_10_1{
+  grid-column: 10;
+}
+#OH_10_2{
+  grid-column: 18;
+}
+#OH_10_3{
+  grid-column: 26;
+}
+#OH_10_4{
+  grid-column: 34;
+}
+#OH_10_5{
+  grid-column: 42;
+}
+#OH_10_6{
+  grid-column: 50;
+}
+#OH_10_7{
+  grid-column: 58;
+}
+#OH_10_8{
+  grid-column: 66;
+}
+#OH_10_10{
+  grid-column: 82;
+}
+#OH_10_11{
+  grid-column: 90;
+}
+#OH_10_12{
+  grid-column: 98;
+}
+#OH_10_13{
+  grid-column: 106;
+}
+#OH_10_14{
+  grid-column: 114;
+}
+#OH_10_15{
+  grid-column: 122;
+}
+#OH_10_16{
+  grid-column: 130;
+}
+#OH_10_17{
+  grid-column: 138;
+}
+#OH_10_18{
+  grid-column: 146;
+}
+#OH_10_19{
+  grid-column: 154;
+}
+#OH_10_20{
+  grid-column: 162;
+}
+#OH_10_21{
+  grid-column: 170;
+}
+#OH_10_22{
+  grid-column: 178;
+}
+#OH_10_23{
+  grid-column: 186;
+}
+#OH_10_24{
+  grid-column: 194;
+}
+#OH_10_25{
+  grid-column: 202;
+}
+#OH_10_27{
+  grid-column: 218;
+}
+#OH_10_28{
+  grid-column: 226;
+}
+#OH_10_29{
+  grid-column: 234;
+}
+#OH_10_30{
+  grid-column: 242;
+}
+#OH_10_31{
+  grid-column: 250;
+}
+#OH_11_1{
+  grid-column: 258;
+}
+#OH_11_4{
+  grid-column: 282;
+}
+#OH_11_5{
+  grid-column: 290;
+}
+#OH_11_6{
+  grid-column: 298;
+}
+#OH_11_7{
+  grid-column: 306;
+}
+#OH_11_9{
+  grid-column: 322;
+}
+#OH_11_10{
+  grid-column: 330;
+}
+#OH_11_11{
+  grid-column: 338;
+}
+#OH_11_12{
+  grid-column: 346;
+}
+#OH_11_13{
+  grid-column: 354;
+}
+#OH_11_15{
+  grid-column: 370;
+}
+#OH_11_16{
+  grid-column: 378;
+}
+#OH_11_17{
+  grid-column: 386;
+}
+#OH_11_19{
+  grid-column: 402;
+}
+#OH_11_21{
+  grid-column: 418;
+}
+#OH_11_22{
+  grid-column: 426;
+}
+#OH_11_23{
+  grid-column: 434;
+}
+#OH_11_24{
+  grid-column: 442;
+}
+#OH_12_1{
+  grid-column: 498;
+}
+#OH_12_2{
+  grid-column: 506;
+}
+#OH_12_3{
+  grid-column: 514;
+}
+#OH_12_5{
+  grid-column: 530;
+}
+#OH_12_6{
+  grid-column: 538;
+}
+#OH_12_8{
+  grid-column: 556;
+}
+#OH_12_10{
+  grid-column: 570;
+}
+#OH_12_11{
+  grid-column: 578;
+}
+#OH_12_12{
+  grid-column: 586;
+}
+#white_space{
+  grid-column: 594 /span 3;
+}
+
+#text{
+  margin-top: 25;
+  grid-column: 2/ span 50;
+  grid-row: 1;
+}
