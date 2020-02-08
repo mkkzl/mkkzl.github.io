@@ -375,229 +375,232 @@ img{
 }
 
 .text{
-  grid-row: 16;
+  grid-row: 14;
+}
+.text2{
+  grid-row:16;
 }
 
-#day_9_30{
+.day_9_30{
   grid-column: 2/ span 7;
 }
-#day_10_1{
+.day_10_1{
   grid-column: 10/ span 7;
 }
-#day_10_2{
+.day_10_2{
   grid-column: 18/ span 7;
 }
-#day_10_3{
+.day_10_3{
   grid-column: 26/ span 7;
 }
-#day_10_4{
+.day_10_4{
   grid-column: 34/ span 7;
 }
-#day_10_5{
+.day_10_5{
   grid-column: 42/ span 7;
 }
-#day_10_6{
+.day_10_6{
   grid-column: 50/ span 7;
 }
-#day_10_7{
+.day_10_7{
   grid-column: 58/ span 7;
 }
-#day_10_8{
+.day_10_8{
   grid-column: 66/ span 7;
 }
-#day_10_9{
+.day_10_9{
   grid-column: 74/ span 7;
 }
-#day_10_10{
+.day_10_10{
   grid-column: 82/ span 7;
 }
-#day_10_11{
+.day_10_11{
   grid-column: 90/ span 7;
 }
-#day_10_12{
+.day_10_12{
   grid-column: 98/ span 7;
 }
-#day_10_13{
+.day_10_13{
   grid-column: 106/ span 7;
 }
-#day_10_14{
+.day_10_14{
   grid-column: 114/ span 7;
 }
-#day_10_15{
+.day_10_15{
   grid-column: 122/ span 7;
 }
-#day_10_16{
+.day_10_16{
   grid-column: 130/ span 7;
 }
-#day_10_17{
+.day_10_17{
   grid-column: 138/ span 7;
 }
-#day_10_18{
+.day_10_18{
   grid-column: 146/ span 7;
 }
-#day_10_19{
+.day_10_19{
   grid-column: 154/ span 7;
 }
-#day_10_20{
+.day_10_20{
   grid-column: 162/ span 7;
 }
-#day_10_21{
+.day_10_21{
   grid-column: 170/ span 7;
 }
-#day_10_22{
+.day_10_22{
   grid-column: 178/ span 7;
 }
-#day_10_23{
+.day_10_23{
   grid-column: 186/ span 7;
 }
-#day_10_24{
+.day_10_24{
   grid-column: 194/ span 7;
 }
-#day_10_25{
+.day_10_25{
   grid-column: 202/ span 7;
 }
-#day_10_26{
+.day_10_26{
   grid-column: 210/ span 7;
 }
-#day_10_27{
+.day_10_27{
   grid-column: 218/ span 7;
 }
-#day_10_28{
+.day_10_28{
   grid-column: 226/ span 7;
 }
-#day_10_29{
+.day_10_29{
   grid-column: 234/ span 7;
 }
-#day_10_30{
+.day_10_30{
   grid-column: 242/ span 7;
 }
-#day_10_31{
+.day_10_31{
   grid-column: 250/ span 7;
 }
-#day_11_1{
+.day_11_1{
   grid-column: 258/ span 7;
 }
-#day_11_2{
+.day_11_2{
   grid-column: 266/ span 7;
 }
-#day_11_3{
+.day_11_3{
   grid-column: 274/ span 7;
 }
-#day_11_4{
+.day_11_4{
   grid-column: 282/ span 7;
 }
-#day_11_5{
+.day_11_5{
   grid-column: 290/ span 7;
 }
-#day_11_6{
+.day_11_6{
   grid-column: 298/ span 7;
 }
-#day_11_7{
+.day_11_7{
   grid-column: 306/ span 7;
 }
-#day_11_8{
+.day_11_8{
   grid-column: 314/ span 7;
 }
-#day_11_9{
+.day_11_9{
   grid-column: 322/ span 7;
 }
-#day_11_10{
+.day_11_10{
   grid-column: 330/ span 7;
 }
-#day_11_11{
+.day_11_11{
   grid-column: 338/ span 7;
 }
-#day_11_12{
+.day_11_12{
   grid-column: 346/ span 7;
 }
-#day_11_13{
+.day_11_13{
   grid-column: 354/ span 7;
 }
-#day_11_14{
+.day_11_14{
   grid-column: 362/ span 7;
 }
-#day_11_15{
+.day_11_15{
   grid-column: 370/ span 7;
 }
-#day_11_16{
+.day_11_16{
   grid-column: 378/ span 7;
 }
-#day_11_17{
+.day_11_17{
   grid-column: 386/ span 7;
 }
-#day_11_18{
+.day_11_18{
   grid-column: 394/ span 7;
 }
-#day_11_19{
+.day_11_19{
   grid-column: 402/ span 7;
 }
-#day_11_20{
+.day_11_20{
   grid-column: 410/ span 7;
 }
-#day_11_21{
+.day_11_21{
   grid-column: 418/ span 7;
 }
-#day_11_22{
+.day_11_22{
   grid-column: 426/ span 7;
 }
-#day_11_23{
+.day_11_23{
   grid-column: 434/ span 7;
 }
-#day_11_24{
+.day_11_24{
   grid-column: 442/ span 7;
 }
-#day_11_25{
+.day_11_25{
   grid-column: 450/ span 7;
 }
-#day_11_26{
+.day_11_26{
   grid-column: 458/ span 7;
 }
-#day_11_27{
+.day_11_27{
   grid-column: 466/ span 7;
 }
-#day_11_28{
+.day_11_28{
   grid-column: 474/ span 7;
 }
-#day_11_29{
+.day_11_29{
   grid-column: 482/ span 7;
 }
-#day_11_30{
+.day_11_30{
   grid-column: 490/ span 7;
 }
-#day_12_1{
+.day_12_1{
   grid-column: 498/ span 7;
 }
-#day_12_2{
+.day_12_2{
   grid-column: 506/ span 7;
 }
-#day_12_3{
+.day_12_3{
   grid-column: 514/ span 7;
 }
-#day_12_4{
+.day_12_4{
   grid-column: 522/ span 7;
 }
-#day_12_5{
+.day_12_5{
   grid-column: 530/ span 7;
 }
-#day_12_6{
+.day_12_6{
   grid-column: 538/ span 7;
 }
-#day_12_7{
+.day_12_7{
   grid-column: 546/ span 7;
 }
-#day_12_8{
+.day_12_8{
   grid-column: 554/ span 7;
 }
-#day_12_9{
+.day_12_9{
   grid-column: 562/ span 7;
 }
-#day_12_10{
+.day_12_10{
   grid-column: 570/ span 7;
 }
-#day_12_11{
+.day_12_11{
   grid-column: 578/ span 7;
 }
 
-#day_12_12{
+.day_12_12{
   grid-column: 586/ span 7;
 }
