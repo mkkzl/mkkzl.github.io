@@ -3,9 +3,12 @@
 <html>
 	<head>
 	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 	<style>
 	h1{
-		font-family: serif;
+		font-family: 'Merriweather', serif;
+		color: #f7083d;
+		font-size: 26px;
 	}
 	.wrapper{
 		display: grid;
@@ -19,7 +22,7 @@ margin: 25px;
 	}
 	ul{
 
-		grid-column: 3/ span 3;
+		grid-column: 1/ span 3;
 		grid-row: 2;
 
 	}
@@ -32,13 +35,28 @@ margin: 25px;
 		height: 60px;
 		width: 135px;
 		text-decoration: none;
+		border-color: #173d82;
+    border-style: solid;
+    border-width: thin;
+    align-content: center;
+    align-items: center;
+	}
+	.button:hover{
+	  border-color:  #f7083d;
+	  background-color: #173d82;
+	  color:  #ffffff;
+	  font-weight: 700;
 	}
 	p{
-		font-family: serif;
+		font-family: 'Merriweather', serif;
 		text-align: center;
+		color: #f7083d;
+		font-size: 14px;
 
 	}
-
+img{grid-column: 4;
+grid-row:2;
+margin-top: -35px;}
 	</style>
 	</head>
 	<body>
@@ -54,6 +72,7 @@ margin: 25px;
 
 		</ul>
   <h1 class="footer">And I am somehow still more informed than some voters.</h1>
+	<img src="ivoted.gif">
     </div>
 	</body>
 </html>
