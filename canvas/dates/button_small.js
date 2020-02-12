@@ -1,4 +1,4 @@
-var months= ["August", "September", "October", "November", "December", "January"];
+var months= ["August", "September", "October", "November", "December", "January", "February"];
 
 var day;
 var month;
@@ -12,6 +12,7 @@ var oct = [];
 var nov=[];
 var dec= [];
 var jan=[];
+var feb=[];
 
 var hm= new Object();
 $.getJSON("data.json", function(json){
@@ -65,6 +66,9 @@ for (var i = 0; i<json.length; i++){
      }
      if(m==1){
        if(jan.includes(d)){}else{jan.push(d)}
+     }
+     if(m==2){
+       if(feb.includes(d)){}else{feb.push(d)}
      }
 }
 
@@ -197,6 +201,19 @@ document.getElementById('October').onclick = function() {
                 var d_opt= document.createElement("button");
               d_opt.appendChild(document.createTextNode(jan[i]));
               d_opt.value="1/"+jan[i]+"/2020";
+              d_opt.className= "day";
+              d_opt.className += " btn";
+
+
+              select.appendChild(d_opt);
+          }};
+          document.getElementById('February').onclick= function(){
+            if (select.innerHTML!= null){select.innerHTML= "";}
+              for (var i=0; i<feb.length; i++){
+
+                var d_opt= document.createElement("button");
+              d_opt.appendChild(document.createTextNode(feb[i]));
+              d_opt.value="2/"+feb[i]+"/2020";
               d_opt.className= "day";
               d_opt.className += " btn";
 
