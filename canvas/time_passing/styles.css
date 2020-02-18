@@ -5,7 +5,7 @@
 .wrapper{
   display: grid;
   grid-template-columns: repeat(800, 50px );
-  grid-template-rows: repeat(50,25px);
+  grid-template-rows: repeat(31,25px);
 }
 img{
   width: 324px;
@@ -376,9 +376,11 @@ img{
 
 .text{
   grid-row: 14;
+  color: #333333;
 }
 .text2{
   grid-row:16;
+  color: #999999;
 }
 
 .day_9_30{
