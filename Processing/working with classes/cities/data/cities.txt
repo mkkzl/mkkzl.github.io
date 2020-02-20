@@ -1,0 +1,898 @@
+Rank	City	Population
+1	Jacksonville	903,889
+2	Miami	470,914
+3	Tampa	392,890
+4	Orlando	285,713
+5	St. Petersburg	265,098
+6	Hialeah	238,942
+7	Port St. Lucie	195,248
+8	Tallahassee	193,551
+9	Cape Coral	189,343
+10	Fort Lauderdale	182,595
+11	Pembroke Pines	172,374
+12	Hollywood	154,823
+13	Miramar	140,823
+14	Gainesville	133,857
+15	Coral Springs	133,507
+16	Lehigh Acres	116,849
+17	Clearwater	116,478
+18	Palm Bay	114,194
+19	Brandon	113,124
+20	Miami Gardens	113,069
+21	Pompano Beach	111,954
+22	West Palm Beach	111,398
+23	Lakeland	110,516
+24	Davie	106,558
+25	Spring Hill	104,722
+26	Boca Raton	99,244
+27	Sunrise	95,458
+28	Plantation	94,288
+29	Deltona	91,951
+30	Miami Beach	91,718
+31	Riverview	88,191
+32	Alafaya	88,025
+33	Palm Coast	87,607
+34	Largo	84,996
+35	Town 'n' Country	83,879
+36	Melbourne	82,826
+37	Fort Myers	82,254
+38	Deerfield Beach	80,863
+39	Boynton Beach	78,050
+40	Kendall	75,123
+41	The Villages	74,618
+42	Kissimmee	73,597
+43	Pine Hills	73,444
+44	Lauderhill	72,094
+45	Weston	71,210
+46	Homestead	70,477
+47	Delray Beach	69,358
+48	Daytona Beach	68,866
+49	North Port	68,628
+50	Poinciana	66,465
+51	Tamarac	66,054
+52	Jupiter	65,524
+53	Wellington	65,200
+54	Port Orange	64,252
+55	North Miami	62,996
+56	Doral	61,824
+57	Palm Harbor	61,553
+58	Coconut Creek	61,361
+59	Ocala	60,429
+60	Sanford	60,035
+61	Kendale Lakes	59,812
+62	Port Charlotte	59,654
+63	Fountainebleau	59,255
+64	The Hammocks	58,976
+65	Margate	58,656
+66	Tamiami	58,250
+67	Sarasota	57,738
+68	Bradenton	57,644
+69	Bonita Springs	57,370
+70	Palm Beach Gardens	56,284
+71	St. Cloud	54,115
+72	Apopka	53,489
+73	Wesley Chapel	53,414
+74	Pinellas Park	53,098
+75	Pensacola	52,713
+76	Coral Gables	50,999
+77	Country Club	49,207
+78	Ocoee	47,720
+79	Titusville	46,497
+80	Fort Pierce	46,071
+81	North Miami Beach	45,887
+82	Oakland Park	45,339
+83	Winter Garden	45,266
+84	University	44,979
+85	Cutler Bay	44,867
+86	North Lauderdale	44,391
+87	Altamonte Springs	44,241
+88	Ormond Beach	43,475
+89	Winter Haven	43,020
+90	Oviedo	41,557
+91	Greenacres	41,084
+92	North Fort Myers	40,916
+93	Royal Palm Beach	40,018
+94	Kendall West	39,952
+95	Hallandale Beach	39,940
+96	South Miami Heights	39,312
+97	Plant City	39,156
+98	The Acreage	38,845
+99	Lake Worth	38,267
+100	Aventura	37,988
+101	Valrico	37,546
+102	Four Corners	37,439
+103	Winter Springs	37,321
+104	Egypt Lake-Leto	36,964
+105	Panama City	36,908
+106	Richmond West	36,898
+107	Clermont	36,693
+108	Dunedin	36,580
+109	Merritt Island	36,380
+110	Lauderdale Lakes	36,324
+111	Land O' Lakes	35,995
+112	Cooper City	35,853
+113	University CDP	35,642
+114	Riviera Beach	34,834
+115	Carrollwood	34,747
+116	Navarre	34,085
+117	Golden Glades	34,062
+118	Meadow Woods	33,688
+119	Parkland	33,631
+120	Buenaventura Lakes	33,598
+121	Ferry Pass and DeLand	33,532
+122	Estero	33,474
+123	West Little River	32,433
+124	Dania Beach	32,271
+125	East Lake	32,248
+126	Fruit Cove	31,873
+127	Miami Lakes	31,628
+128	Winter Park	31,059
+129	Lakeside	30,983
+130	Westchester	30,516
+131	Golden Gate	29,841
+132	Lake Magdalene	29,184
+133	Fleming Island	29,163
+134	Casselberry	28,876
+135	Princeton	28,201
+136	Rockledge	27,715
+137	Leisure City	27,389
+138	New Smyrna Beach	27,229
+139	East Lake-Orient Park	26,989
+140	University Park	26,565
+141	Temple Terrace	26,471
+142	Oakleaf Plantation	26,315
+143	Bayonet Point	26,126
+144	Citrus Park	25,994
+145	Sebastian	25,719
+146	Immokalee	25,686
+147	Tarpon Springs	25,571
+148	Horizon West	25,365
+149	Haines City	25,091
+150	Palm Springs	25,061
+151	South Bradenton	24,935
+152	Coral Terrace	24,723
+153	Crestview	24,664
+154	Palmetto Bay	24,589
+155	Key West	24,565
+156	Palm City	24,537
+157	Oak Ridge	24,368
+158	Keystone	24,236
+159	Hialeah Gardens	24,043
+160	Vero Beach South	24,029
+161	Jacksonville Beach	23,669
+162	Palm River-Clair Mel	23,484
+163	Bloomingdale	23,395
+164	Venice	23,376
+165	West Melbourne	23,372
+166	Wekiwa Springs	23,359
+167	Wright	23,348
+168	Westchase	23,287
+169	Leesburg	23,163
+170	The Crossings	23,062
+171	Hunters Creek	22,999
+172	Brent	22,761
+173	Edgewater	22,669
+174	Northdale	22,558
+175	Ives Estates	22,460
+176	Sunny Isles Beach	22,295
+177	Fort Walton Beach	22,284
+178	Pace	22,232
+179	Ruskin	22,162
+180	Naples	22,039
+181	Sun City Center	21,986
+182	Ensley	21,922
+183	Bellview	21,655
+184	Sweetwater	21,543
+185	Lynn Haven	21,492
+186	Lutz	21,448
+187	DeBary	21,118
+188	Eustis	21,083
+189	Lealman	20,755
+190	Holiday	20,745
+191	Palm Valley	20,672
+192	Jasmine Estates	20,465
+193	West Pensacola	20,314
+194	Belle Glade	20,058
+195	Punta Gorda	20,057
+196	Bayshore Gardens	20,047
+197	Bartow	19,926
+198	Pinecrest	19,591
+199	Lake Butler	19,575
+200	Florida Ridge	19,362
+201	Seminole	18,866
+202	Cocoa	18,619
+203	Gibsonton	18,273
+204	Midway CDP	18,070
+205	Safety Harbor	18,031
+206	Maitland	17,947
+207	Marco Island	17,930
+208	Apollo Beach	17,929
+209	Ojus	17,727
+210	Fish Hawk	17,698
+211	San Carlos Park	17,597
+212	Glenvar Heights	17,560
+213	Tavares	17,472
+214	Lake Mary	17,283
+215	Vero Beach	17,236
+216	Myrtle Grove	16,839
+217	Brownsville	16,615
+218	Country Walk	16,601
+219	Lake Wales	16,577
+220	New Port Richey	16,494
+221	Sarasota Springs	16,386
+222	Opa-locka	16,356
+223	Stuart	16,293
+224	Auburndale	16,291
+225	Three Lakes	16,266
+226	Upper Grand Lagoon	16,094
+227	Palmetto Estates	15,998
+228	Pinewood	15,975
+229	Sunset	15,875
+230	Southchase	15,764
+231	West Lealman	15,756
+232	Lady Lake	15,622
+233	Niceville	15,579
+234	Zephyrhills	15,563
+235	Callaway	15,216
+236	Englewood	15,169
+237	Longwood	15,124
+238	West Park	15,113
+239	World Golf Village	15,025
+240	Oldsmar	14,841
+241	Bellair-Meadowbrook Terrace	14,830
+242	Forest City	14,702
+243	Azalea Park	14,701
+244	Groveland	14,677
+245	St. Augustine	14,576
+246	South Venice	14,535
+247	Gonzalez	14,490
+248	Iona	14,349
+249	Olympia Heights	14,345
+250	Miami Springs	14,315
+251	Hobe Sound	14,301
+252	Mount Dora	14,216
+253	Destin	14,077
+254	Lockhart	14,027
+255	Conway	14,023
+256	Atlantic Beach	13,831
+257	Thonotosassa	13,743
+258	Palmetto	13,717
+259	East Milton	13,583
+260	Warrington	13,569
+261	Fruitville	13,541
+262	Gladeview	13,539
+263	Jensen Beach	13,438
+264	Middleburg	13,316
+265	Elfers	13,291
+266	Homosassa Springs	13,217
+267	Key Biscayne	13,149
+268	North Palm Beach	13,129
+269	Panama City Beach	13,065
+270	South Daytona	13,054
+271	Wilton Manors	12,797
+272	Goldenrod	12,634
+273	Fernandina Beach	12,558
+274	Cypress Lake	12,505
+275	Hudson	12,477
+276	Gulfport	12,401
+277	Lakeland Highlands	12,345
+278	Holly Hill	12,316
+279	Westwood Lakes	12,273
+280	Pine Castle	12,270
+281	Yulee	12,244
+282	South Miami	12,219
+283	Minneola	12,124
+284	Lake City	12,116
+285	Lakewood Park	12,090
+286	Florida City	12,077
+287	Lantana	11,867
+288	Shady Hills	11,850
+289	Mango	11,836
+290	Orange City	11,804
+291	Jupiter Farms	11,787
+292	Goulds	11,768
+293	Cocoa Beach	11,737
+294	Nocatee	11,634
+295	Port St. John	11,489
+296	Westview	11,480
+297	Doctor Phillips	11,416
+298	Lighthouse Point	11,283
+299	Villas	11,242
+300	Richmond Heights	11,155
+301	Fairview Shores	11,096
+302	Satellite Beach	11,088
+303	Viera East	10,975
+304	Sebring	10,937
+305	Cheval	10,821
+306	Naranja	10,776
+307	Port Salerno	10,760
+308	Union Park	10,707
+309	Avon Park	10,695
+310	Gulf Gate Estates	10,650
+311	West Perrine	10,634
+312	Miami Shores	10,562
+313	Trinity	10,529
+314	Palatka	10,465
+315	Cape Canaveral	10,449
+316	Gateway	10,388
+317	Highland City	10,386
+318	Milton	10,269
+319	Fruitland Park	10,122
+320	Key Largo	10,071
+321	Alachua	9,949
+322	Pine Ridge	9,811
+323	Bee Ridge	9,772
+324	New Port Richey East	9,753
+325	Fuller Heights	9,719
+326	Gifford	9,683
+327	St. Pete Beach	9,649
+328	Bardmoor	9,494
+329	Springfield	9,452
+330	Medulla	9,335
+331	Westgate	9,300
+332	Laurel	9,283
+333	Viera West	9,228
+334	Beverly Hills	9,144
+335	St. Augustine Shores	9,099
+336	Citrus Springs	9,011
+337	Cypress Gardens	9,006
+338	Rotonda	8,981
+339	Pasadena Hills	8,932
+340	Memphis	8,926
+341	Bithlo	8,904
+342	Micco	8,859
+343	Orange Park	8,809
+344	Palm Beach	8,802
+345	Asbury Lake	8,736
+346	North Sarasota	8,728
+347	Marathon	8,645
+348	Lake Park	8,605
+349	Indian Harbour Beach	8,565
+350	Miramar Beach	8,555
+351	Celebration	8,536
+352	Silver Springs Shores	8,508
+353	Fern Park	8,469
+354	Sugarmill Woods	8,465
+355	Progress Village	8,425
+356	Green Cove Springs	8,313
+357	Pebble Creek	8,311
+358	Brooksville	8,298
+359	North Bay Village	8,273
+360	Williamsburg	8,259
+361	Hernando	8,254
+362	Seffner	8,239
+363	Arcadia	8,201
+364	West Vero Corridor	8,135
+365	North Weeki Wachee	8,104
+366	West Miami	8,052
+367	Clewiston	7,985
+368	Odessa	7,983
+369	Southwest Ranches	7,981
+370	Broadview Park	7,963
+371	Venice Gardens	7,904
+372	Citrus Hills	7,735
+373	McGregor	7,732
+374	Inwood	7,708
+375	Ormond-by-the-Sea	7,692
+376	Southeast Arcadia	7,653
+377	Fort Pierce North	7,597
+378	Southgate	7,539
+379	Wedgefield	7,516
+380	Sanibel	7,402
+381	Inverness	7,390
+382	Longboat Key	7,323
+383	Neptune Beach	7,297
+384	Quincy	7,235
+385	Dade City	7,232
+386	Belle Isle	7,166
+387	Wimauma	7,140
+388	Fort Myers Beach	7,102
+389	Indiantown and Marianna	7,091
+390	Lake Lorraine	7,081
+391	West Samoset	7,034
+392	St. Augustine Beach	7,026
+393	Wildwood	7,024
+394	Live Oak	6,974
+395	Treasure Island	6,947
+396	Perry	6,928
+397	Beacon Square	6,837
+398	Osprey	6,734
+399	Pembroke Park	6,730
+400	DeFuniak Springs	6,719
+401	Gulf Breeze	6,716
+402	Macclenny	6,705
+403	Lauderdale-by-the-Sea	6,680
+404	South Patrick Shores	6,669
+405	Indian River Estates	6,585
+406	Fort Myers Shores	6,496
+407	Kathleen	6,479
+408	Islamorada, Village of Islands	6,383
+409	Crystal Lake	6,355
+410	Pahokee	6,270
+411	Naples Park	6,258
+412	Ocean City	6,227
+413	Fort Meade	6,203
+414	Combee Settlement	6,189
+415	High Springs	6,137
+416	Heathrow	6,135
+417	Tequesta	6,133
+418	Naples Manor	6,121
+419	Newberry	6,115
+420	Sky Lake	6,112
+421	Orlovista	6,109
+422	Lecanto	6,099
+423	River Park	6,055
+424	South Gate Ridge	6,045
+425	Inverness Highlands South	6,010
+426	Mims	5,982
+427	Lake Alfred	5,977
+428	Bay Harbor Islands	5,964
+429	Pelican Bay	5,876
+430	Mascotte	5,873
+431	Siesta Key	5,850
+432	Surfside	5,802
+433	Willow Oak	5,759
+434	Fellsmere	5,754
+435	Mount Plymouth	5,739
+436	Okeechobee	5,731
+437	Palm Springs North	5,624
+438	South Apopka	5,525
+439	Samsula-Spruce Creek	5,489
+440	Starke	5,411
+441	Davenport	5,378
+442	Big Pine Key	5,339
+443	Lely Resort	5,335
+444	Warm Mineral Springs	5,305
+445	South Highpoint	5,303
+446	St. Augustine South	5,271
+447	South Sarasota	5,265
+448	Cocoa West	5,250
+449	Nassau Village-Ratliff	5,245
+450	LaBelle	5,226
+451	Zephyrhills South and Timber Pines	5,207
+452	Valparaiso	5,195
+453	Jan Phyl Village	5,189
+454	Floral City	5,188
+455	South Bay	5,185
+456	South Pasadena	5,117
+457	Rio Pinar	5,116
+458	Wahneta	5,084
+459	Flagler Beach and Bay Hill	5,081
+460	Kenneth City	5,059
+461	Hutchinson Island South	5,055
+462	Belleview	5,022
+463	River Ridge	5,002
+464	Crawfordville	4,999
+465	Butler Beach	4,983
+466	Whiskey Creek	4,979
+467	Orangetree	4,948
+468	Pine Manor	4,926
+469	Wauchula	4,895
+470	Dundee	4,816
+471	Plantation CDP	4,790
+472	Tice	4,764
+473	Zephyrhills West	4,734
+474	Lake Sarasota	4,718
+475	Goulding	4,624
+476	Suncoast Estates	4,587
+477	Parker	4,584
+478	Port LaBelle	4,583
+479	Sawgrass	4,571
+480	Brookridge	4,543
+481	Daytona Beach Shores	4,541
+482	Moon Lake	4,525
+483	Fussels Corner	4,413
+484	The Meadows	4,383
+485	Mary Esther	4,370
+486	Buckingham	4,366
+487	Lochmoor Waterway Estates	4,363
+488	Kensington Park	4,351
+489	Vamo	4,345
+490	Cortez	4,332
+491	Madeira Beach	4,327
+492	Fort Pierce South	4,318
+493	Holmes Beach	4,295
+494	Loughman	4,292
+495	Indian Rocks Beach	4,286
+496	Grant-Valkaria	4,254
+497	Indian River Shores	4,252
+498	June Park	4,225
+499	Belleair	4,217
+500	West Bradenton	4,213
+501	Lake Belvedere Estates	4,209
+502	Stock Island	4,201
+503	Mulberry	4,192
+504	White City	4,185
+505	San Castle	4,170
+506	West DeLand	4,162
+507	Connerton	4,132
+508	Ridge Manor	4,114
+509	Jasper	4,098
+510	Alturas	4,090
+511	South Brooksville	4,038
+512	Taylor Creek	3,982
+513	Bagdad	3,979
+514	Vineyards	3,945
+515	Samoset	3,922
+516	Highland Beach	3,915
+517	Ridge Wood Heights	3,878
+518	Charlotte Harbor	3,870
+519	Three Oaks	3,850
+520	Lely	3,808
+521	Umatilla	3,805
+522	Holden Heights	3,801
+523	Laguna Beach	3,764
+524	Pea Ridge	3,727
+525	South Beach	3,675
+526	St. James City	3,671
+527	Lower Grand Lagoon	3,669
+528	Point Baker	3,665
+529	Montura	3,654
+530	Juno Beach	3,648
+531	Lake Clarke Shores	3,628
+532	Desoto Lakes	3,590
+533	High Point	3,571
+534	Chipley	3,570
+535	Loxahatchee Groves	3,564
+536	Port St. Joe	3,562
+537	Tierra Verde	3,560
+538	Tyndall AFB	3,557
+539	Cedar Grove	3,547
+540	Feather Sound	3,532
+541	Flagler Estates	3,520
+542	Windermere	3,509
+543	Dover	3,473
+544	Pretty Bayou	3,458
+545	North Brooksville	3,431
+546	Ellenton	3,423
+547	Royal Palm Estates	3,416
+548	Watergate	3,411
+549	North River Shores	3,405
+550	Harbour Heights	3,401
+551	Nokomis	3,376
+552	Cleveland	3,317
+553	Melbourne Beach	3,288
+554	Ponce Inlet	3,282
+555	Frostproof	3,273
+556	Seminole Manor	3,226
+557	Inverness Highlands North	3,219
+558	Whitfield	3,215
+559	Hilliard	3,209
+560	Midway	3,194
+561	Lake Panasoffkee	3,170
+562	Ridgecrest	3,168
+563	Crystal River	3,162
+564	Bay Pines	3,160
+565	Biscayne Park	3,159
+566	Malabar	3,133
+567	Island Walk	3,121
+568	Bushnell	3,119
+569	Oakland	3,087
+570	Chattahoochee	3,065
+571	Harbor Bluffs	3,041
+572	Bal Harbour	3,039
+573	Watertown	3,030
+574	Sharpes	3,016
+575	Zellwood	2,997
+576	Big Coppitt Key	2,994
+577	Dade City North	2,981
+578	Edgewood	2,977
+579	Clarcona	2,935
+580	Greenbriar and Manatee Road	2,925
+581	Indialantic	2,913
+582	Villano Beach	2,903
+583	Bowling Green	2,902
+584	Port Richey	2,869
+585	Bunnell	2,820
+586	Lake Helen	2,814
+587	Madison	2,797
+588	Hypoluxo	2,783
+589	Tiger Point	2,779
+590	Woodville	2,770
+591	Williston	2,718
+592	Eagle Lake	2,708
+593	Bonifay	2,692
+594	Alva	2,684
+595	Woodlawn Beach	2,671
+596	Balm	2,664
+597	Tangelo Park	2,648
+598	De Leon Springs	2,627
+599	Cabana Colony	2,609
+600	Tangerine	2,579
+601	Geneva	2,573
+602	Hernando Beach	2,567
+603	Harlem	2,564
+604	Roosevelt Gardens	2,558
+605	Verona Walk	2,550
+606	Meadow Oaks	2,526
+607	Carrabelle	2,515
+608	Winter Beach	2,510
+609	Blountstown	2,478
+610	Freeport	2,472
+611	El Portal	2,471
+612	Chuluota	2,452
+613	Virginia Gardens	2,451
+614	Lake Placid	2,439
+615	Campbell	2,436
+616	Monticello	2,425
+617	Polk City	2,422
+618	Grenelefe	2,384
+619	Olga	2,357
+620	Apalachicola	2,344
+621	Zephyrhills North	2,342
+622	Redington Shores	2,309
+623	Eatonville	2,301
+624	Sewall's Point	2,216
+625	Boulevard Gardens	2,215
+626	Graceville	2,200
+627	Belleair Bluffs	2,199
+628	Oak Hill	2,183
+629	Malone	2,170
+630	Chiefland	2,169
+631	East Bronson and Eastpoint	2,156
+632	Pine Air	2,154
+633	Trenton	2,125
+634	Haverhill	2,123
+635	Atlantis	2,109
+636	Wewahitchka	2,095
+637	Heritage Pines and Wallace	2,091
+638	Eglin AFB	2,065
+639	Astatula	2,059
+640	Charlotte Park	2,058
+641	Grove City	2,042
+642	Hillsboro Beach	2,020
+643	Homosassa	2,019
+644	Mangonia Park	2,017
+645	East Palatka	1,999
+646	Burnt Store Marina	1,998
+647	Tavernier	1,994
+648	Pine Island Center	1,986
+649	Pine Ridge CDP	1,978
+650	Williston Highlands	1,967
+651	Bear Creek	1,962
+652	Ocean Ridge	1,956
+653	Gotha	1,911
+654	Punta Rassa	1,909
+655	Cudjoe Key	1,896
+656	Pierson	1,890
+657	Taft	1,874
+658	Hill 'n Dale	1,870
+659	Fort Denaud	1,865
+660	Glencoe	1,853
+661	Quail Ridge	1,847
+662	Oriole Beach	1,824
+663	Dunnellon	1,819
+664	Century	1,817
+665	Lake Mary Jane	1,808
+666	Moore Haven	1,807
+667	Zolfo Springs	1,803
+668	Sneads	1,798
+669	Lake Butler city	1,797
+670	Wabasso Beach	1,767
+671	Lacoochee	1,759
+672	Anna Maria	1,749
+673	Crooked Lake Park	1,748
+674	Silver Lake	1,735
+675	Roseland	1,728
+676	Cross City	1,712
+677	Havana	1,707
+678	Weeki Wachee Gardens	1,693
+679	Christmas	1,682
+680	Montverde	1,675
+681	Holley	1,634
+682	Key Vista	1,631
+683	Belleair Beach	1,609
+684	Buckhead Ridge	1,607
+685	Harlem Heights	1,585
+686	Crescent City	1,542
+687	Washington Park	1,537
+688	Hawthorne	1,527
+689	Gretna	1,526
+690	Plantation Mobile Home Park	1,519
+691	Keystone Heights	1,518
+692	Astor	1,504
+693	Baldwin	1,495
+694	Redington Beach	1,481
+695	North Redington Beach	1,477
+696	Indian Shores	1,476
+697	South Palm Beach	1,471
+698	Interlachen	1,461
+699	San Antonio	1,448
+700	Lake Hamilton and Patrick AFB	1,442
+701	Midway CDP	1,440
+702	North DeLand	1,425
+703	Kenwood Estates	1,414
+704	Center Hill	1,409
+705	Babson Park	1,399
+706	Cypress Quarters	1,381
+707	St. Leo	1,376
+708	Black Hammock	1,361
+709	Callahan	1,353
+710	Bokeelia	1,349
+711	Inglis	1,323
+712	Palmona Park	1,321
+713	Gun Club Estates	1,306
+714	Schall Circle	1,293
+715	Limestone Creek	1,290
+716	Mayo	1,286
+717	Bradenton Beach	1,278
+718	Palm Beach Shores	1,264
+719	Paisley	1,262
+720	Black Diamond	1,259
+721	Tildenville	1,252
+722	Five Points	1,247
+723	Molino	1,239
+724	Mexico Beach	1,223
+725	Howey-in-the-Hills	1,175
+726	Archer	1,173
+727	Palm Shores	1,160
+728	Bronson	1,133
+729	Webster	1,114
+730	Manasota Key	1,101
+731	Allentown	1,064
+732	Franklin Park	1,046
+733	Yalaha	1,044
+734	Panacea	1,029
+735	Waldo	1,023
+736	Fanning Springs	1,015
+737	North Key Largo	1,009
+738	Crescent Beach	1,008
+739	Bristol	998
+740	Navarre Beach	995
+741	Crystal Springs	969
+742	DeLand Southwest	960
+743	Golden Beach	959
+744	Jupiter Island	920
+745	Pomona Park	916
+746	Cottondale	905
+747	Rio	893
+748	Medley	890
+749	Juno Ridge	884
+750	Gulf Stream	880
+751	Grand Ridge	879
+752	Coleman	877
+753	Masaryktown	867
+754	Jennings and Chumuckla	863
+755	Lake Kathryn	858
+756	Homestead Base	843
+757	Shalimar and Penney Farms	824
+758	Paxton	822
+759	Greenville	820
+760	Key Colony Beach	814
+761	Hosford	799
+762	Waverly	794
+763	Steinhatchee	778
+764	White Springs	767
+765	St. George Island	740
+766	Branford	730
+767	Duck Key	727
+768	Lawtey	722
+769	Welaka	712
+770	Pioneer and Garden Grove	709
+771	Solana	706
+772	Matlacha	705
+773	Melbourne Village and Stacey Street	697
+774	Vernon	690
+775	Cedar Key	686
+776	Wabasso	681
+777	Greenwood	662
+778	Briny Breezes	653
+779	Harold	652
+780	Wiscon	650
+781	Hastings	648
+782	Seville	646
+783	St. Lucie Village	642
+784	Micanopy	641
+785	East Williston	635
+786	Jay	620
+787	Lemon Grove	619
+788	Sea Ranch Lakes	618
+789	Pine Lakes	617
+790	Greensboro	614
+791	Laurel Hill	609
+792	Sorrento and Lake Mack-Forest Hills	608
+793	Andrews	603
+794	Fort White	602
+795	Canal Point	595
+796	Roeville	575
+797	Ponce de Leon	564
+798	Reddick and Spring Lake	541
+799	Paradise Heights	530
+800	Yankeetown	519
+801	Ferndale	506
+802	Avalon, Altha, and Hillsboro Pines	504
+803	Hampton	497
+804	Page Park	493
+805	Brownsdale	492
+806	McIntosh	490
+807	Bell	488
+808	Sopchoppy	482
+809	Raleigh	479
+810	Spring Ridge	474
+811	Alford	467
+812	Manalapan	466
+813	Acacia Villas	459
+814	Garcon Point	453
+815	Orchid and Jupiter Inlet Colony	452
+816	Glen St. Mary	450
+817	Cinco Bayou	438
+818	Everglades	424
+819	Beverly Beach	400
+820	Bradley Junction	396
+821	La Crosse	395
+822	Wausau	387
+823	Trilby	384
+824	Worthington Springs	380
+825	Matlacha Isles-Matlacha Shores	375
+826	Plantation Island	364
+827	Berrydale	353
+828	Esto	352
+829	Lake Mystic	336
+830	Brooker	334
+831	Lee	328
+832	Lake Hart	327
+833	Wacissa	324
+834	St. Marks	319
+835	Yeehaw Junction	316
+836	Mulat	305
+837	Pineland	299
+838	Hillcrest Heights	294
+839	Caryville	282
+840	Westville	280
+841	Lisbon	277
+842	Ebro, Homeland, and Golf	275
+843	Floridatown and Highland Park	264
+844	Whitfield CDP	261
+845	Sumatra	253
+846	Windsor	252
+847	Jacob City	246
+848	Glen Ridge and Charleston Park	243
+849	Raiford	236
+850	Pittman	235
+851	Ocean Breeze Park	234
+852	Gardner	228
+853	Campbellton	225
+854	Istachatta	214
+855	Pine Level	212
+856	Waukeenah	211
+857	Noma	204
+858	Mount Carmel	203
+859	Goodland	197
+860	Ona	195
+861	Captiva	194
+862	Layton	189
+863	Nobleton	180
+864	Day	179
+865	Munson	169
+866	Fort Green	168
+867	Horseshoe Beach	167
+868	Lamont	161
+869	Dixonville	158
+870	Limestone	153
+871	Fidelis and Aucilla	147
+872	Cloud Lake	146
+873	Westlake	137
+874	Otter Creek	133
+875	Springhill	130
+876	Lloyd	128
+877	Okahumpka	127
+878	Fort Green Springs	125
+879	Bascom	116
+880	Belleair Shore	114
+881	Aripeka	111
+882	Indian Creek	91
+883	Altoona	87
+884	Fisher Island	81
+885	Chokoloskee	74
+886	Morriston	69
+887	Bayport	56
+888	Bay Lake	51
+889	Dickerson City	47
+890	Lake Buena Vista	27
+891	Lazy Lake	26
+892	Lake Harbor	21
+893	Lake Lindsey	17
+894	Weeki Wachee	13
+895	Pine Island	12
+896	Marineland	11
+897	Cobbtown	7

@@ -1,0 +1,94 @@
+{
+  "web_links":[
+    "https://www.yoyolin.com/resiliencejournal",
+    "https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization?language=en#t-1066784",
+    "https://www.ted.com/talks/sougwen_chung_why_i_draw_with_robots?utm_source=newsletter_daily&utm_campaign=daily&utm_medium=email&utm_content=button__2019-11-25",
+    "https://sougwen.com/info",
+    "https://www.theverge.com/2019/4/21/18254786/net-art-anthology-happens-here-new-museum-exhibit-mtaa",
+    "https://www.ted.com/talks/nathalie_miebach?language=en#t-236419",
+    "https://www.wnycstudios.org/podcasts/notetoself/episodes/dear-data-diary",
+    "http://www.dear-data.com/theproject",
+    "https://www.moma.org/explore/inside_out/2013/02/28/watching-the-wind-viegas-and-wattenbergs-wind-map/",
+    "https://www.youtube.com/watch?v=AdSZJzb-aX8",
+    "https://newatlas.com/art-ones-and-zeros-data-visualization/49926/",
+    "https://www.theatlantic.com/entertainment/archive/2015/05/the-rise-of-the-data-artist/392399/",
+    "https://museums.richmond.edu/exhibitions/page.html?eventid=11624&informationid=casDataMuseumExhibition,startdate:2017-02-28,enddate:2017-05-05",
+    "http://www.data-arts.nyc/projects",
+    "https://data-matters.nyc/",
+    "http://digicult.it/section/data-visualization/",
+    "https://datavizcatalogue.com/",
+    "https://www.moma.org/explore/inside_out/2015/12/10/data-visualization-design-and-the-art-of-depicting-reality/"
+
+  ],
+  "names":[
+    "DEAR DATA DIARY",
+    "Nathalie Miebach",
+    "Laurie Frick",
+    "David McCandless",
+    "Aaron Koblin",
+    "Julie Freeman",
+    "Moritz Stefaner",
+    "Million Dollar Blocks",
+    "shapolsky et al Manhattan Real Estate Holdings, A Real Time Social System.",
+    "On Kawara",
+    "Hasan Elahi Wired",
+    "Danica Phelps",
+    "Jeppe Hein",
+    "Paolo Cirio Obscurity",
+    "Ben Fry",
+    "Nigel Holmes",
+    "Len Manovich",
+    "Stefanie Posavec",
+    "Golan Levin",
+    "Loren Munk",
+    "Ward Shelley",
+    "Justin Amhrein",
+    "Eva Hesse",
+    "Claude Shannon",
+    "Norbert Wiener",
+    "Ludwig van Bertalanffy",
+    "Abraham Moles",
+    "Max Bense",
+    "Roy Ascott",
+    "Jack Burnham: systems aesthetics and real time systems",
+    "Luciano Caramel",
+    "Edward Ihnatowicz"
+  ],
+  "recommended":[
+    "stiegler general organology",
+    "Whitechapel Systems",
+    "Rosamund Purcell’s Owls Head.",
+    "Specimens of Hair of Peter Brown.",
+    "Archive Fever by Okwui Enwezor",
+    "Performing the Archive: The Transformation of the Archive in Contemporary Art from Repository of Documents to Art Medium (Think Media: Egs Media Philosophy)",
+    "The Big Archive: Art From Bureaucracy (The MIT Press).",
+    "Cinema And Art As Archive, Form, Medium, Memory (Cinema / Cinema and Contemporary Arts)",
+    "Deep Storage.",
+    "The Wounded Storyteller"
+
+  ],
+  "books":[
+    {
+      "book": "Relive: Media Art Histories",
+      "quotes": [
+        "In his book what do pictures want, W. J. T. Mitchell describes our cybernetic period as one in which informatics, computer, and digital models of calculation and control our  inter locked in a struggle with new forms of incalculability and under controlability, from computer viruses to terrorism. 4",
+        "Our inherited love of tidiness too easily becomes fascist similar to any other instinct it must be socialized and managed. 4",
+        "Data serve as the origin and digital imaging in place of the object photographed and analog photography. The invisible data characterize moreover the ontological peculiarity or self insufficiency of digitalized data. 5",
+        "The second aspect of this history is the expansion of capital into increasing areas of human life. Compelled by the falling rate of profit to find ever new terrains for exploitation, capital rode the technological revolution as it had precipitated into the realm of information. Since 1984, when the personal computer revolution hit the electronics retail market, and especially since the introduction of the web is a mass medium in 1993, we have been in an era in which information has become a critical category of manufacturing exchange. There is, of course, a limit to the amount of data that can be circulated, especially in societies where, in the guise of education, knowledge and skills have been handed out for free. The capitalization organization of knowledge as data have a series of effects: the commercialization of schools and universities, the restructuring of knowledge in the form of facts, the restructuring of skill as intellectual property, and the manufacture of worlds. 11",
+        "Since by definition man is the only teacher a machine has we will not learn from it anything that we did not know before. 312",
+        "COPY-IT-RIGHT means making faithful copies, caring for, and sharing work. As such, it is an ethic, an ethical position. 340",
+        "The term source code refers to the preferred human-readable and human-modifiable form of a software program as opposed to object-code, which is the derived, compiled binary executable form of a program. 340",
+      ]
+    },
+    {
+      "book": "The science of managing our digital stuff",
+      "quotes": [
+        "What unifies this disparate data into a personal collection is that we judge that it may be valuable to us in the future. We therefore seek to preserve and actively organize this data ourselves because we want to ensure access to it at some future time. 1",
+        "Personal information management is the process by which individuals curate their personal data in order to re-access that data leader creation involves three distinct processes: how we make decisions about what personal information to keep, how we organize that kept data, and the strategies by which we access it later. 1",
+        "What exactly do we mean by personal information? One critical point to know here is that not all personal data is self created. Personal collections can also contain data that were originally accessed from public archives. What unifies all this disparate data types into a personal collection is the projected future value for a user. What defines personal information therefore is not the type or providence of information, but rather that users strategically choose to organize the information themselves with an eye to its future access. 14",
+
+      ]
+    }
+    ]
+
+}

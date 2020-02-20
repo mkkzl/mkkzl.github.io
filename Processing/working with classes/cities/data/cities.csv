@@ -1,0 +1,898 @@
+Rank,City,Population
+1,Jacksonville,903889.00
+2,Miami,470914.00
+3,Tampa,392890.00
+4,Orlando,285713.00
+5,St. Petersburg,265098.00
+6,Hialeah,238942.00
+7,Port St. Lucie,195248.00
+8,Tallahassee,193551.00
+9,Cape Coral,189343.00
+10,Fort Lauderdale,182595.00
+11,Pembroke Pines,172374.00
+12,Hollywood,154823.00
+13,Miramar,140823.00
+14,Gainesville,133857.00
+15,Coral Springs,133507.00
+16,Lehigh Acres,116849.00
+17,Clearwater,116478.00
+18,Palm Bay,114194.00
+19,Brandon,113124.00
+20,Miami Gardens,113069.00
+21,Pompano Beach,111954.00
+22,West Palm Beach,111398.00
+23,Lakeland,110516.00
+24,Davie,106558.00
+25,Spring Hill,104722.00
+26,Boca Raton,99244.00
+27,Sunrise,95458.00
+28,Plantation,94288.00
+29,Deltona,91951.00
+30,Miami Beach,91718.00
+31,Riverview,88191.00
+32,Alafaya,88025.00
+33,Palm Coast,87607.00
+34,Largo,84996.00
+35,Town 'n' Country,83879.00
+36,Melbourne,82826.00
+37,Fort Myers,82254.00
+38,Deerfield Beach,80863.00
+39,Boynton Beach,78050.00
+40,Kendall,75123.00
+41,The Villages,74618.00
+42,Kissimmee,73597.00
+43,Pine Hills,73444.00
+44,Lauderhill,72094.00
+45,Weston,71210.00
+46,Homestead,70477.00
+47,Delray Beach,69358.00
+48,Daytona Beach,68866.00
+49,North Port,68628.00
+50,Poinciana,66465.00
+51,Tamarac,66054.00
+52,Jupiter,65524.00
+53,Wellington,65200.00
+54,Port Orange,64252.00
+55,North Miami,62996.00
+56,Doral,61824.00
+57,Palm Harbor,61553.00
+58,Coconut Creek,61361.00
+59,Ocala,60429.00
+60,Sanford,60035.00
+61,Kendale Lakes,59812.00
+62,Port Charlotte,59654.00
+63,Fountainebleau,59255.00
+64,The Hammocks,58976.00
+65,Margate,58656.00
+66,Tamiami,58250.00
+67,Sarasota,57738.00
+68,Bradenton,57644.00
+69,Bonita Springs,57370.00
+70,Palm Beach Gardens,56284.00
+71,St. Cloud,54115.00
+72,Apopka,53489.00
+73,Wesley Chapel,53414.00
+74,Pinellas Park,53098.00
+75,Pensacola,52713.00
+76,Coral Gables,50999.00
+77,Country Club,49207.00
+78,Ocoee,47720.00
+79,Titusville,46497.00
+80,Fort Pierce,46071.00
+81,North Miami Beach,45887.00
+82,Oakland Park,45339.00
+83,Winter Garden,45266.00
+84,University,44979.00
+85,Cutler Bay,44867.00
+86,North Lauderdale,44391.00
+87,Altamonte Springs,44241.00
+88,Ormond Beach,43475.00
+89,Winter Haven,43020.00
+90,Oviedo,41557.00
+91,Greenacres,41084.00
+92,North Fort Myers,40916.00
+93,Royal Palm Beach,40018.00
+94,Kendall West,39952.00
+95,Hallandale Beach,39940.00
+96,South Miami Heights,39312.00
+97,Plant City,39156.00
+98,The Acreage,38845.00
+99,Lake Worth,38267.00
+100,Aventura,37988.00
+101,Valrico,37546.00
+102,Four Corners,37439.00
+103,Winter Springs,37321.00
+104,Egypt Lake-Leto,36964.00
+105,Panama City,36908.00
+106,Richmond West,36898.00
+107,Clermont,36693.00
+108,Dunedin,36580.00
+109,Merritt Island,36380.00
+110,Lauderdale Lakes,36324.00
+111,Land O' Lakes,35995.00
+112,Cooper City,35853.00
+113,University CDP,35642.00
+114,Riviera Beach,34834.00
+115,Carrollwood,34747.00
+116,Navarre,34085.00
+117,Golden Glades,34062.00
+118,Meadow Woods,33688.00
+119,Parkland,33631.00
+120,Buenaventura Lakes,33598.00
+121,Ferry Pass and DeLand,33532.00
+122,Estero,33474.00
+123,West Little River,32433.00
+124,Dania Beach,32271.00
+125,East Lake,32248.00
+126,Fruit Cove,31873.00
+127,Miami Lakes,31628.00
+128,Winter Park,31059.00
+129,Lakeside,30983.00
+130,Westchester,30516.00
+131,Golden Gate,29841.00
+132,Lake Magdalene,29184.00
+133,Fleming Island,29163.00
+134,Casselberry,28876.00
+135,Princeton,28201.00
+136,Rockledge,27715.00
+137,Leisure City,27389.00
+138,New Smyrna Beach,27229.00
+139,East Lake-Orient Park,26989.00
+140,University Park,26565.00
+141,Temple Terrace,26471.00
+142,Oakleaf Plantation,26315.00
+143,Bayonet Point,26126.00
+144,Citrus Park,25994.00
+145,Sebastian,25719.00
+146,Immokalee,25686.00
+147,Tarpon Springs,25571.00
+148,Horizon West,25365.00
+149,Haines City,25091.00
+150,Palm Springs,25061.00
+151,South Bradenton,24935.00
+152,Coral Terrace,24723.00
+153,Crestview,24664.00
+154,Palmetto Bay,24589.00
+155,Key West,24565.00
+156,Palm City,24537.00
+157,Oak Ridge,24368.00
+158,Keystone,24236.00
+159,Hialeah Gardens,24043.00
+160,Vero Beach South,24029.00
+161,Jacksonville Beach,23669.00
+162,Palm River-Clair Mel,23484.00
+163,Bloomingdale,23395.00
+164,Venice,23376.00
+165,West Melbourne,23372.00
+166,Wekiwa Springs,23359.00
+167,Wright,23348.00
+168,Westchase,23287.00
+169,Leesburg,23163.00
+170,The Crossings,23062.00
+171,Hunters Creek,22999.00
+172,Brent,22761.00
+173,Edgewater,22669.00
+174,Northdale,22558.00
+175,Ives Estates,22460.00
+176,Sunny Isles Beach,22295.00
+177,Fort Walton Beach,22284.00
+178,Pace,22232.00
+179,Ruskin,22162.00
+180,Naples,22039.00
+181,Sun City Center,21986.00
+182,Ensley,21922.00
+183,Bellview,21655.00
+184,Sweetwater,21543.00
+185,Lynn Haven,21492.00
+186,Lutz,21448.00
+187,DeBary,21118.00
+188,Eustis,21083.00
+189,Lealman,20755.00
+190,Holiday,20745.00
+191,Palm Valley,20672.00
+192,Jasmine Estates,20465.00
+193,West Pensacola,20314.00
+194,Belle Glade,20058.00
+195,Punta Gorda,20057.00
+196,Bayshore Gardens,20047.00
+197,Bartow,19926.00
+198,Pinecrest,19591.00
+199,Lake Butler,19575.00
+200,Florida Ridge,19362.00
+201,Seminole,18866.00
+202,Cocoa,18619.00
+203,Gibsonton,18273.00
+204,Midway CDP,18070.00
+205,Safety Harbor,18031.00
+206,Maitland,17947.00
+207,Marco Island,17930.00
+208,Apollo Beach,17929.00
+209,Ojus,17727.00
+210,Fish Hawk,17698.00
+211,San Carlos Park,17597.00
+212,Glenvar Heights,17560.00
+213,Tavares,17472.00
+214,Lake Mary,17283.00
+215,Vero Beach,17236.00
+216,Myrtle Grove,16839.00
+217,Brownsville,16615.00
+218,Country Walk,16601.00
+219,Lake Wales,16577.00
+220,New Port Richey,16494.00
+221,Sarasota Springs,16386.00
+222,Opa-locka,16356.00
+223,Stuart,16293.00
+224,Auburndale,16291.00
+225,Three Lakes,16266.00
+226,Upper Grand Lagoon,16094.00
+227,Palmetto Estates,15998.00
+228,Pinewood,15975.00
+229,Sunset,15875.00
+230,Southchase,15764.00
+231,West Lealman,15756.00
+232,Lady Lake,15622.00
+233,Niceville,15579.00
+234,Zephyrhills,15563.00
+235,Callaway,15216.00
+236,Englewood,15169.00
+237,Longwood,15124.00
+238,West Park,15113.00
+239,World Golf Village,15025.00
+240,Oldsmar,14841.00
+241,Bellair-Meadowbrook Terrace,14830.00
+242,Forest City,14702.00
+243,Azalea Park,14701.00
+244,Groveland,14677.00
+245,St. Augustine,14576.00
+246,South Venice,14535.00
+247,Gonzalez,14490.00
+248,Iona,14349.00
+249,Olympia Heights,14345.00
+250,Miami Springs,14315.00
+251,Hobe Sound,14301.00
+252,Mount Dora,14216.00
+253,Destin,14077.00
+254,Lockhart,14027.00
+255,Conway,14023.00
+256,Atlantic Beach,13831.00
+257,Thonotosassa,13743.00
+258,Palmetto,13717.00
+259,East Milton,13583.00
+260,Warrington,13569.00
+261,Fruitville,13541.00
+262,Gladeview,13539.00
+263,Jensen Beach,13438.00
+264,Middleburg,13316.00
+265,Elfers,13291.00
+266,Homosassa Springs,13217.00
+267,Key Biscayne,13149.00
+268,North Palm Beach,13129.00
+269,Panama City Beach,13065.00
+270,South Daytona,13054.00
+271,Wilton Manors,12797.00
+272,Goldenrod,12634.00
+273,Fernandina Beach,12558.00
+274,Cypress Lake,12505.00
+275,Hudson,12477.00
+276,Gulfport,12401.00
+277,Lakeland Highlands,12345.00
+278,Holly Hill,12316.00
+279,Westwood Lakes,12273.00
+280,Pine Castle,12270.00
+281,Yulee,12244.00
+282,South Miami,12219.00
+283,Minneola,12124.00
+284,Lake City,12116.00
+285,Lakewood Park,12090.00
+286,Florida City,12077.00
+287,Lantana,11867.00
+288,Shady Hills,11850.00
+289,Mango,11836.00
+290,Orange City,11804.00
+291,Jupiter Farms,11787.00
+292,Goulds,11768.00
+293,Cocoa Beach,11737.00
+294,Nocatee,11634.00
+295,Port St. John,11489.00
+296,Westview,11480.00
+297,Doctor Phillips,11416.00
+298,Lighthouse Point,11283.00
+299,Villas,11242.00
+300,Richmond Heights,11155.00
+301,Fairview Shores,11096.00
+302,Satellite Beach,11088.00
+303,Viera East,10975.00
+304,Sebring,10937.00
+305,Cheval,10821.00
+306,Naranja,10776.00
+307,Port Salerno,10760.00
+308,Union Park,10707.00
+309,Avon Park,10695.00
+310,Gulf Gate Estates,10650.00
+311,West Perrine,10634.00
+312,Miami Shores,10562.00
+313,Trinity,10529.00
+314,Palatka,10465.00
+315,Cape Canaveral,10449.00
+316,Gateway,10388.00
+317,Highland City,10386.00
+318,Milton,10269.00
+319,Fruitland Park,10122.00
+320,Key Largo,10071.00
+321,Alachua,9949.00
+322,Pine Ridge,9811.00
+323,Bee Ridge,9772.00
+324,New Port Richey East,9753.00
+325,Fuller Heights,9719.00
+326,Gifford,9683.00
+327,St. Pete Beach,9649.00
+328,Bardmoor,9494.00
+329,Springfield,9452.00
+330,Medulla,9335.00
+331,Westgate,9300.00
+332,Laurel,9283.00
+333,Viera West,9228.00
+334,Beverly Hills,9144.00
+335,St. Augustine Shores,9099.00
+336,Citrus Springs,9011.00
+337,Cypress Gardens,9006.00
+338,Rotonda,8981.00
+339,Pasadena Hills,8932.00
+340,Memphis,8926.00
+341,Bithlo,8904.00
+342,Micco,8859.00
+343,Orange Park,8809.00
+344,Palm Beach,8802.00
+345,Asbury Lake,8736.00
+346,North Sarasota,8728.00
+347,Marathon,8645.00
+348,Lake Park,8605.00
+349,Indian Harbour Beach,8565.00
+350,Miramar Beach,8555.00
+351,Celebration,8536.00
+352,Silver Springs Shores,8508.00
+353,Fern Park,8469.00
+354,Sugarmill Woods,8465.00
+355,Progress Village,8425.00
+356,Green Cove Springs,8313.00
+357,Pebble Creek,8311.00
+358,Brooksville,8298.00
+359,North Bay Village,8273.00
+360,Williamsburg,8259.00
+361,Hernando,8254.00
+362,Seffner,8239.00
+363,Arcadia,8201.00
+364,West Vero Corridor,8135.00
+365,North Weeki Wachee,8104.00
+366,West Miami,8052.00
+367,Clewiston,7985.00
+368,Odessa,7983.00
+369,Southwest Ranches,7981.00
+370,Broadview Park,7963.00
+371,Venice Gardens,7904.00
+372,Citrus Hills,7735.00
+373,McGregor,7732.00
+374,Inwood,7708.00
+375,Ormond-by-the-Sea,7692.00
+376,Southeast Arcadia,7653.00
+377,Fort Pierce North,7597.00
+378,Southgate,7539.00
+379,Wedgefield,7516.00
+380,Sanibel,7402.00
+381,Inverness,7390.00
+382,Longboat Key,7323.00
+383,Neptune Beach,7297.00
+384,Quincy,7235.00
+385,Dade City,7232.00
+386,Belle Isle,7166.00
+387,Wimauma,7140.00
+388,Fort Myers Beach,7102.00
+389,Indiantown and Marianna,7091.00
+390,Lake Lorraine,7081.00
+391,West Samoset,7034.00
+392,St. Augustine Beach,7026.00
+393,Wildwood,7024.00
+394,Live Oak,6974.00
+395,Treasure Island,6947.00
+396,Perry,6928.00
+397,Beacon Square,6837.00
+398,Osprey,6734.00
+399,Pembroke Park,6730.00
+400,DeFuniak Springs,6719.00
+401,Gulf Breeze,6716.00
+402,Macclenny,6705.00
+403,Lauderdale-by-the-Sea,6680.00
+404,South Patrick Shores,6669.00
+405,Indian River Estates,6585.00
+406,Fort Myers Shores,6496.00
+407,Kathleen,6479.00
+408,"Islamorada, Village of Islands",6383.00
+409,Crystal Lake,6355.00
+410,Pahokee,6270.00
+411,Naples Park,6258.00
+412,Ocean City,6227.00
+413,Fort Meade,6203.00
+414,Combee Settlement,6189.00
+415,High Springs,6137.00
+416,Heathrow,6135.00
+417,Tequesta,6133.00
+418,Naples Manor,6121.00
+419,Newberry,6115.00
+420,Sky Lake,6112.00
+421,Orlovista,6109.00
+422,Lecanto,6099.00
+423,River Park,6055.00
+424,South Gate Ridge,6045.00
+425,Inverness Highlands South,6010.00
+426,Mims,5982.00
+427,Lake Alfred,5977.00
+428,Bay Harbor Islands,5964.00
+429,Pelican Bay,5876.00
+430,Mascotte,5873.00
+431,Siesta Key,5850.00
+432,Surfside,5802.00
+433,Willow Oak,5759.00
+434,Fellsmere,5754.00
+435,Mount Plymouth,5739.00
+436,Okeechobee,5731.00
+437,Palm Springs North,5624.00
+438,South Apopka,5525.00
+439,Samsula-Spruce Creek,5489.00
+440,Starke,5411.00
+441,Davenport,5378.00
+442,Big Pine Key,5339.00
+443,Lely Resort,5335.00
+444,Warm Mineral Springs,5305.00
+445,South Highpoint,5303.00
+446,St. Augustine South,5271.00
+447,South Sarasota,5265.00
+448,Cocoa West,5250.00
+449,Nassau Village-Ratliff,5245.00
+450,LaBelle,5226.00
+451,Zephyrhills South and Timber Pines,5207.00
+452,Valparaiso,5195.00
+453,Jan Phyl Village,5189.00
+454,Floral City,5188.00
+455,South Bay,5185.00
+456,South Pasadena,5117.00
+457,Rio Pinar,5116.00
+458,Wahneta,5084.00
+459,Flagler Beach and Bay Hill,5081.00
+460,Kenneth City,5059.00
+461,Hutchinson Island South,5055.00
+462,Belleview,5022.00
+463,River Ridge,5002.00
+464,Crawfordville,4999.00
+465,Butler Beach,4983.00
+466,Whiskey Creek,4979.00
+467,Orangetree,4948.00
+468,Pine Manor,4926.00
+469,Wauchula,4895.00
+470,Dundee,4816.00
+471,Plantation CDP,4790.00
+472,Tice,4764.00
+473,Zephyrhills West,4734.00
+474,Lake Sarasota,4718.00
+475,Goulding,4624.00
+476,Suncoast Estates,4587.00
+477,Parker,4584.00
+478,Port LaBelle,4583.00
+479,Sawgrass,4571.00
+480,Brookridge,4543.00
+481,Daytona Beach Shores,4541.00
+482,Moon Lake,4525.00
+483,Fussels Corner,4413.00
+484,The Meadows,4383.00
+485,Mary Esther,4370.00
+486,Buckingham,4366.00
+487,Lochmoor Waterway Estates,4363.00
+488,Kensington Park,4351.00
+489,Vamo,4345.00
+490,Cortez,4332.00
+491,Madeira Beach,4327.00
+492,Fort Pierce South,4318.00
+493,Holmes Beach,4295.00
+494,Loughman,4292.00
+495,Indian Rocks Beach,4286.00
+496,Grant-Valkaria,4254.00
+497,Indian River Shores,4252.00
+498,June Park,4225.00
+499,Belleair,4217.00
+500,West Bradenton,4213.00
+501,Lake Belvedere Estates,4209.00
+502,Stock Island,4201.00
+503,Mulberry,4192.00
+504,White City,4185.00
+505,San Castle,4170.00
+506,West DeLand,4162.00
+507,Connerton,4132.00
+508,Ridge Manor,4114.00
+509,Jasper,4098.00
+510,Alturas,4090.00
+511,South Brooksville,4038.00
+512,Taylor Creek,3982.00
+513,Bagdad,3979.00
+514,Vineyards,3945.00
+515,Samoset,3922.00
+516,Highland Beach,3915.00
+517,Ridge Wood Heights,3878.00
+518,Charlotte Harbor,3870.00
+519,Three Oaks,3850.00
+520,Lely,3808.00
+521,Umatilla,3805.00
+522,Holden Heights,3801.00
+523,Laguna Beach,3764.00
+524,Pea Ridge,3727.00
+525,South Beach,3675.00
+526,St. James City,3671.00
+527,Lower Grand Lagoon,3669.00
+528,Point Baker,3665.00
+529,Montura,3654.00
+530,Juno Beach,3648.00
+531,Lake Clarke Shores,3628.00
+532,Desoto Lakes,3590.00
+533,High Point,3571.00
+534,Chipley,3570.00
+535,Loxahatchee Groves,3564.00
+536,Port St. Joe,3562.00
+537,Tierra Verde,3560.00
+538,Tyndall AFB,3557.00
+539,Cedar Grove,3547.00
+540,Feather Sound,3532.00
+541,Flagler Estates,3520.00
+542,Windermere,3509.00
+543,Dover,3473.00
+544,Pretty Bayou,3458.00
+545,North Brooksville,3431.00
+546,Ellenton,3423.00
+547,Royal Palm Estates,3416.00
+548,Watergate,3411.00
+549,North River Shores,3405.00
+550,Harbour Heights,3401.00
+551,Nokomis,3376.00
+552,Cleveland,3317.00
+553,Melbourne Beach,3288.00
+554,Ponce Inlet,3282.00
+555,Frostproof,3273.00
+556,Seminole Manor,3226.00
+557,Inverness Highlands North,3219.00
+558,Whitfield,3215.00
+559,Hilliard,3209.00
+560,Midway,3194.00
+561,Lake Panasoffkee,3170.00
+562,Ridgecrest,3168.00
+563,Crystal River,3162.00
+564,Bay Pines,3160.00
+565,Biscayne Park,3159.00
+566,Malabar,3133.00
+567,Island Walk,3121.00
+568,Bushnell,3119.00
+569,Oakland,3087.00
+570,Chattahoochee,3065.00
+571,Harbor Bluffs,3041.00
+572,Bal Harbour,3039.00
+573,Watertown,3030.00
+574,Sharpes,3016.00
+575,Zellwood,2997.00
+576,Big Coppitt Key,2994.00
+577,Dade City North,2981.00
+578,Edgewood,2977.00
+579,Clarcona,2935.00
+580,Greenbriar and Manatee Road,2925.00
+581,Indialantic,2913.00
+582,Villano Beach,2903.00
+583,Bowling Green,2902.00
+584,Port Richey,2869.00
+585,Bunnell,2820.00
+586,Lake Helen,2814.00
+587,Madison,2797.00
+588,Hypoluxo,2783.00
+589,Tiger Point,2779.00
+590,Woodville,2770.00
+591,Williston,2718.00
+592,Eagle Lake,2708.00
+593,Bonifay,2692.00
+594,Alva,2684.00
+595,Woodlawn Beach,2671.00
+596,Balm,2664.00
+597,Tangelo Park,2648.00
+598,De Leon Springs,2627.00
+599,Cabana Colony,2609.00
+600,Tangerine,2579.00
+601,Geneva,2573.00
+602,Hernando Beach,2567.00
+603,Harlem,2564.00
+604,Roosevelt Gardens,2558.00
+605,Verona Walk,2550.00
+606,Meadow Oaks,2526.00
+607,Carrabelle,2515.00
+608,Winter Beach,2510.00
+609,Blountstown,2478.00
+610,Freeport,2472.00
+611,El Portal,2471.00
+612,Chuluota,2452.00
+613,Virginia Gardens,2451.00
+614,Lake Placid,2439.00
+615,Campbell,2436.00
+616,Monticello,2425.00
+617,Polk City,2422.00
+618,Grenelefe,2384.00
+619,Olga,2357.00
+620,Apalachicola,2344.00
+621,Zephyrhills North,2342.00
+622,Redington Shores,2309.00
+623,Eatonville,2301.00
+624,Sewall's Point,2216.00
+625,Boulevard Gardens,2215.00
+626,Graceville,2200.00
+627,Belleair Bluffs,2199.00
+628,Oak Hill,2183.00
+629,Malone,2170.00
+630,Chiefland,2169.00
+631,East Bronson and Eastpoint,2156.00
+632,Pine Air,2154.00
+633,Trenton,2125.00
+634,Haverhill,2123.00
+635,Atlantis,2109.00
+636,Wewahitchka,2095.00
+637,Heritage Pines and Wallace,2091.00
+638,Eglin AFB,2065.00
+639,Astatula,2059.00
+640,Charlotte Park,2058.00
+641,Grove City,2042.00
+642,Hillsboro Beach,2020.00
+643,Homosassa,2019.00
+644,Mangonia Park,2017.00
+645,East Palatka,1999.00
+646,Burnt Store Marina,1998.00
+647,Tavernier,1994.00
+648,Pine Island Center,1986.00
+649,Pine Ridge CDP,1978.00
+650,Williston Highlands,1967.00
+651,Bear Creek,1962.00
+652,Ocean Ridge,1956.00
+653,Gotha,1911.00
+654,Punta Rassa,1909.00
+655,Cudjoe Key,1896.00
+656,Pierson,1890.00
+657,Taft,1874.00
+658,Hill 'n Dale,1870.00
+659,Fort Denaud,1865.00
+660,Glencoe,1853.00
+661,Quail Ridge,1847.00
+662,Oriole Beach,1824.00
+663,Dunnellon,1819.00
+664,Century,1817.00
+665,Lake Mary Jane,1808.00
+666,Moore Haven,1807.00
+667,Zolfo Springs,1803.00
+668,Sneads,1798.00
+669,Lake Butler city,1797.00
+670,Wabasso Beach,1767.00
+671,Lacoochee,1759.00
+672,Anna Maria,1749.00
+673,Crooked Lake Park,1748.00
+674,Silver Lake,1735.00
+675,Roseland,1728.00
+676,Cross City,1712.00
+677,Havana,1707.00
+678,Weeki Wachee Gardens,1693.00
+679,Christmas,1682.00
+680,Montverde,1675.00
+681,Holley,1634.00
+682,Key Vista,1631.00
+683,Belleair Beach,1609.00
+684,Buckhead Ridge,1607.00
+685,Harlem Heights,1585.00
+686,Crescent City,1542.00
+687,Washington Park,1537.00
+688,Hawthorne,1527.00
+689,Gretna,1526.00
+690,Plantation Mobile Home Park,1519.00
+691,Keystone Heights,1518.00
+692,Astor,1504.00
+693,Baldwin,1495.00
+694,Redington Beach,1481.00
+695,North Redington Beach,1477.00
+696,Indian Shores,1476.00
+697,South Palm Beach,1471.00
+698,Interlachen,1461.00
+699,San Antonio,1448.00
+700,Lake Hamilton and Patrick AFB,1442.00
+701,Midway CDP,1440.00
+702,North DeLand,1425.00
+703,Kenwood Estates,1414.00
+704,Center Hill,1409.00
+705,Babson Park,1399.00
+706,Cypress Quarters,1381.00
+707,St. Leo,1376.00
+708,Black Hammock,1361.00
+709,Callahan,1353.00
+710,Bokeelia,1349.00
+711,Inglis,1323.00
+712,Palmona Park,1321.00
+713,Gun Club Estates,1306.00
+714,Schall Circle,1293.00
+715,Limestone Creek,1290.00
+716,Mayo,1286.00
+717,Bradenton Beach,1278.00
+718,Palm Beach Shores,1264.00
+719,Paisley,1262.00
+720,Black Diamond,1259.00
+721,Tildenville,1252.00
+722,Five Points,1247.00
+723,Molino,1239.00
+724,Mexico Beach,1223.00
+725,Howey-in-the-Hills,1175.00
+726,Archer,1173.00
+727,Palm Shores,1160.00
+728,Bronson,1133.00
+729,Webster,1114.00
+730,Manasota Key,1101.00
+731,Allentown,1064.00
+732,Franklin Park,1046.00
+733,Yalaha,1044.00
+734,Panacea,1029.00
+735,Waldo,1023.00
+736,Fanning Springs,1015.00
+737,North Key Largo,1009.00
+738,Crescent Beach,1008.00
+739,Bristol,998.00
+740,Navarre Beach,995.00
+741,Crystal Springs,969.00
+742,DeLand Southwest,960.00
+743,Golden Beach,959.00
+744,Jupiter Island,920.00
+745,Pomona Park,916.00
+746,Cottondale,905.00
+747,Rio,893.00
+748,Medley,890.00
+749,Juno Ridge,884.00
+750,Gulf Stream,880.00
+751,Grand Ridge,879.00
+752,Coleman,877.00
+753,Masaryktown,867.00
+754,Jennings and Chumuckla,863.00
+755,Lake Kathryn,858.00
+756,Homestead Base,843.00
+757,Shalimar and Penney Farms,824.00
+758,Paxton,822.00
+759,Greenville,820.00
+760,Key Colony Beach,814.00
+761,Hosford,799.00
+762,Waverly,794.00
+763,Steinhatchee,778.00
+764,White Springs,767.00
+765,St. George Island,740.00
+766,Branford,730.00
+767,Duck Key,727.00
+768,Lawtey,722.00
+769,Welaka,712.00
+770,Pioneer and Garden Grove,709.00
+771,Solana,706.00
+772,Matlacha,705.00
+773,Melbourne Village and Stacey Street,697.00
+774,Vernon,690.00
+775,Cedar Key,686.00
+776,Wabasso,681.00
+777,Greenwood,662.00
+778,Briny Breezes,653.00
+779,Harold,652.00
+780,Wiscon,650.00
+781,Hastings,648.00
+782,Seville,646.00
+783,St. Lucie Village,642.00
+784,Micanopy,641.00
+785,East Williston,635.00
+786,Jay,620.00
+787,Lemon Grove,619.00
+788,Sea Ranch Lakes,618.00
+789,Pine Lakes,617.00
+790,Greensboro,614.00
+791,Laurel Hill,609.00
+792,Sorrento and Lake Mack-Forest Hills,608.00
+793,Andrews,603.00
+794,Fort White,602.00
+795,Canal Point,595.00
+796,Roeville,575.00
+797,Ponce de Leon,564.00
+798,Reddick and Spring Lake,541.00
+799,Paradise Heights,530.00
+800,Yankeetown,519.00
+801,Ferndale,506.00
+802,"Avalon, Altha, and Hillsboro Pines",504.00
+803,Hampton,497.00
+804,Page Park,493.00
+805,Brownsdale,492.00
+806,McIntosh,490.00
+807,Bell,488.00
+808,Sopchoppy,482.00
+809,Raleigh,479.00
+810,Spring Ridge,474.00
+811,Alford,467.00
+812,Manalapan,466.00
+813,Acacia Villas,459.00
+814,Garcon Point,453.00
+815,Orchid and Jupiter Inlet Colony,452.00
+816,Glen St. Mary,450.00
+817,Cinco Bayou,438.00
+818,Everglades,424.00
+819,Beverly Beach,400.00
+820,Bradley Junction,396.00
+821,La Crosse,395.00
+822,Wausau,387.00
+823,Trilby,384.00
+824,Worthington Springs,380.00
+825,Matlacha Isles-Matlacha Shores,375.00
+826,Plantation Island,364.00
+827,Berrydale,353.00
+828,Esto,352.00
+829,Lake Mystic,336.00
+830,Brooker,334.00
+831,Lee,328.00
+832,Lake Hart,327.00
+833,Wacissa,324.00
+834,St. Marks,319.00
+835,Yeehaw Junction,316.00
+836,Mulat,305.00
+837,Pineland,299.00
+838,Hillcrest Heights,294.00
+839,Caryville,282.00
+840,Westville,280.00
+841,Lisbon,277.00
+842,"Ebro, Homeland, and Golf",275.00
+843,Floridatown and Highland Park,264.00
+844,Whitfield CDP,261.00
+845,Sumatra,253.00
+846,Windsor,252.00
+847,Jacob City,246.00
+848,Glen Ridge and Charleston Park,243.00
+849,Raiford,236.00
+850,Pittman,235.00
+851,Ocean Breeze Park,234.00
+852,Gardner,228.00
+853,Campbellton,225.00
+854,Istachatta,214.00
+855,Pine Level,212.00
+856,Waukeenah,211.00
+857,Noma,204.00
+858,Mount Carmel,203.00
+859,Goodland,197.00
+860,Ona,195.00
+861,Captiva,194.00
+862,Layton,189.00
+863,Nobleton,180.00
+864,Day,179.00
+865,Munson,169.00
+866,Fort Green,168.00
+867,Horseshoe Beach,167.00
+868,Lamont,161.00
+869,Dixonville,158.00
+870,Limestone,153.00
+871,Fidelis and Aucilla,147.00
+872,Cloud Lake,146.00
+873,Westlake,137.00
+874,Otter Creek,133.00
+875,Springhill,130.00
+876,Lloyd,128.00
+877,Okahumpka,127.00
+878,Fort Green Springs,125.00
+879,Bascom,116.00
+880,Belleair Shore,114.00
+881,Aripeka,111.00
+882,Indian Creek,91.00
+883,Altoona,87.00
+884,Fisher Island,81.00
+885,Chokoloskee,74.00
+886,Morriston,69.00
+887,Bayport,56.00
+888,Bay Lake,51.00
+889,Dickerson City,47.00
+890,Lake Buena Vista,27.00
+891,Lazy Lake,26.00
+892,Lake Harbor,21.00
+893,Lake Lindsey,17.00
+894,Weeki Wachee,13.00
+895,Pine Island,12.00
+896,Marineland,11.00
+897,Cobbtown,7.00
