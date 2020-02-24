@@ -21,6 +21,7 @@ void setup() {
   diff_h_l= new FloatList();
   messList= new FloatList();
   noStroke();
+  
 }
 
 void draw() {
@@ -60,24 +61,20 @@ void draw() {
       num+=1;
     }
     if (pressure> press_all+dev2press) {
-      fill(#CB5858);
-      rect(width/100*n, height/100*num, 10, 10);
-      n+=1;
+      new SD(morning, middle, night, n, num);
+      n+=3;
     }
     if (pressure< (press_all-dev2press)) {      
-      fill(#CB589E);
-      rect(width/100*n, height/100*num, 10, 10);
-      n+=1;
+      new SD(morning, middle, night, n, num);
+      n+=3;
     }
     if (humidity> hum_all+dev2hum) {
-      fill(#AC58CB);
-      rect(width/100*n, height/100*num, 10, 10);
-      n+=1;
+      new SD(morning, middle, night, n, num);
+      n+=3;
     }
     if (humidity< (hum_all-dev2hum)) {
-      fill(#CBA758);
-      rect(width/100*n, height/100*num, 10, 10);
-      n+=1;
+      new SD(morning, middle, night, n, num);
+      n+=3;
     }
     if (difference> h_l+dev2hl) {
       fill(#BCCB58);
@@ -85,19 +82,16 @@ void draw() {
       n+=1;
     }
     if (difference< (h_l-dev2hl)) {
-      fill(#86CB58);
-      rect(width/100*n, height/100*num, 10, 10);
-      n+=1;
+      new SD(morning, middle, night, n, num);
+      n+=3;
     }
     if (messages> mess_all+dev2mess) {
-      fill(#5889CB);
-      rect(width/100*n, height/100*num, 10, 10);
-      n+=1;
+      new SD(morning, middle, night, n, num);
+      n+=3;
     }
     if (messages< (mess_all-dev2mess)) {
-      fill(#58CBC5);
-      rect(width/100*n, height/100*num, 10, 10);
-      n+=1;
+      new SD(morning, middle, night, n, num);
+      n+=3;
     }
   }
   noLoop();
