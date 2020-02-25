@@ -26,7 +26,7 @@ void draw()
   float hy=0;
   float ly=0;
 stroke(#634331);  
-long timestamp= 1581249600;
+long timestamp= 1581667200;
 line(50, 100, 700, 100);
 line(50, 200, 700, 200);
 line(50, 300, 700, 300);
@@ -94,6 +94,6 @@ while(u<=10) {
 }
 }
 noLoop();
- saveTable(table, "data/feb9-16.csv");
+ saveTable(table, "data/feb14-24.csv");
 //save("high_lows.jpg");
 }

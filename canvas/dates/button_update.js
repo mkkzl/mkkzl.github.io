@@ -207,6 +207,33 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,107,107 )";
                     ctx.fillRect(x_f,y_f,250,800);
                     x_f=x_f+250;
+                  }else if (morning=="good-okay"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,250,800);
+                    x_f=x_f+250;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,250,800);
+                    x_f=x_f+250;
+                  }else if (morning=="okay-okay-bad"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,167,800);
+                    x_f=x_f+167;
+                  }else if (morning=="bad-okay-good"){
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,167,800);
+                    x_f=x_f+167;
                   }
 
 
@@ -307,7 +334,53 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,167,800);
                     x_f=x_f+167;
-
+                  }else if (middle=="good-okay-okay"){
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,167,800);
+                    x_f=x_f+167;
+                  }else if (middle=="okay-good"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,250,800);
+                    x_f=x_f+250;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,250,800);
+                    x_f=x_f+250;
+                  }else if (middle=="bad-okay-okay"){
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,167,800);
+                    x_f=x_f+167;
+                  }else if (middle=="bad-okay-bad"){
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,167,800);
+                    x_f=x_f+167;
+                  }else if (night=="good-okay-bad"){
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(255,107,107 )";
+                    ctx.fillRect(x_f,y_f,167,800);
+                    x_f=x_f+167;
                   }
 
 
@@ -340,12 +413,21 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillStyle= "rgb(161,204,165 )";
                     ctx.fillRect(x_f,y_f,250,800);
                     x_f=x_f+250;
-                  }
-                  else if (night=="okay-okay-good"){
+                  } else if (night=="okay-okay-good"){
                     ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,166,800);
                     x_f=x_f+166;
                     ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillRect(x_f,y_f,167,800);
+                    x_f=x_f+167;
+                  } else if (night=="okay-good-good"){
+                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillRect(x_f,y_f,166,800);
+                    x_f=x_f+166;
+                    ctx.fillStyle= "rgb(161,204,165 )";
                     ctx.fillRect(x_f,y_f,166,800);
                     x_f=x_f+166;
                     ctx.fillStyle= "rgb(161,204,165 )";
@@ -450,10 +532,10 @@ document.body.addEventListener('click', function (evt) {
                     ctx.fillRect(x_f,y_f,167,800);
                     x_f=x_f+167;
                   }else if (night=="good-okay"){
-                    ctx.fillStyle= "rgb(255,230,109 )";
+                    ctx.fillStyle= "rgb(161,204,165 )";
                     ctx.fillRect(x_f,y_f,250,800);
                     x_f=x_f+250;
-                    ctx.fillStyle= "rgb(161,204,165 )";
+                    ctx.fillStyle= "rgb(255,230,109 )";
                     ctx.fillRect(x_f,y_f,250,800);
                     x_f=x_f+250;
                   }

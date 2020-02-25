@@ -1,7 +1,7 @@
 Table table; // for csv to load into
 SD [] variables; //list of objects
 
-int i=0; // for iterating through object array in draw
+int i=230; // for iterating through object array in draw
 
 
 void setup() {
@@ -29,36 +29,41 @@ void setup() {
 }
 
 void draw() {
-  background(255);
-   //set up graph look
-  
-  stroke(2);
-  for(int n=1; n<9; n++){ //set up lines
-  line(0, height/8 *n, width, height/8*n);
+  if (i>0 && i<variables.length-1){
+    float highPrev= variables[i-1].high;
+    float lowPrev=variables[i-1].low;
+    int messPrev=variables[i-1].messages;
+    float humPrev=variables[i-1].humidity;
+    float pressPrev=variables[i-1].pressure;
+    float highAft= variables[i+1].high;
+    float lowAft=variables[i+1].low;
+    int messAft=variables[i+1].messages;
+    float humAft=variables[i+1].humidity;
+    float pressAft=variables[i+1].pressure;
+    
+    variables[i].display(highPrev, lowPrev, messPrev, humPrev, pressPrev, highAft, lowAft, messAft, humAft, pressAft);
+    
   }
-  fill(0);
-  textSize(32); //set up text on lines
-  text("3", width/12, height/8);
-  text("2", width/12, height/4);
-  text("1", width/12, height/8*3);
-  text("0", width/12, height/2);
-  text("-1", width/12, height/8*5);
-  text("-2", width/12, height/4*3);
-  text("-3", width/12, height/8*7);
-  noStroke();
-
-  //try to display object if not null pointer exception
-  try {
-    variables[i].display();
-  } catch (NullPointerException e) {
-    //println("except" + i);
+  else if(i>=variables.length-1){
+    float highPrev= variables[i-1].high;
+    float lowPrev=variables[i-1].low;
+    int messPrev=variables[i-1].messages;
+    float humPrev=variables[i-1].humidity;
+    float pressPrev=variables[i-1].pressure;
+    variables[i].display(highPrev, lowPrev, messPrev, humPrev, pressPrev, 0,0,0,0,0);
+  
+  }
+  else if (i<= 0){
+    float highAft= variables[i+1].high;
+    float lowAft=variables[i+1].low;
+    int messAft=variables[i+1].messages;
+    float humAft=variables[i+1].humidity;
+    float pressAft=variables[i+1].pressure;
+    variables[i].display(0,0,0,0,0, highAft, lowAft, messAft, humAft, pressAft);
   }
   
-  
-  //println(i);
-   
    //increase i so I can iterate
-  if (i<variables.length) {
+  if (i<variables.length-1) {
     i++;
   } else {
     i=0;
