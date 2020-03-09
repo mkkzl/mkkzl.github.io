@@ -56,9 +56,9 @@ class SD {
 
   void display(float highPrev, float lowPrev, int messPrev, float humPrev, float pressPrev, float highAft, float lowAft, int messAft, float humAft, float pressAft) { //makes a square of different color for each variable with height according to how many standard deviations it is away from mean
     feeling();
-    fill(0);
-    textSize(32); //set up text on lines
-    text(date, width/12*9, height/8);
+    fill(#EC973C);
+    textFont(font, 32); //set up text on lines
+    text(date, width/15*12, height/17 *16);
     for (int n=1; n<9; n++) { //set up lines
       stroke(0);
       if (n==4) {
@@ -66,16 +66,16 @@ class SD {
       } else {
         strokeWeight(1);
       }
-      line(0, height/8 *n, width, height/8*n);
+      line(width/8, height/8 *n, width/8 *7, height/8*n);
     }
     fill(0); //set up text on lines
-    text("3", width/12, height/8);
-    text("2", width/12, height/4);
-    text("1", width/12, height/8*3);
-    text("0", width/12, height/2);
-    text("-1", width/12, height/8*5);
-    text("-2", width/12, height/4*3);
-    text("-3", width/12, height/8*7);
+    //text("3", width/12, height/8);
+    //text("2", width/12, height/4);
+    //text("1", width/12, height/8*3);
+    //text("0", width/12, height/2+8);
+    //text("-1", width/12, height/8*5);
+    //text("-2", width/12, height/4*3);
+    //text("-3", width/12, height/8*7);
     strokeWeight(0);
     float press_sd= sd_press();
     float hum_sd=sd_hum();

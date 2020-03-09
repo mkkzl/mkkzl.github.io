@@ -1,14 +1,16 @@
 Table table; // for csv to load into
 SD [] variables; //list of objects
+PFont font;
 
-int i=230; // for iterating through object array in draw
+int i=0; // for iterating through object array in draw
 
 
 void setup() {
   background(255);
   size(1000, 1000);
   table= loadTable("new.csv", "header"); //get csv table
-  frameRate(1);
+  font = createFont("CuteFont-Regular.ttf", 32);
+  frameRate(.5);
   int counting=0; //for iterating through rows, adding objects to list in setup
   variables= new SD[table.getRowCount()]; //add number of variables based on table row count
   for (TableRow row : table.rows()) { //for each row make object using data from table row

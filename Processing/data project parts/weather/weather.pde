@@ -26,7 +26,7 @@ void draw()
   float hy=0;
   float ly=0;
 stroke(#634331);  
-long timestamp= 1581667200;
+long timestamp= 1582444800;
 line(50, 100, 700, 100);
 line(50, 200, 700, 200);
 line(50, 300, 700, 300);
@@ -54,6 +54,7 @@ while(u<=10) {
         //manistee 44.2444, -86.3243
         // boca 26.3683, -80.1289
         // stillwater 45.0560, -92.8088
+        //hyde park 41.7948, -87.5917
         
         json  = loadJSONObject("https://api.darksky.net/forecast/ee9f5606f38812d12988c80ce6013f71/29.6201, -82.3726,"+timestamp);
         timestamp= timestamp + 86400;
@@ -94,6 +95,6 @@ while(u<=10) {
 }
 }
 noLoop();
- saveTable(table, "data/feb14-24.csv");
+ saveTable(table, "data/endFebGNV.csv");
 //save("high_lows.jpg");
 }
