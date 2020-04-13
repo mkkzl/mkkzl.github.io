@@ -33,38 +33,16 @@ void setup() {
 }
 
 void draw() {
-  if (i>0 && i<variables.length-1){
-    float highPrev= variables[i-1].high;
-    float lowPrev=variables[i-1].low;
-    int messPrev=variables[i-1].messages;
-    float humPrev=variables[i-1].humidity;
-    float pressPrev=variables[i-1].pressure;
-    float highAft= variables[i+1].high;
-    float lowAft=variables[i+1].low;
-    int messAft=variables[i+1].messages;
-    float humAft=variables[i+1].humidity;
-    float pressAft=variables[i+1].pressure;
+ 
     
-    variables[i].display(highPrev, lowPrev, messPrev, humPrev, pressPrev, highAft, lowAft, messAft, humAft, pressAft);
-    
-  }
-  else if(i>=variables.length-1){
-    float highPrev= variables[i-1].high;
-    float lowPrev=variables[i-1].low;
-    int messPrev=variables[i-1].messages;
-    float humPrev=variables[i-1].humidity;
-    float pressPrev=variables[i-1].pressure;
-    variables[i].display(highPrev, lowPrev, messPrev, humPrev, pressPrev, 0,0,0,0,0);
+    variables[i].display();
+    fill(#0F6367);
+  circle(width/4, height/4, 5);
+  circle(width/2, height/4, 5);
+  circle(width/8*7, height/2, 5);
+ // circle(width/8*5, height/8*5, 5);
+  circle(width/4, height/2, 5);
   
-  }
-  else if (i<= 0){
-    float highAft= variables[i+1].high;
-    float lowAft=variables[i+1].low;
-    int messAft=variables[i+1].messages;
-    float humAft=variables[i+1].humidity;
-    float pressAft=variables[i+1].pressure;
-    variables[i].display(0,0,0,0,0, highAft, lowAft, messAft, humAft, pressAft);
-  }
   
    //increase i so I can iterate
   if (i<variables.length-1) {
