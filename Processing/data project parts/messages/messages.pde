@@ -92,13 +92,13 @@ for (int o = 0; o<dateArray.length; o++){
        
       
   }
-// save("graph_all.jpg");   
- saveTable(newtable, "data/feb22-mar9.csv");
+ save("graph_all.jpg");   
+ saveTable(newtable, "data/june-apr29.csv");
  
 }
 
 void loadData(){
-    json = loadJSONObject("message_1.json");
+    json = loadJSONObject("june-apr29.json");
     JSONArray messages = json.getJSONArray("messages");
     //dict= new IntDict();
     
