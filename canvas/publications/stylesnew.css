@@ -65,11 +65,32 @@ body {
   cursor: pointer;
 }
 
+.in{
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 150px;
+  font-size: 35px;
+  font-weight: bold;
+}
+.out{
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
 .mySlides {
   display: none;
   width: 100%;
 }
-
+.image{
+  zoom:1;
+}
 .cursor {
   cursor: pointer;
 }
@@ -119,4 +140,7 @@ img.hover-shadow {
 
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.zoom {
+  bottom: 190px;
 }
