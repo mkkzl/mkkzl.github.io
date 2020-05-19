@@ -4,14 +4,31 @@
 }
 h4{
     color: white;
-    font-family:"Trebuchet MS";
+    font-family: mrs-eaves, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.75vw;
     margin-bottom: 2px;
 }
 h1{
     color: white;
-    font-family:"Trebuchet MS";
+    font-family: mrs-eaves, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.75vw;
+    background-color: transparent;
+    margin-bottom: 40px;
 }
 a{
     color: coral;
-    font-family: "Trebuchet MS";
+    font-family: mrs-eaves, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.75vw;
+    background-color: transparent;
+    margin: 10px;
+    padding: 10px;
+}
+ul{
+  list-style: none;
 }
