@@ -1,11 +1,12 @@
 body {
-  font-family: Verdana, sans-serif;
+  font-family: adobe-caslon-pro, serif;
   margin: 0;
 }
 
 * {
   box-sizing: border-box;
 }
+
 
 .row > .column {
   padding: 0 8px;
