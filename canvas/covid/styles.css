@@ -2,7 +2,7 @@
     position: relative;
     margin:0;
     padding:0;
-    background-color: #ba8e7f;
+    background-color: #631B47;
 
   }
 
@@ -23,6 +23,7 @@ h1{
     top: 20%;
     left: 15%;
     font-style: italic;
+    color: #ba8e7f;
 
 }
 
@@ -31,21 +32,36 @@ h1{
     top: 25%;
     left: 15%;
     width: 50vw;
+    color: #ffffff;
   }
 
      a{
       width: 10vw;
+      height: 10vh;
     left: 85vw;
     top: 70vh;
     position: fixed;
+    display: block;
     }
     a:hover{
       cursor: pointer;
     }
-    
+
     img{
       width: inherit;
+      display: block;
     }
-  #april11{
-    top:125%;
+  #arrow{
+    z-index: 4;
+    position: fixed;
   }
+  #arrow:hover{
+  z-index: 2;
+  }
+#arrowhover{
+  z-index: 3;
+  position: fixed;
+}
+img{
+  padding: 1vw 1vh 1vw 1vh;
+}
