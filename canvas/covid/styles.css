@@ -1,0 +1,51 @@
+*{
+    position: relative;
+    margin:0;
+    padding:0;
+    background-color: #ba8e7f;
+
+  }
+
+body{
+  width: 100vw;
+    height: 100vh;
+}
+section {
+  width: 100vw;
+    height: 100vh;
+    display:inline-block;
+    opacity: 50%;
+    z-index: 0;
+}
+
+h1{
+  font-family: adobe-caslon-pro, serif;
+    top: 20%;
+    left: 15%;
+    font-style: italic;
+
+}
+
+  p{
+    font-family: adobe-caslon-pro, serif;
+    top: 25%;
+    left: 15%;
+    width: 50vw;
+  }
+
+     a{
+      width: 10vw;
+    left: 85vw;
+    top: 70vh;
+    position: fixed;
+    }
+    a:hover{
+      cursor: pointer;
+    }
+    
+    img{
+      width: inherit;
+    }
+  #april11{
+    top:125%;
+  }
