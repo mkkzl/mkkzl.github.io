@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <title>7:50 Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <script type="text/javascript" language="javascript" src="map.json"></script>
+    <script>
+      var dots = document.getElementsByClassName('dot');
+
+      function closeThis(){
+        document.getElementById('date').innerHTML = ' ';
+        document.getElementById('rate').innerHTML = ' ';
+        document.getElementById('position').innerHTML = ' ';
+        document.getElementById('day_image').style.visibility = 'hidden';
+        document.getElementById('close').style.visibility = 'hidden';
+      }
+    function showData(clicked_id, clicked_src){
+      $.getJSON("map.json", function(json){
+        for (var i = 0; i<json.length; i++){
+          var id= json[i].id;
+          var date= json[i].date;
+          var rate= json[i].rate;
+          var position= json[i].position;
+          var image= json[i].image;
+
+
+          if(id==clicked_id){
+            var date_place= document.getElementById('date');
+            var rate_place= document.getElementById('rate');
+            var position_place= document.getElementById('position');
+            var image_place= document.getElementById('day_image');
+
+            date_place.innerHTML = ' ';
+            rate_place.innerHTML = ' ';
+            position_place.innerHTML = ' ';
+            image_place.style.visibility = 'hidden';
+
+            if(image.includes("JPEG")){
+              image_place.style.transform= 'rotate(0deg)';
+              image_place.style.height= '500px';
+              image_place.style.width= '375px';
+              image_place.style.gridColumn= "13";
+            }
+            else{
+              image_place.style.transform= 'rotate(90deg)';
+              image_place.style.width= '500px';
+              image_place.style.height= '375px';
+              image_place.style.gridColumn= "11";
+            }
+
+            date_place.appendChild(document.createTextNode('Date: '+date));
+            rate_place.appendChild(document.createTextNode('Rate: '+rate));
+            position_place.appendChild(document.createTextNode('Position: '+position));
+            image_place.src= image;
+            image_place.style.visibility= 'visible';
+            document.getElementById('close').style.visibility= "visible";
+
+          }
+
+    }
+    });
+    }</script>
+  <!---  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>--->
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1> Click dots to explore map </h1>
+    <img src="maps-01.PNG" id="drawn">
+    <!-- <img src="maps.PNG" id="screen" style="visibility: hidden;"> -->
+    <img src="maps.PNG" id="screen" >
+    <a class="dot" onClick= "showData(this.id, this.src);" id="s-25"></a>
+    <a class="dot" id="s-26" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="s-30" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-1" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-2" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-3" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-7" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-8" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-9" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-10" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-14" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-15" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-16" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-17" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-21" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-22" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-23" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-24" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-28" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-29" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-30" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="o-31" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-4" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-5" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-6" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-7" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-11" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-12" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-13" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-14" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-18" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-19" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-20" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-21" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-25" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="n-26" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="d-2" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="d-3" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="d-4" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="d-5" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="d-10" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="d-11" onClick= "showData(this.id, this.src);"></a>
+    <a class="dot" id="d-12" onClick= "showData(this.id, this.src);"></a>
+
+
+      <button id="close" onClick="closeThis()">x</button>
+      <h3 id="date"> </h3>
+      <h5 id="rate"> </h5>
+      <h5 id="position"> </h5>
+      <img id="day_image">
+
+  </div>
+
+  </body>
+</html>

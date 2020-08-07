@@ -1,127 +1,1137 @@
-<html>
-  <head>
-    <title>7:50 Map</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="jquery-3.4.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <script type="text/javascript" language="javascript" src="map.json"></script>
-    <script>
-      var dots = document.getElementsByClassName('dot');
+<!doctype html>
+<!-- Code including html and css taken from http://p-dpa.net/ and edited to serve the purpose of my piece. no copyright infringement intended. -->
 
-      function closeThis(){
-        document.getElementById('date').innerHTML = ' ';
-        document.getElementById('rate').innerHTML = ' ';
-        document.getElementById('position').innerHTML = ' ';
-        document.getElementById('day_image').style.visibility = 'hidden';
-        document.getElementById('close').style.visibility = 'hidden';
-      }
-    function showData(clicked_id, clicked_src){
-      $.getJSON("map.json", function(json){
-        for (var i = 0; i<json.length; i++){
-          var id= json[i].id;
-          var date= json[i].date;
-          var rate= json[i].rate;
-          var position= json[i].position;
-          var image= json[i].image;
+<html lang="en-US" class="no-js">
+
+	<head>
+		<link rel = "icon" href =
+	"../../../M_logo.png"
+	        type = "image/x-icon">
+		<meta charset="utf-8">
+
+				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script src="jquery-3.4.1.min.js"></script>
+		<title>Learning</title>
+
+				<meta name="HandheldFriendly" content="True">
+		<meta name="MobileOptimized" content="320">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel='stylesheet'   href='style.css' type='text/css' media='all' />
 
 
-          if(id==clicked_id){
-            var date_place= document.getElementById('date');
-            var rate_place= document.getElementById('rate');
-            var position_place= document.getElementById('position');
-            var image_place= document.getElementById('day_image');
+	</head>
 
-            date_place.innerHTML = ' ';
-            rate_place.innerHTML = ' ';
-            position_place.innerHTML = ' ';
-            image_place.style.visibility = 'hidden';
+	<body class="home blog" >
+		<div id="container">
+			<header class="header" role="banner">
+				<div id="inner-header" class="wrap clearfix">
 
-            if(image.includes("JPEG")){
-              image_place.style.transform= 'rotate(0deg)';
-              image_place.style.height= '500px';
-              image_place.style.width= '375px';
-              image_place.style.gridColumn= "13";
-            }
-            else{
-              image_place.style.transform= 'rotate(90deg)';
-              image_place.style.width= '500px';
-              image_place.style.height= '375px';
-              image_place.style.gridColumn= "11";
-            }
 
-            date_place.appendChild(document.createTextNode('Date: '+date));
-            rate_place.appendChild(document.createTextNode('Rate: '+rate));
-            position_place.appendChild(document.createTextNode('Position: '+position));
-            image_place.src= image;
-            image_place.style.visibility= 'visible';
-            document.getElementById('close').style.visibility= "visible";
 
-          }
+						<div class=" threehalfcol first wrap">
+							<label class="label" for="search-form">search for date(s)</label>
+					    	<form id="search-form" method="get" action="">
 
+						            <input type="text"  onkeyup="myFunction()" onfocus="if(this.value=='search') this.value='';" onblur="if(this.value=='') this.value='search';" value="" class="inputbox" alt="search for date" maxlength="20" name="s" id="s" size="15">
+
+					        </form>
+								</div>
+										<div class="threehalfcol wrap">
+										<form>
+									  <label class="label" for="weeks">Search by week</label>
+									  <select name="weeks" id="weeks" onchange="getSelectedOption()">
+											<option>Select</option>
+									    <option value="1">1</option>
+									    <option value="2">2</option>
+									    <option value="3">3</option>
+									    <option value="4">4</option>
+											<option value="5">5</option>
+											<option value="6">6</option>
+											<option value="7">7</option>
+											<option value="8">8</option>
+											<option value="9">9</option>
+											<option value="10">10</option>
+											<option value="11">11</option>
+											<option value="12">12</option>
+									  </select>
+									</form>
+								</div>
+								<div class="wrap threehalfcol last">
+									<label class="label" for="image_tags"> Search by image tags </label>
+									<form id="image_tags">
+									<span style="white-space: nowrap;">	<input class="check" type="checkbox" value="car" id="car"><label for="car"> car </label></span>
+									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="person" id="person"><label for="person"> person </label></span>
+									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="can" id="can"><label for="can"> trash can </label></span>
+									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="rsign" id="rsign"><label for="rsign"> road sign </label></span>
+									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="ssign" id="ssign"><label for="ssign"> school sign </label></span>
+									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="tower" id="tower"><label for="tower"> tower </label></span>
+									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="stadium" id="stadium"><label for="stadium"> stadium </label></span>
+
+															</form>
+
+					    </div>
+				</div>
+
+			</header>
+      <div id="content">
+				<div id="inner-content" class="wrap clearfix">
+					<div id="main" class="clearfix main-index" role="main">
+						<h5 class="mini-title">Mon-Thur. 9.25–12.12 07:50</h5>
+							<article class="threehalfcol home-article" role="article" data-week="6" data-person="false" data-car="true" data-can="false" data-ssign= "false" data-rsgin="false" data-tower="false" data-stadium="false">
+
+									<table class="table">
+										<tbody >
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.28</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>0							</h3>				</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-28.JPEG" alt="10.28 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article" data-week="9" data-person="false" data-car="false" data-can="true" data-rsgin="true" data-stadium="true">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.20</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>12.9</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-20.JPG" alt="11.20 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article" data-week="12" data-person="true" data-car="false" data-can="false" data-rsgin="false" data-stadium="false">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>12.12</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>36.2</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/12-12.jpg" alt="12.12 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article" data-week="12" data-person="true" data-car="true" data-can="true" data-rsgin="true" data-stadium="true">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>12.10</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>42.1</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/12-10.jpg" alt="12.10 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article" data-week="3" data-person="true" data-car="true" data-can="true" data-rsgin="false" data-stadium="true">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.09</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>43.4</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10_9.JPG" alt="10.09 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>9.30</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>45.9</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/9_30.JPG" alt="9.30 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.12</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>48.5</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-12.jpg" alt="11.12 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.01</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>55.6</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10_1.JPG" alt="10.01 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.16</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>56.9</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-16.JPEG" alt="10.16 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>9.25</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>57</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/9_25.JPG" alt="9.25 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.24</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>58.2</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-24.JPEG" alt="10.24 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.13</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>60.7</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-13.jpg" alt="11.13 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.23</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>61</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-23.JPEG" alt="10.23 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+
+
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.19</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>67.9</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-19.jpg" alt="11.19 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.03</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>68.5</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10_3.JPG" alt="10.03 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+
+							</article>
+
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>12.04</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>68.8</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/12-4.jpg" alt="12.04 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.05</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>69</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-5.jpg" alt="11.05 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.22</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>69.1</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-22.JPEG" alt="10.22 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.30</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>69.1</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-30.JPEG" alt="10.30 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.02</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>69.1</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10_2.JPG" alt="10.02 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.29</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>72</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-29.JPEG" alt="10.29 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.14</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>74</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-14.jpg" alt="11.14 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>12.02</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>75.2</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/12-2.jpg" alt="12.02 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>12.03</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>75.3</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/12-3.jpg" alt="12.03 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.18</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>78.6</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-18.jpg" alt="11.18 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.21</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>78.7</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-21.JPEG" alt="10.21 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.17</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>80</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-17.JPEG" alt="10.17 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.06</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>80</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-6.jpg" alt="11.06 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.04</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>80.6</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-4.jpg" alt="11.04 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.21</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>81.2</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-21.jpg" alt="11.21 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.31</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>81.6</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-31.JPEG" alt="10.31 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.11</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>82.5</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-11.jpg" alt="11.11 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.15</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>83.8</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10-15.JPEG" alt="10.15 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>12.11</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>84</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/12-11.jpg" alt="12.11 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.10</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>88.3</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10_10.JPG" alt="10.10 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>9.26</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>94.1</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/9_26.JPG" alt="9.26 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.07</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>95.5</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10_7.JPG" alt="10.07 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.14</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>99</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10_14.JPG" alt="10.14 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.26</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>99.1</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-26.jpg" alt="11.26 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>12.05</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>99.4</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/12-5.jpg" alt="12.05 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.07</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>99.8</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-7.jpg" alt="11.07 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>11.25</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>100</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/11-25.jpg" alt="11.25 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+
+							<article class="threehalfcol home-article" role="article">
+
+									<table class="table">
+										<tbody>
+											<tr>
+												<td><h3>Date</h3></td>
+												<td><h3>10.08</h3></td>
+											</tr>
+											<tr>
+												<td><h3>Distance %</h3></td>
+																								<td>
+												<h3>100</h3>											</td>
+											</tr>
+																						<tr>
+												<td colspan="2" class="img">
+													<img src="images/10_8.JPG" alt="10.08 image" />
+												</td>
+											</tr>
+																					</tbody>
+									</table>
+
+							</article>
+						</div>
+
+				</div>
+			</div>
+		</div>
+			<footer class="footer" role="contentinfo">
+				<div id="inner-footer" class="wrap">
+
+				</div>
+			</footer>
+
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, div, art, h3, i, txtValue;
+  input = document.getElementById('s');
+  filter = input.value.toUpperCase();
+  div = document.getElementById("main");
+  art = div.getElementsByTagName('article');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < art.length; i++) {
+    h3 = art[i].getElementsByTagName("h3")[1];
+    txtValue = h3.textContent || h3.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      art[i].style.display = "";
+			//console.log(h3);
+    } else {
+      art[i].style.display = "none";
     }
-    });
-    }</script>
-  <!---  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>--->
-  </head>
-  <body>
-    <div class="wrapper">
-      <h1> Click dots to explore map </h1>
-    <img src="maps-01.PNG" id="drawn">
-    <img src="maps.PNG" id="screen" style="visibility: hidden;">
-    <a class="dot" onClick= "showData(this.id, this.src);" id="s-25"></a>
-    <a class="dot" id="s-26" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="s-30" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-1" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-2" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-3" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-7" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-8" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-9" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-10" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-14" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-15" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-16" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-17" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-21" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-22" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-23" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-24" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-28" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-29" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-30" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="o-31" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-4" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-5" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-6" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-7" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-11" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-12" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-13" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-14" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-18" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-19" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-20" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-21" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-25" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="n-26" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="d-2" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="d-3" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="d-4" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="d-5" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="d-10" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="d-11" onClick= "showData(this.id, this.src);"></a>
-    <a class="dot" id="d-12" onClick= "showData(this.id, this.src);"></a>
+  }
+}
+var opt;
+function getSelectedOption() {
+	var sel= document.getElementById('weeks');
+    var opt = sel.options[sel.selectedIndex].value;
+		console.log(opt);
 
+  var div, art, table, i, value;
 
-      <button id="close" onClick="closeThis()">x</button>
-      <h3 id="date"> </h3>
-      <h5 id="rate"> </h5>
-      <h5 id="position"> </h5>
-      <img id="day_image">
+  div = document.getElementById("main");
+  art = div.getElementsByTagName('article');
 
-  </div>
+	console.log(opt);
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < art.length; i++) {
+    table = art[i];
+		console.log(table.dataset);
+    // value = $("[data-week]"); $('[data-week=opt]')
+		value=table.dataset.week;
+		//console.log("week="+value);
+    if (value==opt) {
+      art[i].style.display = "";
+			console.log(value);
+    } else {
+      art[i].style.display = "none";
+    }
+  }
+}
+$(document).ready(function () {
+	console.log("in doc ready");
+    $(".check").change(function () {
+			console.log("ran");
+        if (this.checked) {
+	const checkboxes = document.querySelectorAll('input:checked');
+	let checked = [];
+	checkboxes.forEach((checkbox) => {
+	    checked.push(checkbox.value);
+			console.log(checkbox.value);
+	});
+	  // Declare variables
+  var input, filter,  art,  i, txtValue, n, v;
+	div = document.getElementById("main");
+  art = div.getElementsByTagName('article');
 
-  </body>
+  // Loop through all list items, and hide those who don't match the search query
+	for (i = 0; i < art.length; i++) {
+
+		table = art[i];
+	for(n=0; n< checked.length; n++){
+			value= checked[n];
+
+			//var opt= table.dataset;
+console.log($(table).data(value));
+				//console.log(opt.value);
+			if ($(table).data(value) === true) {
+				art[i].style.display = "";
+			} else {
+				art[i].style.display = "none";
+
+				//NEED TO FIX, it adds in images that fit new clicked tag even if they don't fit pre-clicked tags
+
+			}
+
+	}
+	}
+}
+})
+});
+</script>
+	</body>
 </html>

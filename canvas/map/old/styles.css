@@ -1,0 +1,268 @@
+.wrapper{
+        display: grid;
+        grid-template-columns: repeat( 100, 25px );
+        grid-template-rows: repeat(52, 25px);
+    }
+h1{
+  font-family: 'Roboto', sans-serif;
+  grid-column: 1 / span 20;
+  grid-row: 1;
+}
+
+#drawn{
+    grid-row: 4;
+    grid-column: 3;
+    padding-top: 10px;
+    z-index: 2;
+    width: 985.5px;
+    height: 319.5px;
+}
+#screen{
+  grid-column: 1;
+  grid-row: 3 / span 20;
+  z-index: 1;
+  width: 1129.75px;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 3;
+}
+a:hover{
+  cursor: pointer;
+}
+
+/*Dots positioning*/
+    #s-25{
+      grid-column: 19;
+      grid-row: 13;
+    }
+    #s-26{
+      grid-column: 41;
+      grid-row: 15;
+    }
+    #s-30{
+      grid-column: 14;
+      grid-row: 12;
+    }
+    #o-1{
+      grid-column: 18;
+      grid-row: 13;
+    }
+    #o-2{
+      grid-column: 30;
+      grid-row: 13;
+    }
+    #o-3{
+      grid-column: 27;
+      grid-row: 13;
+    }
+    #o-7{
+      grid-column: 42;
+      grid-row: 15;
+    }
+    #o-8{
+      grid-column: 42;
+      grid-row: 16;
+    }
+    #o-9{
+      grid-column: 11;
+      grid-row: 12;
+    }
+    #o-10{
+      grid-column: 40;
+      grid-row: 14;
+    }
+    #o-14{
+      grid-column: 42;
+      grid-row: 16;
+      margin-top: -5;
+    }
+    #o-15{
+      grid-column: 40;
+      grid-row: 13;
+    }
+    #o-16{
+      grid-column: 19;
+      grid-row: 13;
+      margin-left: -5;
+    }
+    #o-17{
+      grid-column: 37;
+      grid-row: 13;
+    }
+    #o-21{
+      grid-column: 36;
+      grid-row: 13;
+    }
+    #o-22{
+      grid-column: 35;
+      grid-row: 13;
+    }
+    #o-23{
+      grid-column: 23;
+      grid-row: 13;
+    }
+    #o-24{
+      grid-column: 22;
+      grid-row: 13;
+    }
+    #o-28{
+      grid-column: 3;
+      grid-row: 5;
+    }
+    #o-29{
+      grid-column: 39;
+      grid-row: 13;
+    }
+    #o-30{
+      grid-column: 35;
+      grid-row: 13;
+      margin-left: -5;
+    }
+    #o-31{
+      grid-column: 38;
+      grid-row: 13;
+    }
+    #n-4{
+      grid-column: 37;
+      grid-row: 13;
+      margin-left: 5;
+    }
+    #n-5{
+      grid-column: 34;
+      grid-row: 13;
+    }
+    #n-6{
+      grid-column: 37;
+      grid-row: 13;
+      margin: 5;
+    }
+    #n-7{
+      grid-column: 42;
+      grid-row: 16;
+      margin: 5;
+    }
+    #n-11{
+      grid-column: 39;
+      grid-row: 13;
+      margin: 5;
+    }
+    #n-12{
+      grid-column: 16;
+      grid-row: 12;
+    }
+    #n-13{
+      grid-column: 20;
+      grid-row: 13;
+    }
+    #n-14{
+      grid-column: 36;
+      grid-row: 13;
+      margin: 5;
+    }
+    #n-18{
+      grid-column: 36;
+      grid-row: 13;
+      margin: -5;
+    }
+    #n-19{
+      grid-column: 28;
+      grid-row: 13;
+    }
+    #n-20{
+      grid-column: 6;
+      grid-row: 7;
+    }
+    #n-21{
+      grid-column: 38;
+      grid-row: 13;
+      margin: 5;
+    }
+    #n-25{
+      grid-column: 42;
+      grid-row: 16;
+      margin: 7;
+    }
+    #n-26{
+      grid-column: 42;
+      grid-row: 16;
+      margin: 3;
+    }
+    #d-2{
+      grid-column: 40;
+      grid-row: 13;
+      margin: -10;
+    }
+    #d-3{
+      grid-column: 37;
+      grid-row: 13;
+      margin: -6px;
+    }
+    #d-4{
+      grid-column: 29;
+      grid-row: 13;
+    }
+    #d-5{
+      grid-column: 43;
+      grid-row: 16;
+    }
+    #d-10{
+      grid-column: 12;
+      grid-row: 12;
+    }
+    #d-11{
+      grid-column: 40;
+      grid-row: 13;
+      margin: 3px;
+    }
+    #d-12{
+      grid-column: 10;
+      grid-row: 11;
+}
+    }
+/*Data at bottom*/
+    #date{
+      grid-column: 13/ span 10;
+      grid-row: 21;
+    }
+    #rate{
+      grid-column: 13/ span 5;
+      grid-row: 22;
+    }
+    #position{
+      grid-column: 13/ span 5;
+      grid-row: 23;
+    }
+    #day_image{
+      width: 500px;
+      transform: rotate(90deg);
+      grid-column: 11;
+      grid-row: 29;
+    }
+    #close{
+      grid-column: 27;
+      grid-row: 22;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      overflow: hidden;
+      background : none;
+      border: none;
+      color: grey;
+      font-size: 24px;
+      visibility: hidden;
+    }
+    #close:hover{
+      cursor: pointer;
+      color: black;
+    }
+    h3{
+      font-family: 'Roboto', sans-serif;
+      grid-column: 13/ span 10;
+      grid-row: 21;
+    }
+    h5{
+      font-family: 'Roboto', sans-serif;
+    }

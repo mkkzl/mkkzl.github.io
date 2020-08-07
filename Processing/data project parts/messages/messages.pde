@@ -20,7 +20,7 @@ Table newtable;
 
 
 void setup(){
-  size(5000, 1500);
+  size(6000, 1500);
   background(#f7f3f0);
   newtable= new Table();
   newtable.addColumn("date");
@@ -38,7 +38,7 @@ void setup(){
          //dateArray= append(dateArray, day);
         currentDate.setDate(currentDate.getDate()+71);*/
         
-    while(u<=360) {
+    while(u<=500) {
         int d= currentDate.getDate();
          int m=currentDate.getMonth();
          int y1= currentDate.getYear();
@@ -61,7 +61,8 @@ for (int o = 0; o<dateArray.length; o++){
   Integer v= hm.get(dateArray[o]);
   if (v== null){noStroke();
       rect(x,y,10,0);
-      x = x+15;}
+      x = x+15;
+    println(dateArray[o]);}
   else{
     TableRow newrow = newtable.addRow();
     newrow.setString("date", dateArray[o]);
@@ -93,12 +94,12 @@ for (int o = 0; o<dateArray.length; o++){
       
   }
  save("graph_all.jpg");   
- saveTable(newtable, "data/june-apr29.csv");
+ saveTable(newtable, "data/june-jul24.csv");
  
 }
 
 void loadData(){
-    json = loadJSONObject("june-apr29.json");
+    json = loadJSONObject("june-jul24.json");
     JSONArray messages = json.getJSONArray("messages");
     //dict= new IntDict();
     
