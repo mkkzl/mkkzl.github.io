@@ -11,14 +11,14 @@
 
 				<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <script src="jquery-3.4.1.min.js"></script>
-		<title>Learning</title>
+		<title>07:50</title>
 
 				<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel='stylesheet'   href='style.css' type='text/css' media='all' />
-
-
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
 	</head>
 
 	<body class="home blog" >
@@ -36,7 +36,7 @@
 
 					        </form>
 								</div>
-										<div class="threehalfcol wrap">
+										<div class="threehalfcol wrap" id="mid_head">
 										<form>
 									  <label class="label" for="weeks">Search by week</label>
 									  <select name="weeks" id="weeks" onchange="getSelectedOption()">
@@ -55,17 +55,27 @@
 											<option value="12">12</option>
 									  </select>
 									</form>
+									<br></br>
+									<form>
+									<label class="label" for="image_quality">Search by image quality</label>
+									<select name="image_quality" id="image_quality" onchange="getSelectedQuality()">
+										<option>Select</option>
+										<option value="sharp">sharp</option>
+										<option value="medium">medium</option>
+										<option value="blurry">blurry</option>
+									</select>
+								</form>
 								</div>
-								<div class="wrap threehalfcol last">
+								<div class="wrap threehalfcol" id= "last_head">
 									<label class="label" for="image_tags"> Search by image tags </label>
 									<form id="image_tags">
-									<span style="white-space: nowrap;">	<input class="check" type="checkbox" value="car" id="car"><label for="car"> car </label></span>
-									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="person" id="person"><label for="person"> person </label></span>
-									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="can" id="can"><label for="can"> trash can </label></span>
-									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="rsign" id="rsign"><label for="rsign"> road sign </label></span>
-									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="ssign" id="ssign"><label for="ssign"> school sign </label></span>
-									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="tower" id="tower"><label for="tower"> tower </label></span>
-									<span style="white-space: nowrap;"><input class="check" type="checkbox" value="stadium" id="stadium"><label for="stadium"> stadium </label></span>
+									<span style="white-space: nowrap;"><input class="check" name="tag[]" type="checkbox" value="car" id="car"><label for="car"> car </label></span>
+									<span style="white-space: nowrap;"><input class="check" name="tag[]" type="checkbox" value="person" id="person"><label for="person"> person </label></span>
+									<span style="white-space: nowrap;"><input class="check" name="tag[]" type="checkbox" value="can" id="can"><label for="can"> trash can </label></span>
+									<span style="white-space: nowrap;"><input class="check" name="tag[]" type="checkbox" value="rsign" id="rsign"><label for="rsign"> road sign </label></span>
+									<span style="white-space: nowrap;"><input class="check" name="tag[]" type="checkbox" value="ssign" id="ssign"><label for="ssign"> school sign </label></span>
+									<span style="white-space: nowrap;"><input class="check" name="tag[]" type="checkbox" value="tower" id="tower"><label for="tower"> tower </label></span>
+									<span style="white-space: nowrap;"><input class="check" name="tag[]" type="checkbox" value="stadium" id="stadium"><label for="stadium"> stadium </label></span>
 
 															</form>
 
@@ -77,7 +87,7 @@
 				<div id="inner-content" class="wrap clearfix">
 					<div id="main" class="clearfix main-index" role="main">
 						<h5 class="mini-title">Mon-Thur. 9.25–12.12 07:50</h5>
-							<article class="threehalfcol home-article" role="article" data-week="6" data-person="false" data-car="true" data-can="false" data-ssign= "false" data-rsgin="false" data-tower="false" data-stadium="false">
+							<article class="threehalfcol home-article" role="article" data-week="6" data-person="false" data-car="true" data-can="false" data-ssign= "false" data-rsgin="false" data-tower="false" data-stadium="false" data-quality="medium">
 
 									<table class="table">
 										<tbody >
@@ -100,7 +110,6 @@
 
 							</article>
 							<article class="threehalfcol home-article" role="article" data-week="9" data-person="false" data-car="false" data-can="true" data-rsgin="true" data-stadium="true">
-
 									<table class="table">
 										<tbody>
 											<tr>
@@ -122,7 +131,6 @@
 
 							</article>
 							<article class="threehalfcol home-article" role="article" data-week="12" data-person="true" data-car="false" data-can="false" data-rsgin="false" data-stadium="false">
-
 									<table class="table">
 										<tbody>
 											<tr>
@@ -144,7 +152,6 @@
 
 							</article>
 							<article class="threehalfcol home-article" role="article" data-week="12" data-person="true" data-car="true" data-can="true" data-rsgin="true" data-stadium="true">
-
 									<table class="table">
 										<tbody>
 											<tr>
@@ -166,7 +173,6 @@
 
 							</article>
 							<article class="threehalfcol home-article" role="article" data-week="3" data-person="true" data-car="true" data-can="true" data-rsgin="false" data-stadium="true">
-
 									<table class="table">
 										<tbody>
 											<tr>
@@ -187,8 +193,7 @@
 									</table>
 
 							</article>
-							<article class="threehalfcol home-article" role="article">
-
+							<article class="threehalfcol home-article" role="article" data-week="2" data-person="true" data-car="false" data-can="false" data-rsgin="false" data-stadium="false">
 									<table class="table">
 										<tbody>
 											<tr>
@@ -209,8 +214,7 @@
 									</table>
 
 							</article>
-							<article class="threehalfcol home-article" role="article">
-
+							<article class="threehalfcol home-article" role="article" data-week="8" data-person="true" data-car="true" data-can="false" data-rsgin="false" data-stadium="false">
 									<table class="table">
 										<tbody>
 											<tr>
@@ -231,9 +235,7 @@
 									</table>
 
 							</article>
-
-							<article class="threehalfcol home-article" role="article">
-
+							<article class="threehalfcol home-article" role="article" data-week="2" data-person="true" data-car="true" data-can="true" data-ssign="true" data-rsgin="false" data-stadium="false">
 									<table class="table">
 										<tbody>
 											<tr>
@@ -254,8 +256,7 @@
 									</table>
 
 							</article>
-							<article class="threehalfcol home-article" role="article">
-
+							<article class="threehalfcol home-article" role="article" data-week="4" data-person="true" data-car="true" data-can="true" data-ssign="true" data-rsgin="false" data-stadium="false">
 									<table class="table">
 										<tbody>
 											<tr>
@@ -276,8 +277,7 @@
 									</table>
 
 							</article>
-							<article class="threehalfcol home-article" role="article">
-
+							<article class="threehalfcol home-article" role="article" data-week="1" data-person="true" data-car="true" data-can="true" data-ssign="true" data-rsgin="false" data-stadium="false">
 									<table class="table">
 										<tbody>
 											<tr>
@@ -298,8 +298,7 @@
 									</table>
 
 							</article>
-							<article class="threehalfcol home-article" role="article">
-
+							<article class="threehalfcol home-article" role="article" data-week="5" data-person="false" data-car="true" data-can="true" data-rsgin="true" data-tower="true" data-stadium="false">
 									<table class="table">
 										<tbody>
 											<tr>
@@ -320,8 +319,7 @@
 									</table>
 
 							</article>
-							<article class="threehalfcol home-article" role="article">
-
+							<article class="threehalfcol home-article" role="article" data-week="8" data-person="true" data-car="false" data-can="true" data-rsgin="true" data-tower="true" data-stadium="false">
 									<table class="table">
 										<tbody>
 											<tr>
@@ -342,8 +340,7 @@
 									</table>
 
 							</article>
-							<article class="threehalfcol home-article" role="article">
-
+							<article class="threehalfcol home-article" role="article" data-week="5" data-person="false" data-car="true" data-can="true" data-rsgin="true" data-tower="true" data-stadium="false">
 									<table class="table">
 										<tbody>
 											<tr>
@@ -364,10 +361,7 @@
 									</table>
 
 							</article>
-
-
 							<article class="threehalfcol home-article" role="article">
-
 									<table class="table">
 										<tbody>
 											<tr>
@@ -1092,43 +1086,94 @@ function getSelectedOption() {
     }
   }
 }
+function getSelectedQuality() {
+	var sel= document.getElementById('image_quality');
+    var opt = sel.options[sel.selectedIndex].value;
+
+
+  var div, art, table, i, value;
+
+  div = document.getElementById("main");
+  art = div.getElementsByTagName('article');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < art.length; i++) {
+    table = art[i];
+		console.log(table.dataset);
+    // value = $("[data-week]"); $('[data-week=opt]')
+		value=table.dataset.quality;
+		//console.log("week="+value);
+    if (value==opt) {
+      art[i].style.display = "";
+			console.log(value);
+    } else {
+      art[i].style.display = "none";
+    }
+  }
+}
 $(document).ready(function () {
-	console.log("in doc ready");
     $(".check").change(function () {
 			console.log("ran");
-        if (this.checked) {
-	const checkboxes = document.querySelectorAll('input:checked');
+
+	//const checkboxes = document.querySelectorAll('input:checked');
+	let boxes= document.getElementsByClassName('check');
 	let checked = [];
-	checkboxes.forEach((checkbox) => {
-	    checked.push(checkbox.value);
-			console.log(checkbox.value);
-	});
+	let unchecked = [];
+	for(var c=0; c< boxes.length; c++){
+		if(boxes[c].checked == false){
+			unchecked.push(boxes[c].value);
+		}
+		else{
+			 checked.push(boxes[c].value);
+		}
+
+	}
+
+	// checkboxes.forEach((checkbox) => {
+	//     checked.push(checkbox.value);
+	// });
+	//
 	  // Declare variables
-  var input, filter,  art,  i, txtValue, n, v;
+  var input, filter,  art,  i, txtValue, n, v, u;
 	div = document.getElementById("main");
   art = div.getElementsByTagName('article');
+
+	var all_correct= true;
 
   // Loop through all list items, and hide those who don't match the search query
 	for (i = 0; i < art.length; i++) {
 
 		table = art[i];
+		//console.log(art[i].dataset);
 	for(n=0; n< checked.length; n++){
+		//checked contains only words that are true
 			value= checked[n];
-
-			//var opt= table.dataset;
-console.log($(table).data(value));
-				//console.log(opt.value);
 			if ($(table).data(value) === true) {
-				art[i].style.display = "";
+				console.log("checked:"+value);
+				all_correct= true;
 			} else {
-				art[i].style.display = "none";
-
-				//NEED TO FIX, it adds in images that fit new clicked tag even if they don't fit pre-clicked tags
-
+				all_correct=false;
+				break;
 			}
 
 	}
-	}
+	// for(u=0; u< unchecked.length; u++){
+	// 	//checked contains only words that are true
+	// 		value= unchecked[n];
+	// 		if ($(table).data(value) === false) {
+	// 			all_correct= true;
+	// 			console.log("unchecked:"+value);
+	// 		} else {
+	// 			all_correct=false;
+	// 			break;
+	// 		}
+	//
+	// }
+	if (all_correct== true) {
+		art[i].style.display = "";
+	} else {
+		art[i].style.display = "none";
+}
 }
 })
 });

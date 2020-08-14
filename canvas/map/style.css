@@ -123,6 +123,8 @@ h2 {
 h3 {
   font-size: 1.17em;
   margin: 1em 0;
+  white-space: nowrap ;
+  word-wrap:break-word;
 }
 h4 {
   font-size: 1em;
@@ -379,6 +381,7 @@ input[disabled] {
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
+  border-color: blue;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -386,6 +389,9 @@ input[type="radio"] {
   /* 3 */
   *width: 13px;
   /* 3 */
+
+    margin-left: 0px;
+
 }
 /*
  * 1. Addresses `appearance` set to `searchfield` in S5, Chrome.
@@ -701,7 +707,7 @@ body {
   height: 100%;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: Oswald, sans-serif;
   font-size: 100%;
   line-height: 1.5;
   color: #000000;
@@ -769,9 +775,9 @@ h4,
 .h4,
 h5,
 .h5 {
-  font-family: Arial, sans-serif;
+  font-family: Roboto Condensed, sans-serif;
   text-rendering: optimizelegibility;
-  font-weight: bold;
+  font-weight: 600;
   /* removing text decoration from all headline links */
 }
 h1 a,
@@ -814,8 +820,12 @@ h5,
   letter-spacing: 2px;
 }
 .label{
-  font-weight: 700;
+  font-weight: 550;
 }
+label{
+  font-weight: 600;
+}
+
 /*********************
 06. HEADER STYLES
 *********************/
@@ -1034,11 +1044,11 @@ nav div.top-nav ul li a {
   transition: all 0.2s ease-in-out;
 }
 .table td {
-  padding: 0 10px;
+  padding: 10px;
   border: 2px solid #000000;
 }
 .table tr td:first-child {
-  width: 40%;
+  width: 65%;
 }
 .table tr td.img {
   padding: 2em 0.8em;
@@ -1382,10 +1392,23 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
+@media only screen and (max-width: 767px) {
+  #mid_head, #last_head{
+  margin-top: 20px;
+  }
+  #last_head{
+    margin-left: 9.725px;
+  }
+  label{
+    margin-left: 0px;
+  }
+
+}
 @media only screen and (min-width: 900px) {
   .threehalfcol{
     width: 27.2099447495%;
   }
+
 }
 @media only screen and (min-width: 768px) {
   /******************************************************************
