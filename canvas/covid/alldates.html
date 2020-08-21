@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> April 11 – May 14 </title>
+		<link rel = "icon" href ="../../M_logo.png"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://use.typekit.net/oqf5vwp.css">
+    <script src="jquery-3.4.1.min.js"></script>
+	</head>
+
+	<body>
+
+  <h1 style="top: 20%;"> April 11 – May 14 </h1>
+  <p style="top: 25%;"> We knew it would come when they told us an employee tested positive. It was just a matter of waiting for when. As employees continued to be rotated between buildings, infected or not. All residents the population most at risk. </p>
+
+  <h1 id="April_11" style="top: 120%;">April 11 </h1>
+  <p style="top: 125%;"> She has a fever. She is being put in precautionary quarantine. </p>
+
+  <h1 id="April_12" style="top: 220%;">April 12 </h1>
+  <p style="top: 225%;"> No fever. Easter. </p>
+  <h1 style="top: 230%;"> April 13 </h1>
+  <p style="top: 235%;"> No fever.</p>
+  <h1 style="top: 240%;">April 14 </h1>
+  <p style="top: 245%;"> No fever.</p>
+  <h1 style="top: 250%;">April 15 </h1>
+  <p style="top: 255%; margin-bottom: 10vh;"> No fever.</p>
+
+
+
+</body>
+<script type="text/javascript">
+  $(function() {
+    console.log('in timeout');
+  setTimeout(function() {
+    var jumpPos = $('#April_11').offset().top;
+    if($(document).scrollTop() <= jumpPos)
+      $('html, body').animate({
+        scrollTop: jumpPos
+      }, 1000);
+  }, 10000);
+});
+
+</script>
+
+</html>
