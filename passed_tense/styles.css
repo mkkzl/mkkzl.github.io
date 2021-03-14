@@ -1,0 +1,51 @@
+*{
+  font-family: 'Signika', sans-serif;
+}
+  .inline  {
+     display: inline;
+  }
+  #target{
+    border-style: solid;
+  border-width: 1px;
+  padding-left: 5px;
+  margin-right: 5px;
+  color: #76C209;
+  }
+  .buttons{
+    margin: 20px;
+  }
+  h3{
+    font-size: 3em;
+  }
+  p{
+    font-size: 2em;
+  }
+  button{
+    background-color: white;
+    border: none;
+    margin-right: 5px;
+    padding-left:  26.667px;
+    padding-right: 26.667px;
+  }
+  button:hover{
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+  }
+  #next{
+    visibility: hidden;
+    background-color: #76C209;
+    color: white;
+    position: absolute;
+    left: 50%;
+    font-weight: 550;
+  }
+  #next:hover{
+    background-color: #4a750d;
+    color: white;
+    cursor: pointer;
+
+  }
+  body {
+  background-color: #F1F1F1;
+}

@@ -20,7 +20,7 @@ Table newtable;
 
 
 void setup(){
-  size(6000, 1500);
+  size(9000, 1500);
   background(#f7f3f0);
   newtable= new Table();
   newtable.addColumn("date");
@@ -38,7 +38,7 @@ void setup(){
          //dateArray= append(dateArray, day);
         currentDate.setDate(currentDate.getDate()+71);*/
         
-    while(u<=500) {
+    while(u<=1000) {
         int d= currentDate.getDate();
          int m=currentDate.getMonth();
          int y1= currentDate.getYear();
@@ -94,12 +94,12 @@ for (int o = 0; o<dateArray.length; o++){
       
   }
  save("graph_all.jpg");   
- saveTable(newtable, "data/june-jul24.csv");
+ saveTable(newtable, "data/latest.csv");
  
 }
 
 void loadData(){
-    json = loadJSONObject("june-jul24.json");
+    json = loadJSONObject("june2019-jan312021.json");
     JSONArray messages = json.getJSONArray("messages");
     //dict= new IntDict();
     

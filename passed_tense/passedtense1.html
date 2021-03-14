@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Passed Tense</title>
+<link rel = "icon" href ="../../M_logo.png"/>
+<script src="https://kit.fontawesome.com/ed67e4d929.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+<link rel='stylesheet'   href='styles.css' type='text/css' media='all' />
+</head>
+<body>
+
+<h3>Pick a tense</h3>
+<div class="inline">
+<p class="inline">They</p>
+<p id="target" class="inline"> insert here </p>
+<p class="inline">a great conversationalist</p>
+</div>
+<br>
+<div class="buttons" id="responses">
+<button onclick="myFunction('were')"><p>was</p></button>
+<button onclick="myFunction('are')"><p>is</p></button>
+</div>
+<div>
+  <a href=""><button id="next"><p>Next <i class="fas fa-arrow-right"></i></p></button></a>
+</div>
+
+
+
+<script>
+function myFunction(text) {
+  var tar= document.getElementById("target");
+  var next= document.getElementById("next");
+  var responses= document.getElementById("responses");
+  tar.innerHTML = text;
+  tar.style.borderWidth= "0px";
+  tar.style.marginRight= "0px";
+  tar.style.paddingLeft= "0px";
+  responses.style.visibility= "hidden";
+  next.style.visibility= "visible";
+}
+</script>
+
+</body>
+</html>
