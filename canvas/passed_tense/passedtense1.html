@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<h3>Pick a tense</h3>
+<h3 id="title">Pick a tense</h3>
 <div class="inline">
 <p class="inline">They</p>
 <p id="target" class="inline"> insert here </p>
@@ -18,8 +18,8 @@
 </div>
 <br>
 <div class="buttons" id="responses">
-<button onclick="myFunction('were')"><p>was</p></button>
-<button onclick="myFunction('are')"><p>is</p></button>
+<button onclick="myFunction('were', 'You picked past tense')"><p>was</p></button>
+<button onclick="myFunction('are', 'You picked present tense')"><p>is</p></button>
 </div>
 <div>
   <a href=""><button id="next"><p>Next <i class="fas fa-arrow-right"></i></p></button></a>
@@ -28,14 +28,17 @@
 
 
 <script>
-function myFunction(text) {
+function myFunction(text, tense) {
   var tar= document.getElementById("target");
   var next= document.getElementById("next");
   var responses= document.getElementById("responses");
+  var title= document.getElementById("title");
   tar.innerHTML = text;
+  title.innerHTML =  tense;
   tar.style.borderWidth= "0px";
   tar.style.marginRight= "0px";
-  tar.style.paddingLeft= "0px";
+  // tar.style.paddingLeft= "5px";
+  tar.style.paddingRight= "5px";
   responses.style.visibility= "hidden";
   next.style.visibility= "visible";
 }
