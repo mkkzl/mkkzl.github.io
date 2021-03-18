@@ -1,5 +1,8 @@
 *{
   font-family: 'Signika', sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
 }
   .inline  {
      display: inline;
@@ -16,35 +19,37 @@
   }
   h3{
     font-size: 3em;
+    padding-bottom: 20px;
+  }
+  h6{
+    font-size: 2em;
+    padding-bottom: 10px;
   }
   p{
-    font-size: 2em;
+    font-size: 1.75em;
   }
   button{
-    background-color: white;
+    background-color: #76C209;
+    color: white;
     border: none;
     margin-right: 5px;
     padding-left:  26.667px;
     padding-right: 26.667px;
   }
   button:hover{
-    background-color: gray;
+    background-color: #4a750d;
     color: white;
     cursor: pointer;
   }
   #next{
     visibility: hidden;
-    background-color: #76C209;
-    color: white;
-    position: absolute;
-    left: 30%;
     font-weight: 550;
   }
-  #next:hover{
-    background-color: #4a750d;
-    color: white;
-    cursor: pointer;
 
+  #container{
+    background-color: #fff;
+    margin: 25px;
+    padding: 25px 25px 40px 25px;
   }
   body {
   background-color: #F1F1F1;
