@@ -9,6 +9,9 @@
 <link rel='stylesheet'   href='styles.css' type='text/css' media='all' />
 </head>
 <body>
+  <div class="progress left">
+    <div class="progress complete" style="width:22%"  id="myBar">22%</div>
+  </div>
 <div id="container">
 <h3 id="title">Pick a tense</h3>
 <div class="inline">
@@ -19,18 +22,20 @@
 <br>
 <br>
 <div class="buttons" id="responses">
-<button onclick="myFunction('were', 'past')"><p>were</p></button>
-<button onclick="myFunction('are', 'present')"><p>are</p></button>
-<button onclick="myFunction('were not', 'past')"><p>were not</p></button>
-<button onclick="myFunction('are not', 'present')"><p>are not</p></button>
+<button onclick="myFunction('were', 'past'); move();"><p>were</p></button>
+<button onclick="myFunction('are', 'present'); move();"><p>are</p></button>
+<button onclick="myFunction('were not', 'past'); move();"><p>were not</p></button>
+<button onclick="myFunction('are not', 'present'); move();"><p>are not</p></button>
 </div>
 <div>
-  <a href=""><button id="next"><p>Next <i class="fas fa-arrow-right" style="transform: scale(0.7); margin-top: 5px;"></i></p></button></a>
+  <a href="passedtense4.html"><button id="next"><p>Next <i class="fas fa-arrow-right" style="transform: scale(0.7); margin-top: 5px;"></i></p></button></a>
 </div>
 </div>
 
 
 <script>
+console.log("present="+sessionStorage.presentcount);
+console.log("past="+sessionStorage.pastcount);
 function myFunction(text, tense) {
   var tar= document.getElementById("target");
   var next= document.getElementById("next");
@@ -43,6 +48,36 @@ function myFunction(text, tense) {
   tar.style.paddingRight= "5px";
   responses.style.visibility= "hidden";
   next.style.visibility= "visible";
+  if (tense== 'present' && typeof(Storage) !== "undefined") {
+    if (sessionStorage.presentcount) {
+      sessionStorage.presentcount = Number(sessionStorage.presentcount)+1;
+    } else {
+      sessionStorage.presentcount = 1;
+    }
+    console.log(sessionStorage.presentcount);
+}
+else if(tense== 'past' && typeof(Storage) !== "undefined") {
+  if (sessionStorage.pastcount) {
+    sessionStorage.pastcount = Number(sessionStorage.pastcount)+1;
+  } else {
+    sessionStorage.pastcount = 1;
+  }
+  console.log(sessionStorage.pastcount);
+}
+}
+function move() {
+  var elem = document.getElementById("myBar");
+  var width = 22;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 33) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+  myBar.innerHTML="33%";
 }
 </script>
 

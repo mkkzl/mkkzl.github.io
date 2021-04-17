@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="progress left">
-    <div class="progress complete" style="width:0%"  id="myBar"></div>
+    <div class="progress complete" style="width:89%"  id="myBar">89%</div>
   </div>
 <div id="container">
 
@@ -19,26 +19,25 @@
 <div class="inline">
 <p class="inline">They</p>
 <p id="target" class="inline"> insert here </p>
-<p class="inline">a great conversationalist</p>
+<p class="inline">a polite person</p>
 </div>
 <br>
 <br>
 <div class="buttons" id="responses">
-<button onclick="myFunction('were', 'past');  move();"><p>were</p></button>
-<button onclick="myFunction('are', 'present');  move();"><p>are</p></button>
+<button onclick="myFunction('were', 'past'); move();"><p>were</p></button>
+<button onclick="myFunction('are', 'present'); move();"><p>are</p></button>
 <button onclick="myFunction('were not', 'past'); move();"><p>were not</p></button>
 <button onclick="myFunction('are not', 'present'); move();"><p>are not</p></button>
 </div>
 <div>
-  <a href="passedtense2.html"><button id="next"><p>Next <i class="fas fa-arrow-right" style="transform: scale(0.7); margin-top: 5px;"></i></p></button></a>
+  <a href="results.html"><button id="next"><p>Go to results <i class="fas fa-arrow-right" style="transform: scale(0.7); margin-top: 5px;"></i></p></button></a>
 </div>
 
 </div>
 
 
 <script>
-sessionStorage.pastcount=0;
-sessionStorage.presentcount=0;
+
 function myFunction(text, tense) {
 
   var tar= document.getElementById("target");
@@ -73,17 +72,17 @@ else if(tense== 'past' && typeof(Storage) !== "undefined") {
 }
 function move() {
   var elem = document.getElementById("myBar");
-  var width = 0;
+  var width = 89;
   var id = setInterval(frame, 10);
   function frame() {
-    if (width >= 11) {
+    if (width >= 100) {
       clearInterval(id);
     } else {
       width++;
       elem.style.width = width + '%';
     }
   }
-  myBar.innerHTML="11%";
+  myBar.innerHTML="100%";
 }
 
 </script>

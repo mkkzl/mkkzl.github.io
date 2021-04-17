@@ -23,6 +23,7 @@
   }
   h6{
     font-size: 2em;
+    font-weight: 100;
     padding-bottom: 10px;
   }
   p{
@@ -35,6 +36,8 @@
     margin-right: 5px;
     padding-left:  26.667px;
     padding-right: 26.667px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
   button:hover{
     background-color: #4a750d;
@@ -53,4 +56,20 @@
   }
   body {
   background-color: #F1F1F1;
+}
+.progress{
+  border-radius: 8px;
+  margin-left: 5vw;
+  margin-top: 10vh;
+  width:90vw;
+}
+
+.left{
+  color: #000!important;
+    background-color: #797575!important;
+}
+.complete{
+  color: #fff!important;
+    background-color: #76C209!important;
+    margin: 0px;
 }

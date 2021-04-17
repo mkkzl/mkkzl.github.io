@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Passed Tense</title>
+<link rel = "icon" href ="../../M_logo.png"/>
+<script src="https://kit.fontawesome.com/ed67e4d929.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+<link rel='stylesheet'   href='styles.css' type='text/css' media='all' />
+</head>
+<body>
+  <div id="container">
+  <h3 id="result"></h3>
+  <br>
+    <div>
+      <a href="index.html"><button id="ready"><i class="fas fa-home" style="font-size:1.75rem;"></i></button></a>
+    </div>
+
+</div>
+</body>
+<script>
+  document.getElementById("result").innerHTML = "You have picked " + sessionStorage.presentcount + " present tense and "+ sessionStorage.pastcount + " past tense choices";
+  (function() {
+
+      const idleDurationSecs = 20;    // X number of seconds
+      const redirectUrl = '/canvas/passed_tense/';  // Redirect idle users to this URL
+      let idleTimeout; // variable to hold the timeout, do not modify
+
+      const resetIdleTimeout = function() {
+
+          // Clears the existing timeout
+          if(idleTimeout) clearTimeout(idleTimeout);
+
+          // Set a new idle timeout to load the redirectUrl after idleDurationSecs
+          idleTimeout = setTimeout(() => location.href = redirectUrl, idleDurationSecs * 1000);
+      };
+
+      // Init on page load
+      resetIdleTimeout();
+
+      // Reset the idle timeout on any of the events listed below
+      ['click', 'touchstart', 'mousemove'].forEach(evt =>
+          document.addEventListener(evt, resetIdleTimeout, false)
+      );
+
+  })();
+  </script>
+</html>

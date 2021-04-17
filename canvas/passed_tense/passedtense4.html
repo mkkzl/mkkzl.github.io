@@ -10,44 +10,38 @@
 </head>
 <body>
   <div class="progress left">
-    <div class="progress complete" style="width:0%"  id="myBar"></div>
+    <div class="progress complete" style="width:33%"  id="myBar">33%</div>
   </div>
 <div id="container">
-
-<br>
 <h3 id="title">Pick a tense</h3>
 <div class="inline">
 <p class="inline">They</p>
 <p id="target" class="inline"> insert here </p>
-<p class="inline">a great conversationalist</p>
+<p class="inline">a focused person</p>
 </div>
 <br>
 <br>
 <div class="buttons" id="responses">
-<button onclick="myFunction('were', 'past');  move();"><p>were</p></button>
-<button onclick="myFunction('are', 'present');  move();"><p>are</p></button>
+<button onclick="myFunction('were', 'past'); move();"><p>were</p></button>
+<button onclick="myFunction('are', 'present'); move();"><p>are</p></button>
 <button onclick="myFunction('were not', 'past'); move();"><p>were not</p></button>
 <button onclick="myFunction('are not', 'present'); move();"><p>are not</p></button>
 </div>
 <div>
-  <a href="passedtense2.html"><button id="next"><p>Next <i class="fas fa-arrow-right" style="transform: scale(0.7); margin-top: 5px;"></i></p></button></a>
+  <a href="passedtense5.html"><button id="next"><p>Next <i class="fas fa-arrow-right" style="transform: scale(0.7); margin-top: 5px;"></i></p></button></a>
 </div>
-
 </div>
 
 
 <script>
-sessionStorage.pastcount=0;
-sessionStorage.presentcount=0;
+console.log("present="+sessionStorage.presentcount);
+console.log("past="+sessionStorage.pastcount);
 function myFunction(text, tense) {
-
   var tar= document.getElementById("target");
-
   var next= document.getElementById("next");
   var responses= document.getElementById("responses");
   var title= document.getElementById("title");
   tar.innerHTML = '<strong>' + text + '</strong>';
-
   title.innerHTML = 'You picked '+ "<p class= 'inline' style='color: #76C209; font-size: 1.25em;'>" + tense + " </p>" + 'tense';
   tar.style.borderWidth= "0px";
   tar.style.marginRight= "0px";
@@ -73,19 +67,18 @@ else if(tense== 'past' && typeof(Storage) !== "undefined") {
 }
 function move() {
   var elem = document.getElementById("myBar");
-  var width = 0;
+  var width = 33;
   var id = setInterval(frame, 10);
   function frame() {
-    if (width >= 11) {
+    if (width >= 44) {
       clearInterval(id);
     } else {
       width++;
       elem.style.width = width + '%';
     }
   }
-  myBar.innerHTML="11%";
+  myBar.innerHTML="44%";
 }
-
 </script>
 
 </body>
